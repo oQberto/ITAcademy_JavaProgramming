@@ -50,4 +50,20 @@ public class Homework1 {
         }
         return fibonacciSequence;
     }
+
+    /**
+     * Inverts the array
+     * @param array user's array for invert
+     * @return inverted array
+     */
+    public static int[] invert(int[] array) {
+        int temp;
+
+        for (int i = 0; i < array.length / 2; i++) {
+            temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
+        }
+        return array;
+    }
 }
