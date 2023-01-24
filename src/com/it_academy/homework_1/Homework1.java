@@ -94,5 +94,23 @@ public class Homework1 {
         return "Same";
     }
 
-
+    /**
+     * Determines if a matrix is a lower triangular matrix.
+     * <p>
+     * @param matrix input a matrix for verification
+     * @return true if the matrix is a lower triangular matrix
+     */
+    public static boolean isLowerTriangularMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (j <= i && matrix[i][j] == 0) {
+                    return false;
+                }
+                if (j > i && matrix[i][j] != 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
