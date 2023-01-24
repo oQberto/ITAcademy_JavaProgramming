@@ -66,4 +66,33 @@ public class Homework1 {
         }
         return array;
     }
+
+    /**
+     * Determines which numbers are greater: positive or negative.
+     * <p>
+     * @param matrix two-dimensional array to look up positive and negative numbers
+     * @return a message which numbers are greater
+     */
+    public static String findPositiveAndNegative(int[][] matrix) {
+        int countOfPositive = 0;
+        int countOfNegative = 0;
+
+        for (int[] ints : matrix) {
+            for (int anInt : ints) {
+                if (anInt > 0) {
+                    countOfPositive++;
+                } else {
+                    countOfNegative++;
+                }
+            }
+        }
+        if (countOfPositive > countOfNegative) {
+            return "Positive";
+        } else if (countOfNegative > countOfPositive) {
+            return "Negative";
+        }
+        return "Same";
+    }
+
+
 }
