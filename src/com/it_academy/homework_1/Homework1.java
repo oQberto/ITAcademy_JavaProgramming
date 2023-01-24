@@ -113,4 +113,64 @@ public class Homework1 {
         }
         return true;
     }
+
+    /**
+     * Calculates a sum of two matrices. After adding identical elements
+     * in two matrices, their sum is written in matrixA.
+     * <p>
+     * @param matrixA first term
+     * @param matrixB second term
+     * @return a rewritten matrixA equal to the sum of the original matrices.
+     *         If matrices sizes not equals return null.
+     */
+    public static int[][] findSumOfMatrices(int[][] matrixA, int[][] matrixB) {
+        if (!isSameSize(matrixA, matrixB)) {
+            return null;
+        }
+        int intermediateSum;
+
+        for (int i = 0; i < matrixA.length; i++) {
+            for (int j = 0; j < matrixA[i].length; j++) {
+                intermediateSum = matrixA[i][j] + matrixB[i][j];
+                matrixA[i][j] = intermediateSum;
+            }
+        }
+        return matrixA;
+    }
+
+    /**
+     * Calculates a difference of two matrices. After subtracting the same elements
+     * in two matrices, their difference is written in matrixA.
+     * <p>
+     * @param matrixA minuend
+     * @param matrixB subtrahend
+     * @return a rewritten matrixA equal to the difference of the original matrices.
+     *         If matrices sizes not equals return null.
+     */
+    public static int[][] findDifferenceOfMatrices(int[][] matrixA, int[][] matrixB) {
+        if (!isSameSize(matrixA, matrixB)) {
+            return null;
+        }
+        int intermediateDifference;
+
+        for (int i = 0; i < matrixA.length; i++) {
+            for (int j = 0; j < matrixA[i].length; j++) {
+                intermediateDifference = matrixA[i][j] - matrixB[i][j];
+                matrixA[i][j] = intermediateDifference;
+            }
+        }
+        return matrixA;
+    }
+
+    private static boolean isSameSize(int[][] matrixA, int[][] matrixB) {
+        if (matrixA.length != matrixB.length) {
+            return false;
+        }
+        for (int i = 0; i < matrixA.length; i++) {
+            if (matrixA[i].length != matrixB[i].length) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
