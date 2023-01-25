@@ -173,4 +173,28 @@ public class Homework1 {
         }
         return true;
     }
+
+    /**
+     * Calculates the maximum amount that can be obtained from an array, with the condition that the
+     * elements included in the sum do not stand on neighboring indices.
+     * <p>
+     * @param array for calculating sum
+     * @return maximum amount in array
+     */
+    public static int findMaxSumInArray(int[] array) {
+        if (array.length == 0) {
+            return 0;
+        } else if (array.length == 1) {
+            return array[0];
+        }
+        int sumToCurrentElementMinusTwo = array[0];
+        int sumToCurrentElementMinusOne = Math.max(array[0], array[1]);
+
+        for (int i = 2; i < array.length; i++) {
+            int currentSum = Math.max(sumToCurrentElementMinusOne, sumToCurrentElementMinusTwo + array[i]);
+            sumToCurrentElementMinusTwo = sumToCurrentElementMinusOne;
+            sumToCurrentElementMinusOne = currentSum;
+        }
+        return sumToCurrentElementMinusOne;
+    }
 }
