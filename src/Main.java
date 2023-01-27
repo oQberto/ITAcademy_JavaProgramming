@@ -1,8 +1,8 @@
-import com.it_academy.homework_1.Homework1;
+import by.itacademy.homework1.Homework1;
+
 public class Main {
     public static void main(String[] args) {
-        int[] array = {2, 1, 0, 0, 0, 0};
-        System.out.println("The maximum sum is "+Homework1.findMaxSumInArray(array));
-
+        int[] array = {1, 0, 4, 8, 9, 1};
+        System.out.println(Homework1.findMaxSumInArray(array));
     }
 }

@@ -1,4 +1,4 @@
-package com.it_academy.homework_1;
+package by.itacademy.homework1;
 
 public class Homework1 {
 
