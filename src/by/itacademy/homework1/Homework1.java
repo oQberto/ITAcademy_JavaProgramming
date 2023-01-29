@@ -18,20 +18,12 @@ public class Homework1 {
 
     /**
      * Calculates the sum of all even Fibonacci numbers up to a definite index
-     * @param countOfNumbersInSequence the length of the Fibonacci numbers sequence
+     * <p>
      * @param amountIndex the number up to which the sum is calculated
      * @return the sum of even numbers
      */
-    public static int getSumOfEvenNumbers(int countOfNumbersInSequence, int amountIndex) {
-        int[] fibonacciNumbers = makeFibonacciSequence(countOfNumbersInSequence);
-        int amountOfNumbersFromSequence = 0;
-
-        for (int i = 0; i < amountIndex; i++) {
-            if (fibonacciNumbers[i] % 2 == 0) {
-                amountOfNumbersFromSequence += fibonacciNumbers[i];
-            }
-        }
-        return amountOfNumbersFromSequence;
+    public static int getSumOfEvenNumbers(int amountIndex) {
+        return Arrays.stream(makeFibonacciSequence(amountIndex)).filter(s -> s % 2 != 0).sum();
     }
 
     private static int[] makeFibonacciSequence(int countOfNumbersInSequence) {
