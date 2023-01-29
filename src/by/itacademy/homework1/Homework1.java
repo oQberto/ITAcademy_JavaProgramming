@@ -13,7 +13,8 @@ public class Homework1 {
      * @return the sum of array elements
      */
     public static int getArraySum(int[] array, int notIncludeInArraySum) {
-        return Arrays.stream(array).filter(s -> s != notIncludeInArraySum).sum();
+        return Arrays.stream(array)
+                .filter(s -> s != notIncludeInArraySum).sum();
     }
 
     /**
@@ -23,7 +24,8 @@ public class Homework1 {
      * @return the sum of even numbers
      */
     public static int getSumOfEvenNumbers(int amountIndex) {
-        return Arrays.stream(makeFibonacciSequence(amountIndex)).filter(s -> s % 2 != 0).sum();
+        return Arrays.stream(makeFibonacciSequence(amountIndex))
+                .filter(s -> s % 2 != 0).sum();
     }
 
     private static int[] makeFibonacciSequence(int countOfNumbersInSequence) {
