@@ -89,9 +89,6 @@ public class Homework1 {
     public static boolean isLowerTriangularMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                if (j <= i && matrix[i][j] == 0) {
-                    return false;
-                }
                 if (j > i && matrix[i][j] != 0) {
                     return false;
                 }
