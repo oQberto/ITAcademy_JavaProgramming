@@ -1,5 +1,7 @@
 package by.itacademy.homework1;
 
+import java.util.Arrays;
+
 public class Homework1 {
 
     /**
@@ -11,15 +13,7 @@ public class Homework1 {
      * @return the sum of array elements
      */
     public static int getArraySum(int[] array, int notIncludeInArraySum) {
-        int arraySum = 0;
-
-        for (int element : array) {
-            if (element == notIncludeInArraySum) {
-                continue;
-            }
-            arraySum += element;
-        }
-        return arraySum;
+        return Arrays.stream(array).filter(s -> s != notIncludeInArraySum).sum();
     }
 
     /**
