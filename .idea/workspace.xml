@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: add line break in &quot;getArraySum&quot; &amp; &quot;getSumOfEvenNumbers&quot; methods">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/atm/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/atm/ATMTerminal.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add &quot;ATM&quot; &amp; &quot;ATMTerminal&quot; classes">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/timeinterval/TimeInterval.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/timeinterval/TimeIntervalTerminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/atm/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/atm/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/atm/ATMTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/workbook/classesandobjects/atm/ATMTerminal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,20 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ATMTerminal">
+    <configuration name="ATMTerminal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.workbook.classesandobjects.atm.ATMTerminal" />
+      <module name="ITAcademy_JavaProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itacademy.workbook.classesandobjects.atm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ITAcademy_JavaProgramming" />
@@ -62,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ATMTerminal" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TimeIntervalTerminal" />
       </list>
@@ -174,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674987528455</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: add &quot;ATM&quot; &amp; &quot;ATMTerminal&quot; classes">
+      <created>1675010223875</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675010223875</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +223,7 @@
     <MESSAGE value="refactor: change &quot;getSumOfEvenNumbers&quot;&#10;Use Stream API" />
     <MESSAGE value="perf: remove check first part of a matrix" />
     <MESSAGE value="refactor: add line break in &quot;getArraySum&quot; &amp; &quot;getSumOfEvenNumbers&quot; methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: add line break in &quot;getArraySum&quot; &amp; &quot;getSumOfEvenNumbers&quot; methods" />
+    <MESSAGE value="feat: add &quot;ATM&quot; &amp; &quot;ATMTerminal&quot; classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add &quot;ATM&quot; &amp; &quot;ATMTerminal&quot; classes" />
   </component>
 </project>
