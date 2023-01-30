@@ -17,12 +17,12 @@ public class ATM {
                 + countOfBanknotes100 * 100;
     }
 
-    public int addMoney(int kindOfBanknote, int countOfBanknotes) {
+    public String addMoney(int kindOfBanknote, int countOfBanknotes) {
         totalAmountOfMoney += switch (kindOfBanknote) {
             case 20, 50, 100 -> kindOfBanknote * countOfBanknotes;
             default -> throw new IllegalStateException("Unexpected value: " + kindOfBanknote);
         };
-        return totalAmountOfMoney;
+        return "Credited to the account: " + kindOfBanknote * countOfBanknotes;
     }
 
     @Override
