@@ -1,10 +1,8 @@
-import by.itacademy.homework1.Homework1;
+import by.itacademy.homework2.task1.Month;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 0, 0},
-                          {0, 2, 0},
-                          {1, 2, 3}};
-        System.out.println(Homework1.isLowerTriangularMatrix(matrix));
+        System.out.println(Month.getMonthNumberByName("Sept"));
+        System.out.println(Month.getMonthNameByNumber(13));
     }
 }
