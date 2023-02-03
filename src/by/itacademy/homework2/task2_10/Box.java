@@ -1,4 +1,4 @@
-package by.itacademy.homework2.task10;
+package by.itacademy.homework2.task2_10;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -41,7 +41,7 @@ public class Box {
             return "Cube";
         } else if (box.height > 0 && box.width > 0 && box.length > 0) {
             return "Common box";
-        } else if (box.width == 0 && box.height != 0) {
+        } else if (box.width == 0) {
             return "Envelope";
         }
         return "The box cannot exist";
