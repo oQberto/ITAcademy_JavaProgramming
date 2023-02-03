@@ -1,20 +1,26 @@
 package by.itacademy.homework2.task3;
 
-import java.util.Arrays;
-
 public class Consumer {
-    private static final int[] CONSUMERS = new int[5];
-    private static int count = 0;
-
-    public static void consume(int consumer) {
+    private final int[] consumers = new int[5];
+    private int count = 0;
+    public void consume(int value) {
         if (count == 5) {
             count = 0;
         }
-        CONSUMERS[count] = consumer;
+        consumers[count] = value;
         count++;
     }
 
-    public static double getAverage() {
-        return Arrays.stream(CONSUMERS).average().orElse(Double.NaN);
+    public double getAverage() {
+        int sum = 0;
+        int count = 0;
+        for (int value : consumers) {
+            if (value == 0) {
+                continue;
+            }
+            sum += value;
+            count++;
+        }
+        return (double) sum / count;
     }
 }
