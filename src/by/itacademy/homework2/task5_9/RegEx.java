@@ -4,9 +4,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegEx {
+    private static Pattern pattern;
+    private static Matcher matcher;
     public static int countWords(String text) {
-        Pattern pattern = Pattern.compile("\\b([^cC ]*[cC][^cC ]*){3}\\b");
-        Matcher matcher = pattern.matcher(text);
+        pattern = Pattern.compile("\\b([^cC ]*[cC][^cC ]*){3}\\b");
+        matcher = pattern.matcher(text);
         int words = 0;
 
         while (matcher.find()) {
@@ -16,8 +18,8 @@ public class RegEx {
     }
 
     public static String getLongestWord(String text) {
-        Pattern pattern = Pattern.compile("\\b\\w+\\b");
-        Matcher matcher = pattern.matcher(text);
+        pattern = Pattern.compile("\\b\\w+\\b");
+        matcher = pattern.matcher(text);
 
         String longestWord = "";
         int lengthOfLongestWord = Integer.MIN_VALUE;
@@ -34,12 +36,23 @@ public class RegEx {
     }
 
     public static StringBuffer showWordsThatStartAndEndWithA(String text) {
-        Pattern pattern = Pattern.compile("\\ba\\w*a\\b");
-        Matcher matcher = pattern.matcher(text);
+        pattern = Pattern.compile("\\ba\\w*a\\b");
+        matcher = pattern.matcher(text);
         StringBuffer result = new StringBuffer();
 
         while (matcher.find()) {
             result.append(matcher.group()).append(" ");
+        }
+        return result;
+    }
+
+    public static StringBuffer getCreditCardNumber(String text) {
+        pattern = Pattern.compile("\\d[0-9]{3}(-[0-9]{4}){3}");
+        matcher = pattern.matcher(text);
+        StringBuffer result = new StringBuffer();
+
+        while (matcher.find()) {
+            result.append(matcher.group()).append("\n");
         }
         return result;
     }
