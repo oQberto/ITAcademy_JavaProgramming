@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix &quot;showWordsThatStartAndEndWithA&quot; method">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix &quot;getCreditCardNumber&quot; method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework2/task5_9/RegEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework2/task5_9/RegEx.java" afterDir="false" />
     </list>
@@ -310,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675443468549</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix: fix &quot;getCreditCardNumber&quot; method">
+      <created>1675443739069</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675443739069</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,7 +333,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add &quot;isLowerTriangularMatrix&quot; method" />
     <MESSAGE value="feat: add task 6 from homework" />
     <MESSAGE value="feat: add &quot;findMaxSumInArray&quot; method" />
     <MESSAGE value="refactor: change package name" />
@@ -350,6 +357,7 @@
     <MESSAGE value="refactor: merge task10 and task2" />
     <MESSAGE value="fix: fix &quot;determineBoxKind&quot; method" />
     <MESSAGE value="fix: fix &quot;showWordsThatStartAndEndWithA&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix &quot;showWordsThatStartAndEndWithA&quot; method" />
+    <MESSAGE value="fix: fix &quot;getCreditCardNumber&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix &quot;getCreditCardNumber&quot; method" />
   </component>
 </project>

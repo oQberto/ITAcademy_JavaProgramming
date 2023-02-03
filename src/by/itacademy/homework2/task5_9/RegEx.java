@@ -7,7 +7,7 @@ public class RegEx {
     private static Pattern pattern;
     private static Matcher matcher;
     public static int countWords(String text) {
-        pattern = Pattern.compile("\\b([^cC ]*[cC][^cC ]*){3}\\b");
+        pattern = Pattern.compile("\\b([а-яёА-ЯЁ]*[сС][а-яёА-ЯЁ]*){3,}\\b", Pattern.UNICODE_CHARACTER_CLASS);
         matcher = pattern.matcher(text);
         int words = 0;
 
