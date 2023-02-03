@@ -1,12 +1,28 @@
-import by.itacademy.homework2.task5_9.RegEx;
+import by.itacademy.homework2.task4.*;
 
 public class Main {
     public static void main(String[] args) {
-        String text = "спасаться ренессанс присосись высосутся расспроси сосЁедство согласись " +
-                "сносность солипсист российско консенсус скрасться рассечься сослаться миссисипи" +
-                " рассядусь сосёкрести искуСство С состоятСССся состоится всоСССсаться скисаться рассвести" +
-                " скисшийся смеситься скоситься синтаксис рассосать сноситься лесоспуск расселись" +
-                " скрестись создастся расспросы соосноСсть соседский высосется ссС ссс ссссс с";
-        System.out.println(RegEx.countWords(text));
+        CarColor black = CarColor.BLACK;
+        CarModel audi = CarModel.AUDI;
+        Car carAudi = new Car(audi, black);
+        System.out.println(carAudi);
+        carAudi.changeCarColor("Red");
+        System.out.println(carAudi);
+
+        System.out.println();
+
+        CarModel bmw = CarModel.BMW;
+        Car carBMW = new Car(bmw, black);
+        System.out.println(carBMW);
+        carBMW.changeCarColor("Purple");
+        System.out.println(carBMW);
+
+        System.out.println();
+
+        CarModel kia = CarModel.KIA;
+        Car carKIA = new Car(kia, black);
+        System.out.println(carKIA);
+        carKIA.changeCarColor("Yellow");
+        System.out.println(carKIA);
     }
 }

@@ -1,45 +1,67 @@
 package by.itacademy.homework2.task4;
 
 public class Car {
-    private String model;
-    private String color;
+    private CarModel carModel;
+    private CarColor carColor;
+    private final CarColor[] audiColors = {CarColor.BLUE, CarColor.RED,  CarColor.GREEN};
+    private final CarColor[] bmwColors = {CarColor.ORANGE, CarColor.BLACK,  CarColor.PURPLE};
+    private final CarColor[] kiaColors = {CarColor.YELLOW, CarColor.GRAY,  CarColor.WHITE};
 
-    public Car(String model, String color) {
-        this.model = model;
-        this.color = color;
+    public Car(CarModel carModel, CarColor carColor) {
+        this.carModel = carModel;
+        this.carColor = carColor;
     }
 
     public void changeCarColor(String color) {
-        for (CarColorCatalogue carColor : CarColorCatalogue.values()) {
-            if (carColor.getCarModel().equals(this.model)
-                    && carColor.getColor().equals(color)) {
-                this.color = color;
+        switch (carModel.getCarModel()) {
+            case "Audi":
+                for (CarColor carColor : audiColors) {
+                    if (carColor.getCarColor().equals(color)) {
+                        this.carColor = carColor;
+                        break;
+                    }
+                }
                 break;
-            }
+            case "BMW":
+                for (CarColor carColor : bmwColors) {
+                    if (carColor.getCarColor().equals(color)) {
+                        this.carColor = carColor;
+                        break;
+                    }
+                }
+                break;
+            case "KIA":
+                for (CarColor carColor : kiaColors) {
+                    if (carColor.getCarColor().equals(color)) {
+                        this.carColor = carColor;
+                        break;
+                    }
+                }
+                break;
         }
     }
 
     @Override
     public String toString() {
         return "Car{ " +
-                "model='" + model + '\'' +
-                ", color='" + color + '\'' +
+                "carModel=" + carModel.getCarModel() +
+                ", carColor=" + carColor.getCarColor() +
                 " }";
     }
 
-    public String getModel() {
-        return model;
+    public CarModel getCarModel() {
+        return carModel;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setCarModel(CarModel carModel) {
+        this.carModel = carModel;
     }
 
-    public String getColor() {
-        return color;
+    public CarColor getCarColor() {
+        return carColor;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setCarColor(CarColor carColor) {
+        this.carColor = carColor;
     }
 }
