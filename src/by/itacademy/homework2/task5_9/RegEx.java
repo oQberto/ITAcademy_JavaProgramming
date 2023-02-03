@@ -36,7 +36,7 @@ public class RegEx {
     }
 
     public static StringBuffer showWordsThatStartAndEndWithA(String text) {
-        pattern = Pattern.compile("\\ba\\w*a\\b");
+        pattern = Pattern.compile("(\\b[аА]([а-яёА-ЯЁ]*[аА])?\\b)", Pattern.UNICODE_CHARACTER_CLASS);
         matcher = pattern.matcher(text);
         StringBuffer result = new StringBuffer();
 

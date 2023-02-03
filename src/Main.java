@@ -1,14 +1,9 @@
-import by.itacademy.homework2.task2_10.Box;
+import by.itacademy.homework2.task5_9.RegEx;
 
 public class Main {
     public static void main(String[] args) {
-        Box boxes;
-        try {
-            boxes = new Box("Box[1,0]");
-            System.out.println(Box.determineBoxKind(boxes));
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
-
+        String text = "авернякаархаикаадресаткаактивистка, армадаалчбааферисткааделаида," +
+                " алискааккадаавантёЁюристкааэробика, а, аар, ааааа, АлискааккадаавантюристкааэробикА";
+        System.out.println(RegEx.showWordsThatStartAndEndWithA(text));
     }
 }
