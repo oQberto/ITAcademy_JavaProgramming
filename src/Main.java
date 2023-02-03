@@ -5,7 +5,7 @@ public class Main {
         String text = "acceptance, accomplice, accordance, accountancy, accuracy, acquiescence, " +
                 "acyclic, adrenocorticotrophic, anticlimactic, anticyclonic, calcification, capacitance, " +
                 "cappuccino, carcinogenic, catac-lysmiC, characteristic, chiccory, chocoholic, circumcised, " +
-                "circumference, circumlocution, circumspect, circumstance, coalescence, coccyx, cockchafer, " +
+                "circumference, circumlocutioncircumspectcircumspect, circumspect, circumstance, coalescence, coccyx, cockchafer, " +
                 "cockroaches, cocksucker, coincidence, colchicine, complacency, concentric, concoction, " +
                 "concordance, concupiscence, concurrence, conductance, conscience, convalescence, copacetic, " +
                 "crosscheck, cyclic, eccentric, ecclesiastical, echocardiographic, eclectic, encyclopaedic, " +
@@ -13,5 +13,6 @@ public class Main {
                 "spectroscopic, staphylococcus, succinct, uncharacteristic, Cat_catc";
 
         System.out.println("Words with \"c\": " + RegEx.countWords(text));
+        System.out.println("The longest word: " + RegEx.getLongestWord(text));
     }
 }
