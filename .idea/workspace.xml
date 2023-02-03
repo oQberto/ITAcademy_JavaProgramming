@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add the &quot;Consumer&quot; class">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework2/task4/CarColorCatalogue.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add the &quot;Car&quot; class">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework2/task5_9/RegEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -14,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -229,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675339952503</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="feat: add the &quot;CarColorCatalogue&quot; enum">
+      <created>1675349206487</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675349206487</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: add the &quot;Car&quot; class">
+      <created>1675349452744</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675349452744</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +277,8 @@
     <MESSAGE value="feat: add enum &quot;Month&quot;" />
     <MESSAGE value="feat: add class &quot;Box&quot;" />
     <MESSAGE value="feat: add the &quot;Consumer&quot; class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add the &quot;Consumer&quot; class" />
+    <MESSAGE value="feat: add the &quot;CarColorCatalogue&quot; enum" />
+    <MESSAGE value="feat: add the &quot;Car&quot; class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add the &quot;Car&quot; class" />
   </component>
 </project>
