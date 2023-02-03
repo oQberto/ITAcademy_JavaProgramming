@@ -47,12 +47,24 @@ public class RegEx {
     }
 
     public static StringBuffer getCreditCardNumber(String text) {
-        pattern = Pattern.compile("\\d[0-9]{3}(-[0-9]{4}){3}");
+        pattern = Pattern.compile("[0-9]{4}(-[0-9]{4}){3}");
         matcher = pattern.matcher(text);
         StringBuffer result = new StringBuffer();
 
         while (matcher.find()) {
             result.append(matcher.group()).append("\n");
+        }
+        return result;
+    }
+
+    public static StringBuffer getWordStartIndex(String text, String word) {
+        pattern = Pattern.compile("\\b" + word + "\\b");
+        matcher = pattern.matcher(text);
+
+        StringBuffer result = new StringBuffer();
+
+        while (matcher.find()) {
+            result.append(matcher.start()).append("\n");
         }
         return result;
     }
