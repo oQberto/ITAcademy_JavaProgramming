@@ -14,30 +14,18 @@ public class Car {
 
     public void changeCarColor(String color) {
         switch (carModel.getCarModel()) {
-            case "Audi":
-                for (CarColor carColor : audiColors) {
-                    if (carColor.getCarColor().equals(color)) {
-                        this.carColor = carColor;
-                        break;
-                    }
-                }
+            case "Audi" -> selectColor(audiColors, color);
+            case "BMW" -> selectColor(bmwColors, color);
+            case "KIA" -> selectColor(kiaColors, color);
+        }
+    }
+
+    private void selectColor(CarColor[] carColors, String color) {
+        for (CarColor carColor : carColors) {
+            if (carColor.getCarColor().equals(color)) {
+                this.carColor = carColor;
                 break;
-            case "BMW":
-                for (CarColor carColor : bmwColors) {
-                    if (carColor.getCarColor().equals(color)) {
-                        this.carColor = carColor;
-                        break;
-                    }
-                }
-                break;
-            case "KIA":
-                for (CarColor carColor : kiaColors) {
-                    if (carColor.getCarColor().equals(color)) {
-                        this.carColor = carColor;
-                        break;
-                    }
-                }
-                break;
+            }
         }
     }
 
