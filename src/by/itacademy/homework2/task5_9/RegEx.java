@@ -32,4 +32,15 @@ public class RegEx {
         }
         return longestWord;
     }
+
+    public static StringBuffer showWordsThatStartAndEndWithA(String text) {
+        Pattern pattern = Pattern.compile("\\ba\\w*a\\b");
+        Matcher matcher = pattern.matcher(text);
+        StringBuffer result = new StringBuffer();
+
+        while (matcher.find()) {
+            result.append(matcher.group()).append(" ");
+        }
+        return result;
+    }
 }
