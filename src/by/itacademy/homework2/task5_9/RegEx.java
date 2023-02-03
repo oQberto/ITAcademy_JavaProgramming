@@ -47,7 +47,7 @@ public class RegEx {
     }
 
     public static StringBuffer getCreditCardNumber(String text) {
-        pattern = Pattern.compile("[0-9]{4}(-[0-9]{4}){3}");
+        pattern = Pattern.compile("\\b[0-9]{4}(-[0-9]{4}){3}\\b");
         matcher = pattern.matcher(text);
         StringBuffer result = new StringBuffer();
 
