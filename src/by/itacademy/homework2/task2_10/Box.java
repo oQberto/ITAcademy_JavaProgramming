@@ -15,9 +15,10 @@ public class Box {
         this.width = width;
     }
 
-    public Box(int length, int height) {
+    public Box(int length) {
         this.length = length;
-        this.height = height;
+        this.height = length;
+        this.width = length;
     }
 
     public Box(String boxObject) {
@@ -41,10 +42,11 @@ public class Box {
             return "Cube";
         } else if (box.height > 0 && box.width > 0 && box.length > 0) {
             return "Common box";
-        } else if (box.length > 0 && box.height > 0) {
+        } else if ((box.length > 0 && box.height > 0) || (box.length > 0 && box.width > 0)
+                    || (box.width > 0 && box.height > 0)) {
             return "Envelope";
         }
-        return "The box cannot exist";
+        return "It isn't a box.";
     }
 
     @Override
