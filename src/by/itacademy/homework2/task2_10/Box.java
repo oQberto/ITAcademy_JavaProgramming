@@ -7,46 +7,79 @@ public class Box {
     private int length;
     private int height;
     private int width;
-
+    private final BoxKind boxKind;
 
     public Box(int length, int height, int width) {
-        this.length = length;
-        this.height = height;
-        this.width = width;
+        if (length > 0 && length == height && height == width) {
+            this.length = length;
+            this.height = height;
+            this.width = width;
+            boxKind = BoxKind.CUBE;
+        } else if (length > 0 && height > 0 && width > 0) {
+            this.length = length;
+            this.height = height;
+            this.width = width;
+            boxKind = BoxKind.COMMON_BOX;
+        } else {
+            throw new IllegalArgumentException("Invalid arguments");
+        }
+    }
+
+    public Box(int length, int height) {
+        if (length > 0 && height > 0) {
+            this.length = length;
+            this.height = height;
+            boxKind = BoxKind.ENVELOPE;
+        } else {
+            throw new IllegalArgumentException("Invalid arguments");
+        }
     }
 
     public Box(int length) {
-        this.length = length;
-        this.height = length;
-        this.width = length;
+        if (length > 0) {
+            this.length = length;
+            this.height = length;
+            this.width = length;
+            boxKind = BoxKind.CUBE;
+        } else {
+            throw new IllegalArgumentException("Invalid arguments");
+        }
     }
 
     public Box(String boxObject) {
-        Pattern pattern = Pattern.compile("Box\\[(\\d),?(\\d)?,?(\\d)?]");
+        Pattern pattern = Pattern.compile("Box\\[([1-9]+),?([1-9]+)?,?([1-9]+)?]");
         Matcher matcher = pattern.matcher(boxObject);
         if (matcher.find()) {
-            length = Integer.parseInt(matcher.group(1));
-            height = matcher.group(2) == null
-                    ? 0
-                    : Integer.parseInt(matcher.group(2));
-            width = matcher.group(3) == null
-                    ? 0
-                    : Integer.parseInt(matcher.group(3));
+            if (matcher.group(3) == null) {
+                length = Integer.parseInt(matcher.group(1));
+                height = Integer.parseInt(matcher.group(2));
+                boxKind = BoxKind.ENVELOPE;
+            } else if (matcher.group(2) == null && matcher.group(3) == null) {
+                length = Integer.parseInt(matcher.group(1));
+                boxKind = BoxKind.CUBE;
+            } else {
+                length = Integer.parseInt(matcher.group(1));
+                height = Integer.parseInt(matcher.group(2));
+                width = Integer.parseInt(matcher.group(3));
+                if (length > 0 && length == height && height == width) {
+                    boxKind = BoxKind.CUBE;
+                } else {
+                    boxKind = BoxKind.COMMON_BOX;
+                }
+            }
         } else {
             throw new IllegalArgumentException("Incorrect input");
         }
     }
 
     public static String determineBoxKind(Box box) {
-        if (box.length != 0 && box.length == box.width && box.length == box.height) {
-            return "Cube";
-        } else if (box.height > 0 && box.width > 0 && box.length > 0) {
-            return "Common box";
-        } else if ((box.length > 0 && box.height > 0) || (box.length > 0 && box.width > 0)
-                    || (box.width > 0 && box.height > 0)) {
-            return "Envelope";
+        String result = "";
+        switch (box.boxKind.getBoxKind()) {
+            case "Common box" -> result = BoxKind.COMMON_BOX.getBoxKind();
+            case "Cube" -> result = BoxKind.CUBE.getBoxKind();
+            case "Envelope" -> result = BoxKind.ENVELOPE.getBoxKind();
         }
-        return "It isn't a box.";
+        return result;
     }
 
     @Override
@@ -80,5 +113,9 @@ public class Box {
 
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    public BoxKind getBoxKind() {
+        return boxKind;
     }
 }
