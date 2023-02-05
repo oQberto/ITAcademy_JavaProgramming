@@ -8,10 +8,6 @@ public class Main {
 
         System.out.println(commonBox.getBoxKind().getBoxKind());
         System.out.println(envelope.getBoxKind().getBoxKind());
-        System.out.println(cube.getBoxKind().getBoxKind() + "\n");
-
-        System.out.println(Box.determineBoxKind(commonBox));
-        System.out.println(Box.determineBoxKind(envelope));
         System.out.println(cube.getBoxKind().getBoxKind());
     }
 }

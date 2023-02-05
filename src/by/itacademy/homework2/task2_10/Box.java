@@ -72,16 +72,6 @@ public class Box {
         }
     }
 
-    public static String determineBoxKind(Box box) {
-        String result = "";
-        switch (box.boxKind.getBoxKind()) {
-            case "Common box" -> result = BoxKind.COMMON_BOX.getBoxKind();
-            case "Cube" -> result = BoxKind.CUBE.getBoxKind();
-            case "Envelope" -> result = BoxKind.ENVELOPE.getBoxKind();
-        }
-        return result;
-    }
-
     @Override
     public String toString() {
         return "Box{ " +
