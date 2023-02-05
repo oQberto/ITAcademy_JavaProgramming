@@ -39,7 +39,7 @@ public enum Month {
                 return month.getMonthName();
             }
         }
-        return "Month doesn't exist.";
+        return null;
     }
 
     public int getMonthNumber() {
