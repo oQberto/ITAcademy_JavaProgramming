@@ -12,7 +12,7 @@ public class Consumer {
     }
 
     public double getAverage() {
-        int sum = 0;
+        double sum = 0.0;
         int count = 0;
         for (int value : consumers) {
             if (value == 0) {
@@ -21,6 +21,6 @@ public class Consumer {
             sum += value;
             count++;
         }
-        return (double) sum / count;
+        return sum / count;
     }
 }

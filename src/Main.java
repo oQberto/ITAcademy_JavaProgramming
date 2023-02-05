@@ -12,6 +12,6 @@ public class Main {
 
         System.out.println(Box.determineBoxKind(commonBox));
         System.out.println(Box.determineBoxKind(envelope));
-        System.out.println(Box.determineBoxKind(cube));
+        System.out.println(cube.getBoxKind().getBoxKind());
     }
 }
