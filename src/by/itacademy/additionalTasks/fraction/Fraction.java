@@ -1,5 +1,6 @@
 package by.itacademy.additionalTasks.fraction;
 
+import java.math.BigDecimal;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -35,11 +36,14 @@ public class Fraction {
         return printFraction(newNumerator, commonDenominator);
     }
 
-    public String multiplication(double divider) {
-        return printFraction(0, 0);
+    public String multiply(double factor) {
+        convertDecimalToCommonFraction(factor);
+        numerator *= USER_FRACTION[0];
+        denominator *= USER_FRACTION[1];
+        return printFraction(numerator, denominator);
     }
 
-    public String division(double factor) {
+    public String division(double divider) {
         return printFraction(0, 0);
     }
 
@@ -66,6 +70,12 @@ public class Fraction {
             commonDenominator++;
         }
         return commonDenominator;
+    }
+
+    private static void convertDecimalToCommonFraction(double decimal) {
+        int fractionalSize = BigDecimal.valueOf(decimal).scale();
+        USER_FRACTION[1] = (int) Math.pow(10, fractionalSize);
+        USER_FRACTION[0] = (int) Math.round((decimal - (int) decimal) * USER_FRACTION[1]) + USER_FRACTION[1];
     }
 
     public int getNumerator() {

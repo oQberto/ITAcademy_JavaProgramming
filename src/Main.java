@@ -2,8 +2,9 @@ import by.itacademy.additionalTasks.fraction.Fraction;
 
 public class Main {
     public static void main(String[] args) {
-        Fraction fraction = new Fraction(5, 6);
+        Fraction fraction = new Fraction(7, 8);
         System.out.println(fraction.printFraction());
-        System.out.println(fraction.addition("3/4"));
+        System.out.println(Math.round(1.2 % 1));
+        System.out.println(fraction.multiply(1.222));
     }
 }
