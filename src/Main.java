@@ -5,6 +5,6 @@ public class Main {
         Fraction fraction = new Fraction(7, 8);
         System.out.println(fraction.printFraction());
         System.out.println(Math.round(1.2 % 1));
-        System.out.println(fraction.multiply(1.222));
+        System.out.println(fraction.divide(1.2));
     }
 }

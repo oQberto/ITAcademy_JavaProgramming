@@ -43,8 +43,11 @@ public class Fraction {
         return printFraction(numerator, denominator);
     }
 
-    public String division(double divider) {
-        return printFraction(0, 0);
+    public String divide(double divider) {
+        convertDecimalToCommonFraction(divider);
+        numerator *= USER_FRACTION[1];
+        denominator *= USER_FRACTION[0];
+        return printFraction(numerator, denominator);
     }
 
     @Override
