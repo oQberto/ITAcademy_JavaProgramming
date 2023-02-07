@@ -5,11 +5,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Fraction {
-    private static final String FRACTION_REGEXP = "(\\d?) ?/ ?([1-9]?)";
+    private static final String FRACTION_REGEXP = "(\\d) ?/ ?([1-9])";
     private static final Pattern PATTERN = Pattern.compile(FRACTION_REGEXP);
     private static final int[] USER_FRACTION = new int[2];
     private int numerator;
     private int denominator;
+    public int newNumerator;
+    public int newDenominator;
 
 
     public Fraction(int numerator, int denominator) {
@@ -38,16 +40,16 @@ public class Fraction {
 
     public String multiply(double factor) {
         convertDecimalToCommonFraction(factor);
-        numerator *= USER_FRACTION[0];
-        denominator *= USER_FRACTION[1];
-        return printFraction(numerator, denominator);
+        newNumerator = numerator * USER_FRACTION[0];
+        newDenominator = denominator * USER_FRACTION[1];
+        return printFraction(newNumerator, newDenominator);
     }
 
     public String divide(double divider) {
         convertDecimalToCommonFraction(divider);
-        numerator *= USER_FRACTION[1];
-        denominator *= USER_FRACTION[0];
-        return printFraction(numerator, denominator);
+        newNumerator = numerator * USER_FRACTION[1];
+        newDenominator = denominator * USER_FRACTION[0];
+        return printFraction(newNumerator, newDenominator);
     }
 
     @Override

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add &quot;isURL&quot; method">
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/regex/RegEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/regex/RegEx.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: add Pattern constants">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/fraction/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/fraction/Fraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RegExCheck">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ATMTerminal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.workbook.classesandobjects.atm.ATMTerminal" />
       <module name="ITAcademy_JavaProgramming" />
@@ -103,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RegExCheck" />
         <item itemvalue="Application.PhoneTerminal" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ATMTerminal" />
         <item itemvalue="Application.TimeIntervalTerminal" />
       </list>
@@ -119,13 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: add task 6 from homework">
-      <created>1674568506117</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1674568506117</updated>
     </task>
     <task id="LOCAL-00008" summary="feat: add &quot;findMaxSumInArray&quot; method">
       <created>1674649269142</created>
@@ -463,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675779107277</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="refactor: add Pattern constants">
+      <created>1675779391759</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1675779391759</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: fix &quot;determineBoxKind&quot; method" />
     <MESSAGE value="fix: fix &quot;showWordsThatStartAndEndWithA&quot; method" />
     <MESSAGE value="fix: fix &quot;getCreditCardNumber&quot; method" />
     <MESSAGE value="fix: fix &quot;countWords&quot; method" />
@@ -503,6 +504,7 @@
     <MESSAGE value="pref: add &quot;isIPAddress&quot; method" />
     <MESSAGE value="fix: change &quot;getHexColor&quot; method" />
     <MESSAGE value="feat: add &quot;isURL&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add &quot;isURL&quot; method" />
+    <MESSAGE value="refactor: add Pattern constants" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: add Pattern constants" />
   </component>
 </project>
