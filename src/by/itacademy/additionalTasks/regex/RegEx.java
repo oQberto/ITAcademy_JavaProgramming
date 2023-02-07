@@ -8,4 +8,8 @@ public class RegEx {
             return str + "zzz";
         }
     }
+
+    public static String removeSpaces(String str) {
+        return str.replaceAll("\\s+", " ").trim();
+    }
 }
