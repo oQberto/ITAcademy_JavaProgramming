@@ -69,4 +69,10 @@ public class RegEx {
         }
         return hexColors;
     }
+
+    public static boolean isEmail(String str) {
+        Pattern pattern = Pattern.compile("^[\\w.-]+@[\\w.]+\\.[a-z.]{2,6}$");
+        Matcher matcher = pattern.matcher(str);
+        return matcher.find();
+    }
 }
