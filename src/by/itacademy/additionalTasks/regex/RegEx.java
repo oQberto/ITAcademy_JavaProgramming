@@ -4,6 +4,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegEx {
+    private static final Pattern HEX_COLOR_PATTERN = Pattern.compile("^#?([A-F\\d]){3,6}$");
+    private static final Pattern EMAIL_PATTERN = Pattern.compile("^[\\w.-]+@[\\w.]+\\.[a-z.]{2,6}$");
+    private static final Pattern IP_ADDRESS_PATTERN = Pattern.compile("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
+                                                                            "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
+                                                                            "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
+                                                                            "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
+    private static final Pattern URL_PATTERN = Pattern.compile("^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*" +
+                                                                        "[-a-zA-Z0-9+&@#/%=~_|]$");
+
     public static String replaceABC(String str) {
         if (str.startsWith("abc")) {
             return str.replace("abc", "www");
@@ -60,30 +69,23 @@ public class RegEx {
     }
 
     public static boolean isHexColor(String hexColor) {
-        Pattern pattern = Pattern.compile("^#?([A-F\\d]){3,6}$");
-        Matcher matcher = pattern.matcher(hexColor);
+        Matcher matcher = HEX_COLOR_PATTERN.matcher(hexColor);
         return matcher.find();
 
     }
 
     public static boolean isEmail(String str) {
-        Pattern pattern = Pattern.compile("^[\\w.-]+@[\\w.]+\\.[a-z.]{2,6}$");
-        Matcher matcher = pattern.matcher(str);
+        Matcher matcher = EMAIL_PATTERN.matcher(str);
         return matcher.find();
     }
 
     public static boolean isIPAddress(String ipAddress) {
-        Pattern pattern = Pattern.compile("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
-                                                "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
-                                                "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
-                                                "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
-        Matcher matcher = pattern.matcher(ipAddress);
+        Matcher matcher = IP_ADDRESS_PATTERN.matcher(ipAddress);
         return matcher.find();
     }
 
     public static boolean isURL(String url) {
-        Pattern pattern = Pattern.compile("^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]$");
-        Matcher matcher = pattern.matcher(url);
+        Matcher matcher = URL_PATTERN.matcher(url);
         return matcher.find();
     }
 }
