@@ -58,4 +58,15 @@ public class RegEx {
         }
         return count;
     }
+
+    public static StringBuffer getHexColor(String str) {
+        StringBuffer hexColors = new StringBuffer("Hex colors: \n");
+        Pattern pattern = Pattern.compile("#?([A-F\\d]){3,6}");
+        Matcher matcher = pattern.matcher(str);
+
+        while (matcher.find()) {
+            hexColors.append(matcher.group()).append("\n");
+        }
+        return hexColors;
+    }
 }
