@@ -75,4 +75,13 @@ public class RegEx {
         Matcher matcher = pattern.matcher(str);
         return matcher.find();
     }
+
+    public static boolean isIPAddress(String ipAddress) {
+        Pattern pattern = Pattern.compile("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
+                                                "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
+                                                "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
+                                                "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
+        Matcher matcher = pattern.matcher(ipAddress);
+        return matcher.find();
+    }
 }
