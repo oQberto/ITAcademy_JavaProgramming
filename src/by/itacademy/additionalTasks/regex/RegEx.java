@@ -43,4 +43,19 @@ public class RegEx {
         }
         return count;
     }
+
+    public static int countUniqueWords(String str) {
+        String[] words = (str + " ").split("\\p{P}? +");
+        int count = words.length;
+
+        for (int i = 1; i < words.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (words[i].equalsIgnoreCase(words[j])) {
+                    count--;
+                    break;
+                }
+            }
+        }
+        return count;
+    }
 }
