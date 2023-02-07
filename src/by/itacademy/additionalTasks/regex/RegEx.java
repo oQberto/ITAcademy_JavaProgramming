@@ -59,15 +59,11 @@ public class RegEx {
         return count;
     }
 
-    public static StringBuffer getHexColor(String str) {
-        StringBuffer hexColors = new StringBuffer("Hex colors: \n");
+    public static boolean isHexColor(String hexColor) {
         Pattern pattern = Pattern.compile("#?([A-F\\d]){3,6}");
-        Matcher matcher = pattern.matcher(str);
+        Matcher matcher = pattern.matcher(hexColor);
+        return matcher.find();
 
-        while (matcher.find()) {
-            hexColors.append(matcher.group()).append("\n");
-        }
-        return hexColors;
     }
 
     public static boolean isEmail(String str) {
