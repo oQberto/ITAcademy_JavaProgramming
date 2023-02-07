@@ -60,7 +60,7 @@ public class RegEx {
     }
 
     public static boolean isHexColor(String hexColor) {
-        Pattern pattern = Pattern.compile("#?([A-F\\d]){3,6}");
+        Pattern pattern = Pattern.compile("^#?([A-F\\d]){3,6}$");
         Matcher matcher = pattern.matcher(hexColor);
         return matcher.find();
 
@@ -78,6 +78,12 @@ public class RegEx {
                                                 "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\." +
                                                 "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
         Matcher matcher = pattern.matcher(ipAddress);
+        return matcher.find();
+    }
+
+    public static boolean isURL(String url) {
+        Pattern pattern = Pattern.compile("^(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]$");
+        Matcher matcher = pattern.matcher(url);
         return matcher.find();
     }
 }
