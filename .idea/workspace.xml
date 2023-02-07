@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="pref: add &quot;removeSpaces&quot; method">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="pref: add &quot;getLongestRowOfNumbers&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/regex/RegEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/regex/RegEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/regex/RegExCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/regex/RegExCheck.java" afterDir="false" />
@@ -451,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675757547807</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="pref: add &quot;getLongestRowOfNumbers&quot; method">
+      <created>1675758747510</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1675758747510</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add the &quot;Car&quot; class" />
     <MESSAGE value="feat: add the &quot;countWords&quot; method" />
     <MESSAGE value="feat: add the &quot;getLongestWord&quot; method" />
     <MESSAGE value="feat: add the &quot;showWordsThatStartAndEndWithA&quot; method" />
@@ -491,6 +497,7 @@
     <MESSAGE value="pref: complete task2&#10;add &quot;Phone&quot;, &quot;PhoneTerminal&quot; classes &amp; &quot;PhoneModel&quot; enum" />
     <MESSAGE value="pref: add &quot;replaceABC&quot; method" />
     <MESSAGE value="pref: add &quot;removeSpaces&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="pref: add &quot;removeSpaces&quot; method" />
+    <MESSAGE value="pref: add &quot;getLongestRowOfNumbers&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="pref: add &quot;getLongestRowOfNumbers&quot; method" />
   </component>
 </project>

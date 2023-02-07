@@ -32,4 +32,15 @@ public class RegEx {
         }
         return "Longest row: " + longestRow + " -> " + longestRowStr;
     }
+
+    public static int findPunctuationMarks(String str) {
+        Pattern pattern = Pattern.compile("\\p{Punct}");
+        Matcher matcher = pattern.matcher(str);
+        int count = 0;
+
+        while (matcher.find()) {
+            count++;
+        }
+        return count;
+    }
 }
