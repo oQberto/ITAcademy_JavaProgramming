@@ -3,9 +3,6 @@ package by.itacademy.homework2.task4;
 public class Car {
     private CarModel carModel;
     private CarColor carColor;
-    private final CarColor[] audiColors = {CarColor.BLUE, CarColor.RED,  CarColor.GREEN};
-    private final CarColor[] bmwColors = {CarColor.ORANGE, CarColor.BLACK,  CarColor.PURPLE};
-    private final CarColor[] kiaColors = {CarColor.YELLOW, CarColor.GRAY,  CarColor.WHITE};
 
     public Car(CarModel carModel, CarColor carColor) {
         this.carModel = carModel;
@@ -14,9 +11,9 @@ public class Car {
 
     public void changeCarColor(String color) {
         switch (carModel.getCarModel()) {
-            case "Audi" -> selectColor(audiColors, color);
-            case "BMW" -> selectColor(bmwColors, color);
-            case "KIA" -> selectColor(kiaColors, color);
+            case "Audi" -> selectColor(CarColor.getAudiColors(), color);
+            case "BMW" -> selectColor(CarColor.getBmwColors(), color);
+            case "KIA" -> selectColor(CarColor.getKiaColors(), color);
         }
     }
 
