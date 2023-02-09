@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add class car">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/TaskDescription" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: flower task init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/Flower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/GardenFlower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/GardenFlower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/WildFlower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/WildFlower.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,13 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00012" summary="refactor: change &quot;getSumOfEvenNumbers&quot;&#10;Use Stream API">
-      <created>1674977961505</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1674977961505</updated>
     </task>
     <task id="LOCAL-00013" summary="perf: remove check first part of a matrix">
       <created>1674987326666</created>
@@ -468,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675930242775</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="feat: flower task init">
+      <created>1675951876816</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1675951876816</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: change task4" />
     <MESSAGE value="fix: fix task3" />
     <MESSAGE value="refactor: add &quot;selectColor&quot; method" />
     <MESSAGE value="fix: fix &quot;Box&quot; class" />
@@ -508,6 +505,7 @@
     <MESSAGE value="refactor: add numerator and denominator for new fraction" />
     <MESSAGE value="fix: fix task4" />
     <MESSAGE value="feat: add class car" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add class car" />
+    <MESSAGE value="feat: flower task init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: flower task init" />
   </component>
 </project>
