@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop;
+package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.flowers;
 
 public enum FlowerColor {
     WHITE("White"),

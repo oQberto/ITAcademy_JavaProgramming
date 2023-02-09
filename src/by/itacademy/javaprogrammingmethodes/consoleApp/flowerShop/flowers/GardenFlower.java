@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop;
+package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.flowers;
 
 public class GardenFlower extends Flower {
     public GardenFlower(int flowerId, int flowerHight, int flowerPrice, String flowerVariety,

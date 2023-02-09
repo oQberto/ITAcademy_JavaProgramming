@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop;
+package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.flowers;
 
 public abstract class Flower {
     private int flowerId;
