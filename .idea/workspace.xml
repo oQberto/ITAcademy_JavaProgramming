@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add fields in &quot;Flower&quot; class">
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerType.java" afterDir="false" />
-    </list>
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,13 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00014" summary="refactor: add line break in &quot;getArraySum&quot; &amp; &quot;getSumOfEvenNumbers&quot; methods">
-      <created>1674987528455</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1674987528455</updated>
     </task>
     <task id="LOCAL-00015" summary="feat: add &quot;ATM&quot; &amp; &quot;ATMTerminal&quot; classes">
       <created>1675010223875</created>
@@ -464,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675953209810</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums">
+      <created>1675953653310</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1675953653311</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: add &quot;selectColor&quot; method" />
     <MESSAGE value="fix: fix &quot;Box&quot; class" />
     <MESSAGE value="fix: fix &quot;getAverage&quot; method" />
     <MESSAGE value="fix: fix &quot;Box&quot; class&#10;delete &quot;determineBoxKind&quot; method. We can get box kind from &quot;getBoxKind&quot; method" />
@@ -504,6 +500,7 @@
     <MESSAGE value="feat: add class car" />
     <MESSAGE value="feat: flower task init" />
     <MESSAGE value="feat: add fields in &quot;Flower&quot; class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add fields in &quot;Flower&quot; class" />
+    <MESSAGE value="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums" />
   </component>
 </project>
