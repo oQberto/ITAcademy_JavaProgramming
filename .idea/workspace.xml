@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add fields in Flower and Houseplant classes">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Bloomed.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add possibility to grow">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/bouquets/BouquetType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/houseplant/Houseplant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/houseplant/Houseplant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/Florist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/bouquets/Bouquet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/bouquets/Bouquet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -124,13 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat: add the &quot;Consumer&quot; class">
-      <created>1675339952503</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1675339952503</updated>
     </task>
     <task id="LOCAL-00021" summary="feat: add the &quot;CarColorCatalogue&quot; enum">
       <created>1675349206487</created>
@@ -468,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676032924676</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="feat: add possibility to grow">
+      <created>1676035281178</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1676035281178</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pref: add &quot;multiply&quot; method" />
     <MESSAGE value="pref: add &quot;divide&quot; method" />
     <MESSAGE value="pref: complete task2&#10;add &quot;Phone&quot;, &quot;PhoneTerminal&quot; classes &amp; &quot;PhoneModel&quot; enum" />
     <MESSAGE value="pref: add &quot;replaceABC&quot; method" />
@@ -508,6 +506,7 @@
     <MESSAGE value="feat: change classes structure" />
     <MESSAGE value="feat: add HouseplantName enum&#10;Change FlowerName enum: delete arrays." />
     <MESSAGE value="feat: add fields in Flower and Houseplant classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add fields in Flower and Houseplant classes" />
+    <MESSAGE value="feat: add possibility to grow" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add possibility to grow" />
   </component>
 </project>

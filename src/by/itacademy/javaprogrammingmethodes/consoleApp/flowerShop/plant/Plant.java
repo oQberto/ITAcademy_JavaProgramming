@@ -6,11 +6,13 @@ public abstract class Plant {
     protected int plantId;
     protected int plantPrice;
     protected int plantHeight;
+    protected int freshnessLevel;
 
-    public Plant(int plantId, int plantPrice, int plantHeight) {
+    public Plant(int plantId, int plantPrice, int plantHeight, int freshnessLevel) {
         this.plantId = plantId;
         this.plantPrice = plantPrice;
         this.plantHeight = plantHeight;
+        this.freshnessLevel = freshnessLevel;
     }
 
     public abstract void grow();

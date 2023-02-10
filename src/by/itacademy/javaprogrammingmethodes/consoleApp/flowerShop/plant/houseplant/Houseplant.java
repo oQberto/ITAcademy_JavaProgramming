@@ -8,9 +8,9 @@ public class Houseplant extends Plant implements Bloomed {
     private final HouseplantName houseplantName;
     private boolean isBlooming = false;
 
-    public Houseplant(int plantId, int plantPrice, int houseplantHeight,
+    public Houseplant(int plantId, int plantPrice, int houseplantHeight, int freshnessLevel,
                       int sizeOfFlowerPot, HouseplantName houseplantName) {
-        super(plantId, plantPrice, houseplantHeight);
+        super(plantId, plantPrice, houseplantHeight, freshnessLevel);
         this.sizeOfFlowerPot = sizeOfFlowerPot;
         this.houseplantName = houseplantName;
     }

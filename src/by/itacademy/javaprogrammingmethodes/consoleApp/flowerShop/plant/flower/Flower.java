@@ -6,9 +6,9 @@ public class Flower extends Plant {
     private final FlowerName flowerName;
     private final FlowerColor flowerColor;
 
-    public Flower(int plantId, int plantPrice, int flowerStemHeight,
+    public Flower(int plantId, int plantPrice, int flowerStemHeight, int freshnessLevel,
                   FlowerName flowerName, FlowerColor flowerColor) {
-        super(plantId, plantPrice, flowerStemHeight);
+        super(plantId, plantPrice, flowerStemHeight, freshnessLevel);
         this.flowerName = flowerName;
         this.flowerColor = flowerColor;
     }
