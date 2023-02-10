@@ -6,9 +6,9 @@ public class Flower extends Plant implements Comparable<Flower> {
     private final FlowerName flowerName;
     private final FlowerColor flowerColor;
 
-    public Flower(int plantId, int plantPrice, int flowerStemHeight, int freshnessLevel,
+    public Flower(int plantId, int flowerStemHeight, int freshnessLevel,
                   FlowerName flowerName, FlowerColor flowerColor) {
-        super(plantId, plantPrice, flowerStemHeight, freshnessLevel);
+        super(plantId, flowerName.getFlowerPrice(), flowerStemHeight, freshnessLevel);
         this.flowerName = flowerName;
         this.flowerColor = flowerColor;
     }
@@ -25,10 +25,13 @@ public class Flower extends Plant implements Comparable<Flower> {
 
     @Override
     public String toString() {
-        return super.toString() + ", Flower{ " +
-                "flowerName=" + flowerName +
-                ", flowerColor=" + flowerColor +
-                " }";
+        return "Flower -> " +
+                "Name: " + flowerName.getFlowerName() +
+                ", flowerColor: " + flowerColor +
+                ", Height: " + plantHeight +
+                ", freshnessLevel: " + freshnessLevel +
+                ", Price: " + plantPrice +
+                ", Id: " + plantId;
     }
 
     public FlowerName getFlowerName() {

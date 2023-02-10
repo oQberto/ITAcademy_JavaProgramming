@@ -8,9 +8,9 @@ public class Houseplant extends Plant implements Bloomed {
     private final HouseplantName houseplantName;
     private boolean isBlooming = false;
 
-    public Houseplant(int plantId, int plantPrice, int houseplantHeight, int freshnessLevel,
+    public Houseplant(int plantId, int houseplantHeight, int freshnessLevel,
                       int sizeOfFlowerPot, HouseplantName houseplantName) {
-        super(plantId, plantPrice, houseplantHeight, freshnessLevel);
+        super(plantId, houseplantName.getHouseplantPrice(), houseplantHeight, freshnessLevel);
         this.sizeOfFlowerPot = sizeOfFlowerPot;
         this.houseplantName = houseplantName;
     }
@@ -36,11 +36,14 @@ public class Houseplant extends Plant implements Bloomed {
 
     @Override
     public String toString() {
-        return super.toString() + ", Houseplant{" +
-                "sizeOfFlowerPot=" + sizeOfFlowerPot +
-                ", houseplantName=" + houseplantName +
-                ", isBlooming=" + isBlooming +
-                " }";
+        return "Houseplant -> " +
+                "Name: " + houseplantName.getHouseplantName() +
+                ", isBlooming: " + isBlooming +
+                ", sizeOfFlowerPot: " + sizeOfFlowerPot +
+                ", Height: " + plantHeight +
+                ", freshnessLevel: " + freshnessLevel +
+                ", Price: " + plantPrice +
+                ", Id :" + plantId;
     }
 
     public int getSizeOfFlowerPot() {

@@ -1,6 +1,5 @@
 package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.bouquets;
 
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.Plant;
 import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Flower;
 
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ public class BouquetUtils {
         if (bouquet == null) {
             return -1;
         }
-        for (Plant flower : bouquet.flowers) {
+        for (Flower flower : bouquet.flowers) {
             bouquet.setBouquetPrice(flower.getPlantPrice());
         }
         return bouquet.getBouquetPrice();
