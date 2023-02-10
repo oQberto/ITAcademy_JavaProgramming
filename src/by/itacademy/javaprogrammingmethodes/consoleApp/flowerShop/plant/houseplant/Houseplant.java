@@ -1,22 +1,32 @@
 package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.houseplant;
 
 import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.Plant;
+import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Bloomed;
 
-public class Houseplant extends Plant {
-    private final int houseplantHeight;
+public class Houseplant extends Plant implements Bloomed {
     private final int sizeOfFlowerPot;
     private final HouseplantName houseplantName;
+    private boolean isBlooming = false;
 
     public Houseplant(int plantId, int plantPrice, int houseplantHeight,
                       int sizeOfFlowerPot, HouseplantName houseplantName) {
-        super(plantId, plantPrice);
-        this.houseplantHeight = houseplantHeight;
+        super(plantId, plantPrice, houseplantHeight);
         this.sizeOfFlowerPot = sizeOfFlowerPot;
         this.houseplantName = houseplantName;
     }
 
-    public int getHouseplantHeight() {
-        return houseplantHeight;
+    @Override
+    public void bloom() {
+        isBlooming = true;
+    }
+
+    @Override
+    public void grow() {
+        switch (this.houseplantName.getHouseplantName()) {
+            case "Bonsai" -> plantHeight += 4;
+            case "Cactus" -> plantHeight += 2;
+            case "Palm" -> plantHeight += 1;
+        }
     }
 
     public int getSizeOfFlowerPot() {

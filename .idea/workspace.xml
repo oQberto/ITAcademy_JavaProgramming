@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add HouseplantName enum&#10;Change FlowerName enum: delete arrays.">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add fields in Flower and Houseplant classes">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Bloomed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" afterDir="false" />
@@ -123,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00019" summary="feat: add class &quot;Box&quot;">
-      <created>1675336577651</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1675336577651</updated>
     </task>
     <task id="LOCAL-00020" summary="feat: add the &quot;Consumer&quot; class">
       <created>1675339952503</created>
@@ -467,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676032320797</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="feat: add fields in Flower and Houseplant classes">
+      <created>1676032924676</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1676032924676</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pref: add &quot;Fraction&quot; class&#10;pref: add &quot;addition&quot; method" />
     <MESSAGE value="pref: add &quot;multiply&quot; method" />
     <MESSAGE value="pref: add &quot;divide&quot; method" />
     <MESSAGE value="pref: complete task2&#10;add &quot;Phone&quot;, &quot;PhoneTerminal&quot; classes &amp; &quot;PhoneModel&quot; enum" />
@@ -507,6 +507,7 @@
     <MESSAGE value="feat: move flower classes in &quot;flower&quot; package" />
     <MESSAGE value="feat: change classes structure" />
     <MESSAGE value="feat: add HouseplantName enum&#10;Change FlowerName enum: delete arrays." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add HouseplantName enum&#10;Change FlowerName enum: delete arrays." />
+    <MESSAGE value="feat: add fields in Flower and Houseplant classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add fields in Flower and Houseplant classes" />
   </component>
 </project>
