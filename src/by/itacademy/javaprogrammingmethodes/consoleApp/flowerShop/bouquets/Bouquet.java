@@ -1,23 +1,27 @@
 package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.bouquets;
 
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.FlowerName;
+import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Flower;
 
 public class Bouquet {
-    private final FlowerName[] flowersNames;
     private final BouquetType bouquetType;
-    public int bouquetPrice;
+    private final int bouquetCapacity;
+    protected Flower[] flowers;
+    private int bouquetPrice;
 
-    public Bouquet(FlowerName[] flowersNames, BouquetType bouquetType) {
-        this.flowersNames = flowersNames;
+
+    public Bouquet(BouquetType bouquetType, Flower[] flowers) {
         this.bouquetType = bouquetType;
-    }
-
-    public FlowerName[] getFlowersNames() {
-        return flowersNames;
+        this.flowers = flowers;
+        this.bouquetCapacity = bouquetType.getBouquetCapacity();
+        this.bouquetPrice = bouquetType.getPrice();
     }
 
     public BouquetType getBouquetType() {
         return bouquetType;
+    }
+
+    public int getBouquetCapacity() {
+        return bouquetCapacity;
     }
 
     public int getBouquetPrice() {
