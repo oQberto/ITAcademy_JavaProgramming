@@ -1,13 +1,12 @@
 package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant;
 
 public abstract class Plant {
-    private int plantId;
-    private int plantPrice;
+    protected int plantId;
+    protected int plantPrice;
 
-
-    public Plant(int flowerId, int flowerPrice) {
-        this.plantId = flowerId;
-        this.plantPrice = flowerPrice;
+    public Plant(int plantId, int plantPrice) {
+        this.plantId = plantId;
+        this.plantPrice = plantPrice;
     }
 
     public int getPlantId() {
