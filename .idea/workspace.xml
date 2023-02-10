@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add &quot;main&quot; method">
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/bouquets/Bouquet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/bouquets/Bouquet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/houseplant/Houseplant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/houseplant/Houseplant.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add prices for plants">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/FlowerShopCatalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,20 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00028" summary="feat: add the &quot;Box&quot; class for task 10">
-      <created>1675424808212</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1675424808212</updated>
-    </task>
-    <task id="LOCAL-00029" summary="refactor: merge task10 and task2">
-      <created>1675427016980</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1675427016980</updated>
     </task>
     <task id="LOCAL-00030" summary="fix: fix &quot;determineBoxKind&quot; method">
       <created>1675427309126</created>
@@ -466,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676040252689</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="feat: override &quot;toString&quot; methods">
+      <created>1676040497384</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1676040497384</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat: add prices for plants">
+      <created>1676040701372</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1676040701372</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,9 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pref: add &quot;getHexColor&quot; method" />
-    <MESSAGE value="pref: add &quot;isEmail&quot; method" />
-    <MESSAGE value="pref: add &quot;isIPAddress&quot; method" />
     <MESSAGE value="fix: change &quot;getHexColor&quot; method" />
     <MESSAGE value="feat: add &quot;isURL&quot; method" />
     <MESSAGE value="refactor: add Pattern constants" />
@@ -506,6 +502,9 @@
     <MESSAGE value="feat: add getter and &quot;compareTo&quot; method" />
     <MESSAGE value="feat: add BouquetUtils class" />
     <MESSAGE value="feat: add &quot;main&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add &quot;main&quot; method" />
+    <MESSAGE value="feat: add &quot;toString&quot; methods" />
+    <MESSAGE value="feat: override &quot;toString&quot; methods" />
+    <MESSAGE value="feat: add prices for plants" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add prices for plants" />
   </component>
 </project>
