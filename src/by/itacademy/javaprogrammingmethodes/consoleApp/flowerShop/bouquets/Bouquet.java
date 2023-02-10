@@ -2,6 +2,8 @@ package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.bouquets;
 
 import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Flower;
 
+import java.util.Arrays;
+
 public class Bouquet {
     private final BouquetType bouquetType;
     private final int bouquetCapacity;
@@ -14,6 +16,16 @@ public class Bouquet {
         this.flowers = flowers;
         this.bouquetCapacity = bouquetType.getBouquetCapacity();
         this.bouquetPrice = bouquetType.getPrice();
+    }
+
+    @Override
+    public String toString() {
+        return "Bouquet{ " +
+                "bouquetType=" + bouquetType +
+                ", bouquetCapacity=" + bouquetCapacity +
+                ", flowers=" + Arrays.toString(flowers) +
+                ", bouquetPrice=" + bouquetPrice +
+                " }";
     }
 
     public BouquetType getBouquetType() {

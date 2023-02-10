@@ -23,6 +23,18 @@ public class Flower extends Plant implements Comparable<Flower> {
         return this.freshnessLevel - f.freshnessLevel;
     }
 
+    @Override
+    public String toString() {
+        return "Flower{ " +
+                "flowerName=" + flowerName.getFlowerName() +
+                ", flowerColor=" + flowerColor.getFlowerColor() +
+                ", plantId=" + plantId +
+                ", plantPrice=" + plantPrice +
+                ", plantHeight=" + plantHeight +
+                ", freshnessLevel=" + freshnessLevel +
+                " }";
+    }
+
     public FlowerName getFlowerName() {
         return flowerName;
     }

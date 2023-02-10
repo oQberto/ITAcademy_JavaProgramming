@@ -34,6 +34,19 @@ public class Houseplant extends Plant implements Bloomed {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Houseplant{ " +
+                "sizeOfFlowerPot=" + sizeOfFlowerPot +
+                ", houseplantName=" + houseplantName.getHouseplantName() +
+                ", isBlooming=" + isBlooming +
+                ", plantId=" + plantId +
+                ", plantPrice=" + plantPrice +
+                ", plantHeight=" + plantHeight +
+                ", freshnessLevel=" + freshnessLevel +
+                " }";
+    }
+
     public int getSizeOfFlowerPot() {
         return sizeOfFlowerPot;
     }
