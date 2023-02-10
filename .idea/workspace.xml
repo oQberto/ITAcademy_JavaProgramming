@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: move flower classes in &quot;flower&quot; package">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/bouquets/Bouquet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/Plant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/houseplant/Houseplant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/TaskDescription" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/TaskDescription" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/flowers/Flower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/flowers/FlowerColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/FlowerColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/flowers/FlowerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/FlowerName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/flowers/GardenFlower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/flowers/WildFlower.java" beforeDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: change classes structure">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/houseplant/HouseplantName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/FlowerName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/javaprogrammingmethodes/consoleApp/flowerShop/plant/flower/FlowerName.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -129,13 +120,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00017" summary="refactor: change return value in &quot;addMoney&quot; method">
-      <created>1675069894504</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1675069894504</updated>
     </task>
     <task id="LOCAL-00018" summary="feat: add enum &quot;Month&quot;">
       <created>1675329312974</created>
@@ -473,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675954883016</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="feat: change classes structure">
+      <created>1676031999701</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1676031999702</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: fix &quot;Box&quot; class&#10;delete &quot;determineBoxKind&quot; method. We can get box kind from &quot;getBoxKind&quot; method" />
     <MESSAGE value="fix: fix return value in &quot;getMonthNameByNumber&quot; method" />
     <MESSAGE value="pref: add &quot;Fraction&quot; class&#10;pref: add &quot;addition&quot; method" />
     <MESSAGE value="pref: add &quot;multiply&quot; method" />
@@ -513,6 +503,7 @@
     <MESSAGE value="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums" />
     <MESSAGE value="feat: add wild flowers" />
     <MESSAGE value="feat: move flower classes in &quot;flower&quot; package" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: move flower classes in &quot;flower&quot; package" />
+    <MESSAGE value="feat: change classes structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change classes structure" />
   </component>
 </project>
