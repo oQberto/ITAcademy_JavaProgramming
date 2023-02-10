@@ -21,6 +21,11 @@ public class Houseplant extends Plant implements Bloomed {
     }
 
     @Override
+    public void stopBloom() {
+        isBlooming = false;
+    }
+
+    @Override
     public void grow() {
         switch (this.houseplantName.getHouseplantName()) {
             case "Bonsai" -> plantHeight += 4;
