@@ -32,4 +32,8 @@ public abstract class Plant {
     public void setPlantPrice(int plantPrice) {
         this.plantPrice = plantPrice;
     }
+
+    public int getPlantHeight() {
+        return plantHeight;
+    }
 }
