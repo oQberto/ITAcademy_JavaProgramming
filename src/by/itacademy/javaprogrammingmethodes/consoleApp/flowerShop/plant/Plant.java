@@ -17,6 +17,16 @@ public abstract class Plant {
 
     public abstract void grow();
 
+    @Override
+    public String toString() {
+        return "Plant{ " +
+                "plantId=" + plantId +
+                ", plantPrice=" + plantPrice +
+                ", plantHeight=" + plantHeight +
+                ", freshnessLevel=" + freshnessLevel +
+                " }";
+    }
+
     public int getPlantId() {
         return plantId;
     }

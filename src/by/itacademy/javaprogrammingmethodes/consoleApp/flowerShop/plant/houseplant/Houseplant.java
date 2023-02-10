@@ -36,14 +36,10 @@ public class Houseplant extends Plant implements Bloomed {
 
     @Override
     public String toString() {
-        return "Houseplant{ " +
+        return super.toString() + ", Houseplant{" +
                 "sizeOfFlowerPot=" + sizeOfFlowerPot +
-                ", houseplantName=" + houseplantName.getHouseplantName() +
+                ", houseplantName=" + houseplantName +
                 ", isBlooming=" + isBlooming +
-                ", plantId=" + plantId +
-                ", plantPrice=" + plantPrice +
-                ", plantHeight=" + plantHeight +
-                ", freshnessLevel=" + freshnessLevel +
                 " }";
     }
 
