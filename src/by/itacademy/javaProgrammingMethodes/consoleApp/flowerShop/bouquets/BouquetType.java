@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.bouquets;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.bouquets;
 
 public enum BouquetType {
     SMALL_BASKET(5, 5, "Small basket"),

@@ -1,11 +1,11 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop;
 
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.Plant;
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Flower;
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.FlowerColor;
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.FlowerName;
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.houseplant.Houseplant;
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.houseplant.HouseplantName;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.Plant;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.flower.Flower;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.flower.FlowerColor;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.flower.FlowerName;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.houseplant.Houseplant;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.houseplant.HouseplantName;
 
 import java.util.ArrayList;
 import java.util.List;

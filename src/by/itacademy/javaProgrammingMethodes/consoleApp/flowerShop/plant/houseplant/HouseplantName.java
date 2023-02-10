@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.houseplant;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.houseplant;
 
 public enum HouseplantName {
     BONSAI("Bonsai", 1),

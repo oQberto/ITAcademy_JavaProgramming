@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.car;
+package by.itacademy.javaProgrammingMethodes.car;
 
 public class Car {
     private Wheel wheel;

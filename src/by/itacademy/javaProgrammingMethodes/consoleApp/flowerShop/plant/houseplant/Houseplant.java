@@ -1,7 +1,7 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.houseplant;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.houseplant;
 
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.Plant;
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Bloomed;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.Plant;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.flower.Bloomed;
 
 public class Houseplant extends Plant implements Bloomed {
     private final int sizeOfFlowerPot;

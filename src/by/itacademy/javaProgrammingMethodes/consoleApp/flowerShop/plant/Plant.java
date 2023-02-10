@@ -1,6 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant;
-
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.FlowerName;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant;
 
 public abstract class Plant {
     protected int plantId;

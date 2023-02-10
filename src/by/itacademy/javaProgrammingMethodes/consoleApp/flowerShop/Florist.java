@@ -1,4 +1,4 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop;
 
 public class Florist {
     public static void main(String[] args) {

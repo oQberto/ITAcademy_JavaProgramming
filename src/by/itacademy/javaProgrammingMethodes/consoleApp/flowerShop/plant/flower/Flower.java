@@ -1,6 +1,6 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.flower;
 
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.Plant;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.Plant;
 
 public class Flower extends Plant implements Comparable<Flower> {
     private final FlowerName flowerName;

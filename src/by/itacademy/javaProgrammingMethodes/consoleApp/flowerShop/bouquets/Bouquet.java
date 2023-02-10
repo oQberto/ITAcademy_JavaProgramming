@@ -1,6 +1,6 @@
-package by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.bouquets;
+package by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.bouquets;
 
-import by.itacademy.javaprogrammingmethodes.consoleApp.flowerShop.plant.flower.Flower;
+import by.itacademy.javaProgrammingMethodes.consoleApp.flowerShop.plant.flower.Flower;
 
 import java.util.Arrays;
 
