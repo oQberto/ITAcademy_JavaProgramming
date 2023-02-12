@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="build: init homework4">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/AdditionalOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarWheelSize.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: override toString method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,20 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00036" summary="refactor: add &quot;selectColor&quot; method">
-      <created>1675461816468</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1675461816468</updated>
-    </task>
-    <task id="LOCAL-00037" summary="fix: fix &quot;Box&quot; class">
-      <created>1675497566517</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1675497566517</updated>
     </task>
     <task id="LOCAL-00038" summary="fix: fix &quot;Box&quot; class">
       <created>1675536570079</created>
@@ -470,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676198986305</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="feat: add Car class and his enums">
+      <created>1676213072926</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1676213072926</updated>
+    </task>
+    <task id="LOCAL-00086" summary="feat: override toString method">
+      <created>1676213185024</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1676213185024</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,8 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: flower task init" />
-    <MESSAGE value="feat: add fields in &quot;Flower&quot; class" />
     <MESSAGE value="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums" />
     <MESSAGE value="feat: add wild flowers" />
     <MESSAGE value="feat: move flower classes in &quot;flower&quot; package" />
@@ -510,6 +503,8 @@
     <MESSAGE value="refactor: change package name" />
     <MESSAGE value="refactor: delete package &quot;car&quot;" />
     <MESSAGE value="build: init homework4" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: init homework4" />
+    <MESSAGE value="feat: add Car class and his enums" />
+    <MESSAGE value="feat: override toString method" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: override toString method" />
   </component>
 </project>

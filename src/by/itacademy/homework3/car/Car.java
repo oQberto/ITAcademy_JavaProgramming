@@ -1,14 +1,12 @@
 package by.itacademy.homework3.car;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Car {
-    private CarBrand carBrand;
+    private final CarBrand carBrand;
     private CarColor carColor;
-    private CarEngine carEngine;
-    private CarWheelSize carWheelSize;
+    private final CarEngine carEngine;
+    private CarWheelSize carWheelSize; // TODO сделать нормальные размеры колес
     private List<AdditionalOptions> additionalOptions;
 
     public Car(CarBrand carBrand, CarColor carColor, CarEngine carEngine,
@@ -38,6 +36,10 @@ public class Car {
         return carColor;
     }
 
+    public void setCarColor(CarColor carColor) {
+        this.carColor = carColor;
+    }
+
     public CarEngine getCarEngine() {
         return carEngine;
     }
@@ -46,7 +48,15 @@ public class Car {
         return carWheelSize;
     }
 
+    public void setCarWheelSize(CarWheelSize carWheelSize) {
+        this.carWheelSize = carWheelSize;
+    }
+
     public List<AdditionalOptions> getAdditionalOptions() {
         return additionalOptions;
+    }
+
+    public void setAdditionalOptions(List<AdditionalOptions> additionalOptions) {
+        this.additionalOptions = additionalOptions;
     }
 }
