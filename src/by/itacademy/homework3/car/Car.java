@@ -20,6 +20,16 @@ public class Car {
         this.additionalOptions = additionalOptions;
     }
 
+    @Override
+    public String toString() {
+        return "Car{ " +
+                "carBrand=" + carBrand +
+                ", carColor=" + carColor +
+                ", carEngine=" + carEngine +
+                ", carWheelSize=" + carWheelSize +
+                " }";
+    }
+
     public CarBrand getCarBrand() {
         return carBrand;
     }
