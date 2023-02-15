@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add service">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add CarFactory and FactoryStock">
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,13 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00042" summary="pref: add &quot;Fraction&quot; class&#10;pref: add &quot;addition&quot; method">
-      <created>1675680232270</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1675680232270</updated>
     </task>
     <task id="LOCAL-00043" summary="pref: add &quot;multiply&quot; method">
       <created>1675691014949</created>
@@ -466,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676466959812</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="feat: add CarFactory and FactoryStock">
+      <created>1676467902308</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1676467902308</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add HouseplantName enum&#10;Change FlowerName enum: delete arrays." />
     <MESSAGE value="feat: add fields in Flower and Houseplant classes" />
     <MESSAGE value="feat: add possibility to grow" />
     <MESSAGE value="feat: add Bouquet class" />
@@ -506,6 +506,7 @@
     <MESSAGE value="refactor: change car package" />
     <MESSAGE value="refactor: change names" />
     <MESSAGE value="feat: add service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add service" />
+    <MESSAGE value="feat: add CarFactory and FactoryStock" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add CarFactory and FactoryStock" />
   </component>
 </project>
