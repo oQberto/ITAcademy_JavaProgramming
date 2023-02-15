@@ -5,7 +5,7 @@ import by.itacademy.homework3.car.Options;
 
 import java.util.List;
 
-public class OptionService {
+public class OptionService implements Changeable<List<Options>> {
 
     public void addOption(Car car, Options option) {
         car.getOptions().add(option);
@@ -15,8 +15,8 @@ public class OptionService {
         car.getOptions().remove(option);
     }
 
-    public void change(Car car, List<Options> newOptions) {
-        car.getOptions().clear();
-        car.setOptions(newOptions);
+    @Override
+    public void change(Car car, List<Options> options) {
+        car.setOptions(options);
     }
 }
