@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change car package">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add service">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/Changeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/WheelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarColor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,20 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00040" summary="fix: fix &quot;Box&quot; class&#10;delete &quot;determineBoxKind&quot; method. We can get box kind from &quot;getBoxKind&quot; method">
-      <created>1675615249732</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1675615249732</updated>
-    </task>
-    <task id="LOCAL-00041" summary="fix: fix return value in &quot;getMonthNameByNumber&quot; method">
-      <created>1675615351918</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1675615351918</updated>
     </task>
     <task id="LOCAL-00042" summary="pref: add &quot;Fraction&quot; class&#10;pref: add &quot;addition&quot; method">
       <created>1675680232270</created>
@@ -474,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676442324864</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="refactor: change names">
+      <created>1676466920421</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466920422</updated>
+    </task>
+    <task id="LOCAL-00090" summary="feat: add service">
+      <created>1676466959812</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466959812</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,8 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: move flower classes in &quot;flower&quot; package" />
-    <MESSAGE value="feat: change classes structure" />
     <MESSAGE value="feat: add HouseplantName enum&#10;Change FlowerName enum: delete arrays." />
     <MESSAGE value="feat: add fields in Flower and Houseplant classes" />
     <MESSAGE value="feat: add possibility to grow" />
@@ -514,6 +504,8 @@
     <MESSAGE value="feat: override toString method" />
     <MESSAGE value="feat: add setters for changeable fields" />
     <MESSAGE value="refactor: change car package" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change car package" />
+    <MESSAGE value="refactor: change names" />
+    <MESSAGE value="feat: add service" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add service" />
   </component>
 </project>
