@@ -5,8 +5,8 @@ public enum CarColor {
     BLUE("Blue"),
     GREEN("Green"),
     RED("Red"),
-    WHITE("WHITE"),
-    YELLOW("YELLOW");
+    WHITE("White"),
+    YELLOW("Yellow");
     private final String colorName;
 
     CarColor(String colorName) {

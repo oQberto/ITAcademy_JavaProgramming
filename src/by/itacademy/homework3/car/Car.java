@@ -6,16 +6,24 @@ public class Car {
     private final CarBrand carBrand;
     private CarColor carColor;
     private final CarEngine carEngine;
-    private CarWheelSize carWheelSize; // TODO сделать нормальные размеры колес
-    private List<Options> options; //TODO протестировать с разным кол-вом опций
+    private CarWheelSize wheelSize;
+    private List<Options> options;
 
     public Car(CarBrand carBrand, CarColor carColor, CarEngine carEngine,
-               CarWheelSize carWheelSize, List<Options> options) {
+               CarWheelSize wheelSize, List<Options> options) {
         this.carBrand = carBrand;
         this.carColor = carColor;
         this.carEngine = carEngine;
-        this.carWheelSize = carWheelSize;
+        this.wheelSize = wheelSize;
         this.options = options;
+    }
+
+    public Car(CarBrand carBrand, CarColor carColor, CarEngine carEngine,
+               CarWheelSize wheelSize) {
+        this.carBrand = carBrand;
+        this.carColor = carColor;
+        this.carEngine = carEngine;
+        this.wheelSize = wheelSize;
     }
 
     @Override
@@ -24,7 +32,7 @@ public class Car {
                 "carBrand=" + carBrand +
                 ", carColor=" + carColor +
                 ", carEngine=" + carEngine +
-                ", carWheelSize=" + carWheelSize +
+                ", carWheelSize=" + wheelSize +
                 " }";
     }
 
@@ -44,19 +52,19 @@ public class Car {
         return carEngine;
     }
 
-    public CarWheelSize getCarWheelSize() {
-        return carWheelSize;
+    public CarWheelSize getWheelSize() {
+        return wheelSize;
     }
 
-    public void setCarWheelSize(CarWheelSize carWheelSize) {
-        this.carWheelSize = carWheelSize;
+    public void setWheelSize(CarWheelSize wheelSize) {
+        this.wheelSize = wheelSize;
     }
 
-    public List<Options> getAdditionalOptions() {
+    public List<Options> getOptions() {
         return options;
     }
 
-    public void setAdditionalOptions(List<Options> options) {
+    public void setOptions(List<Options> options) {
         this.options = options;
     }
 }
