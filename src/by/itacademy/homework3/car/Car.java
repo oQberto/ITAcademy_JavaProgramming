@@ -7,15 +7,15 @@ public class Car {
     private CarColor carColor;
     private final CarEngine carEngine;
     private CarWheelSize carWheelSize; // TODO сделать нормальные размеры колес
-    private List<AdditionalOptions> additionalOptions;
+    private List<Options> options; //TODO протестировать с разным кол-вом опций
 
     public Car(CarBrand carBrand, CarColor carColor, CarEngine carEngine,
-               CarWheelSize carWheelSize, List<AdditionalOptions> additionalOptions) {
+               CarWheelSize carWheelSize, List<Options> options) {
         this.carBrand = carBrand;
         this.carColor = carColor;
         this.carEngine = carEngine;
         this.carWheelSize = carWheelSize;
-        this.additionalOptions = additionalOptions;
+        this.options = options;
     }
 
     @Override
@@ -52,11 +52,11 @@ public class Car {
         this.carWheelSize = carWheelSize;
     }
 
-    public List<AdditionalOptions> getAdditionalOptions() {
-        return additionalOptions;
+    public List<Options> getAdditionalOptions() {
+        return options;
     }
 
-    public void setAdditionalOptions(List<AdditionalOptions> additionalOptions) {
-        this.additionalOptions = additionalOptions;
+    public void setAdditionalOptions(List<Options> options) {
+        this.options = options;
     }
 }
