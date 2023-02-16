@@ -28,10 +28,10 @@ public class CarFactory {
 
     public Car createCar(Car clientOrder) {
         if (checkCarInTheStock(clientOrder) == null) {
-            return clientOrder;
-        } else {
             return replaceInappropriateOptions(
                     chooseMoreSuitableCar(clientOrder), clientOrder);
+        } else {
+            return clientOrder;
         }
     }
 
@@ -44,7 +44,7 @@ public class CarFactory {
         return null;
     }
 
-    public Car chooseMoreSuitableCar(Car clientOrder) {
+    private Car chooseMoreSuitableCar(Car clientOrder) {
         Car moreSuitableCar = null;
         int count = 0;
         int maxMatches = 0;
