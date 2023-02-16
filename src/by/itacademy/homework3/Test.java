@@ -1,6 +1,7 @@
 package by.itacademy.homework3;
 
 import by.itacademy.homework3.car.*;
+import by.itacademy.homework3.carFactory.CarFactory;
 import by.itacademy.homework3.service.ColorService;
 import by.itacademy.homework3.service.OptionService;
 import by.itacademy.homework3.service.WheelService;
@@ -16,24 +17,16 @@ public class Test {
         WheelService wheelService = new WheelService();
         OptionService optionService = new OptionService();
 
+        List<Options> options1 = new ArrayList<>();
+        options1.add(Options.SETTINGS_MEMORY);
+        options1.add(Options.TINTED_GLASS);
+
         Car car = new Car(CarBrand.AUDI,
-                CarColor.BLACK,
                 CarEngine.B4204T26,
-                CarWheelSize.MIDDLE,
-                options);
+                2008,
+                CarColor.BLACK,
+                CarWheelSize.MIDDLE);
 
-        System.out.println(car.getCarColor());
-        colorService.change(car, "White");
-        System.out.println(car.getCarColor());
-
-        System.out.println(car.getWheelSize());
-        wheelService.change(car, "19");
-        System.out.println(car.getWheelSize());
-
-        System.out.println(car.getOptions());
-        optionService.removeOption(car, Options.DOOR_CLOSER);
-        System.out.println(car.getOptions());
-        optionService.addOption(car, Options.CRUISE_CONTROL);
-        System.out.println(car.getOptions());
+        CarFactory carFactory = new CarFactory();
     }
 }

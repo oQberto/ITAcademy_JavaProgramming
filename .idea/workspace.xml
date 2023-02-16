@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: remove space">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change Changeable interface, implements this interface to OptionService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarBrand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/Changeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/Changeable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/WheelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/WheelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00045" summary="pref: complete task2&#10;add &quot;Phone&quot;, &quot;PhoneTerminal&quot; classes &amp; &quot;PhoneModel&quot; enum">
-      <created>1675756478295</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1675756478295</updated>
     </task>
     <task id="LOCAL-00046" summary="pref: add &quot;replaceABC&quot; method">
       <created>1675757007964</created>
@@ -471,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676469558820</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="refactor: change Changeable interface, implements this interface to OptionService">
+      <created>1676493711040</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1676493711041</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -486,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add Bouquet class" />
     <MESSAGE value="feat: flowers can stop bloom" />
     <MESSAGE value="feat: add more types of bouquets" />
     <MESSAGE value="feat: add bouquetCapacity field" />
@@ -511,6 +509,7 @@
     <MESSAGE value="feat: add CarFactory and FactoryStock" />
     <MESSAGE value="feat: add method that changes list of options" />
     <MESSAGE value="refactor: remove space" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove space" />
+    <MESSAGE value="refactor: change Changeable interface, implements this interface to OptionService" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change Changeable interface, implements this interface to OptionService" />
   </component>
 </project>
