@@ -35,9 +35,9 @@ public class CarFactory {
         }
     }
 
-    private Car checkCarInTheStock(Car testedCar) {
+    private Car checkCarInTheStock(Car clientCar) {
         for (Car car : factoryStock.getCars()) {
-            if (testedCar.equals(car)) {
+            if (clientCar.equals(car)) {
                 return car;
             }
         }
@@ -80,8 +80,8 @@ public class CarFactory {
         if (!(moreSuitableCar.getWheelSize().equals(clientOrder.getWheelSize()))) {
             moreSuitableCar.setWheelSize(clientOrder.getWheelSize());
         }
-        if (!(moreSuitableCar.getOptions() == null
-                || moreSuitableCar.getOptions().equals(clientOrder.getOptions()))) {
+        if (moreSuitableCar.getOptions() == null
+                || moreSuitableCar.getOptions().equals(clientOrder.getOptions())) {
             moreSuitableCar.setOptions(clientOrder.getOptions());
         }
         return moreSuitableCar;

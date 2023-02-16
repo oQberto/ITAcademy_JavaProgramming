@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="style: change createCar() method">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change access modifier.">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
     </list>
@@ -123,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00052" summary="pref: add &quot;isEmail&quot; method">
-      <created>1675775705855</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1675775705855</updated>
     </task>
     <task id="LOCAL-00053" summary="pref: add &quot;isIPAddress&quot; method">
       <created>1675777619593</created>
@@ -467,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676553006007</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="refactor: change access modifier.">
+      <created>1676553504653</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1676553504653</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add &quot;toString&quot; methods" />
     <MESSAGE value="feat: override &quot;toString&quot; methods" />
     <MESSAGE value="feat: add prices for plants" />
     <MESSAGE value="feat: add FlowerShopCatalogue" />
@@ -507,6 +507,7 @@
     <MESSAGE value="feat: change FactoryStock initialization" />
     <MESSAGE value="feat: change lists initialization&#10;complete task3" />
     <MESSAGE value="style: change createCar() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: change createCar() method" />
+    <MESSAGE value="refactor: change access modifier." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change access modifier." />
   </component>
 </project>
