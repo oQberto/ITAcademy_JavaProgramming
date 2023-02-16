@@ -39,8 +39,7 @@ public class Car {
                 && carBrand == car.carBrand
                 && carEngine == car.carEngine
                 && carColor == car.carColor
-                && wheelSize == car.wheelSize
-                && options.equals(car.options);
+                && wheelSize == car.wheelSize;
     }
 
     @Override
@@ -52,9 +51,11 @@ public class Car {
     public String toString() {
         return "Car{ " +
                 "carBrand=" + carBrand +
-                ", carColor=" + carColor +
                 ", carEngine=" + carEngine +
-                ", carWheelSize=" + wheelSize +
+                ", issueYear=" + issueYear +
+                ", carColor=" + carColor +
+                ", wheelSize=" + wheelSize +
+                ", options=" + options +
                 " }";
     }
 
