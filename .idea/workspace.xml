@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: move issueYear field from CarBrand to Car&#10;add Override equals() &amp; hashCode() methods&#10;change Car constructors">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="style: change hashCode method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" afterDir="false" />
     </list>
@@ -125,20 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00047" summary="pref: add &quot;removeSpaces&quot; method">
-      <created>1675757547807</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1675757547807</updated>
-    </task>
-    <task id="LOCAL-00048" summary="pref: add &quot;getLongestRowOfNumbers&quot; method">
-      <created>1675758747510</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1675758747510</updated>
     </task>
     <task id="LOCAL-00049" summary="pref: add &quot;findPunctuationMarks&quot; method">
       <created>1675765454067</created>
@@ -469,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676535192905</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="refactor: change toString &amp; equals methods">
+      <created>1676537629615</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1676537629616</updated>
+    </task>
+    <task id="LOCAL-00097" summary="style: change hashCode method">
+      <created>1676537814136</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1676537814136</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,8 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add more types of bouquets" />
-    <MESSAGE value="feat: add bouquetCapacity field" />
     <MESSAGE value="feat: add getter and &quot;compareTo&quot; method" />
     <MESSAGE value="feat: add BouquetUtils class" />
     <MESSAGE value="feat: add &quot;main&quot; method" />
@@ -509,6 +506,8 @@
     <MESSAGE value="refactor: remove space" />
     <MESSAGE value="refactor: change Changeable interface, implements this interface to OptionService" />
     <MESSAGE value="refactor: move issueYear field from CarBrand to Car&#10;add Override equals() &amp; hashCode() methods&#10;change Car constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: move issueYear field from CarBrand to Car&#10;add Override equals() &amp; hashCode() methods&#10;change Car constructors" />
+    <MESSAGE value="refactor: change toString &amp; equals methods" />
+    <MESSAGE value="style: change hashCode method" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: change hashCode method" />
   </component>
 </project>
