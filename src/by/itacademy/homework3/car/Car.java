@@ -44,7 +44,8 @@ public class Car {
 
     @Override
     public int hashCode() {
-        return Objects.hash(carBrand, carEngine, issueYear, carColor, wheelSize, options);
+        return Objects.hash(carBrand, carEngine, issueYear,
+                carColor, wheelSize, options);
     }
 
     @Override
