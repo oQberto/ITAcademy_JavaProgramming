@@ -7,10 +7,6 @@ public enum CarEngine {
     V8_TFSI(4.0),
     T6_AWD(1.9),
     T5(1.9);
-    public static final CarEngine[] audiEngines = {V6_TFSI, V8_TFSI};
-    public static final CarEngine[] volvoEngines = {B4204T26, T5, T6_AWD};
-    public static final CarEngine[] kiaEngines = {G4KM_MPI};
-
     private final double engineVolume;
 
     CarEngine(double engineVolume) {
