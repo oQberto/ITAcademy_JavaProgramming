@@ -30,7 +30,8 @@ public class CarFactory {
         if (checkCarInTheStock(clientOrder) == null) {
             return clientOrder;
         } else {
-            return replaceInappropriateOptions(chooseMoreSuitableCar(clientOrder), clientOrder);
+            return replaceInappropriateOptions(
+                    chooseMoreSuitableCar(clientOrder), clientOrder);
         }
     }
 
