@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add CarShowroom" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: remove arrays">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/Airline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -119,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00054" summary="fix: change &quot;getHexColor&quot; method">
-      <created>1675777771492</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1675777771492</updated>
     </task>
     <task id="LOCAL-00055" summary="feat: add &quot;isURL&quot; method">
       <created>1675779107277</created>
@@ -463,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676559978644</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="refactor: remove arrays">
+      <created>1676561666755</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1676561666755</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add prices for plants" />
     <MESSAGE value="feat: add FlowerShopCatalogue" />
     <MESSAGE value="refactor: change toString methods" />
     <MESSAGE value="commit" />
@@ -503,6 +507,7 @@
     <MESSAGE value="style: change createCar() method" />
     <MESSAGE value="refactor: change access modifier." />
     <MESSAGE value="feat: add CarShowroom" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add CarShowroom" />
+    <MESSAGE value="refactor: remove arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove arrays" />
   </component>
 </project>

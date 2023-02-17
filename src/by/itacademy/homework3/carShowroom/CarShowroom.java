@@ -26,7 +26,15 @@ public class CarShowroom {
     public void changeWheel(Car car, CarWheelSize newCarWheel) {
         wheelService.change(car, newCarWheel);
     }
-    public void changeOptions(Car car, List<Options> newCarOptions) {
+    public void replaceOptions(Car car, List<Options> newCarOptions) {
         optionService.change(car, newCarOptions);
+    }
+
+    public void changeOption(Car car, Options option) {
+        optionService.addOption(car, option);
+    }
+
+    public void removeOption(Car car, Options option) {
+        optionService.removeOption(car, option);
     }
 }
