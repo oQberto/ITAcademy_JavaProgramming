@@ -1,12 +1,13 @@
 package by.itacademy.additionalTasks.inheritance.airline.aircraft.airlineService;
 
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.Aircraft;
+import by.itacademy.additionalTasks.inheritance.airline.aircraft.AircraftComparator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeSet;
 
-public class AirlineService implements Countable {
+public class AirlineUtil implements Countable {
+    private final AircraftComparator aircraftComparator = new AircraftComparator();
     private final List<Aircraft> aircraftList = new ArrayList<>();
 
     public List<Aircraft> getAircraftByFlightRage(List<Aircraft> aircraftTreeSet, int flightRage) {
@@ -22,7 +23,7 @@ public class AirlineService implements Countable {
     public List<Aircraft> getAircraftByCapacity(List<Aircraft> aircraftTreeSet, int capacity) {
         aircraftList.clear();
         for (Aircraft aircraft : aircraftTreeSet) {
-            if (aircraft.getFlightRage() == capacity) {
+            if (aircraft.getCapacity() == capacity) {
                 aircraftList.add(aircraft);
             }
         }
@@ -36,6 +37,11 @@ public class AirlineService implements Countable {
                 aircraftList.add(aircraft);
             }
         }
+        return aircraftList;
+    }
+
+    public List<Aircraft> sort(List<Aircraft> aircraftList) {
+        aircraftList.sort(aircraftComparator);
         return aircraftList;
     }
 
