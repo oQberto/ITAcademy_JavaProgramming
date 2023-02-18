@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: delete fuelConsumption field">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/electrictransport/ElectricTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/fueltransport/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/fueltransport/FuelTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/fueltransport/Minibus.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add inheritance hierarchy">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransportGarage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,13 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00073" summary="feat: add bouquetCapacity field">
-      <created>1676039466589</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1676039466589</updated>
     </task>
     <task id="LOCAL-00074" summary="feat: add getter and &quot;compareTo&quot; method">
       <created>1676039997583</created>
@@ -468,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676738599585</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="feat: add inheritance hierarchy">
+      <created>1676739094592</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1676739094592</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style: change hashCode method" />
     <MESSAGE value="feat: change FactoryStock initialization" />
     <MESSAGE value="feat: change lists initialization&#10;complete task3" />
     <MESSAGE value="style: change createCar() method" />
@@ -508,6 +504,7 @@
     <MESSAGE value="style: change package structure" />
     <MESSAGE value="build: PublicTransport init" />
     <MESSAGE value="refactor: delete fuelConsumption field" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: delete fuelConsumption field" />
+    <MESSAGE value="feat: add inheritance hierarchy" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add inheritance hierarchy" />
   </component>
 </project>
