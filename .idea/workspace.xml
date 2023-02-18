@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add methods for changing one option of clientCar">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/Airline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Aircraft.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add abstract class &quot;Aircraft&quot;">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Airplane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Helicopter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Quadcopter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Aircraft.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,20 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00056" summary="refactor: add Pattern constants">
-      <created>1675779391759</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1675779391759</updated>
-    </task>
-    <task id="LOCAL-00057" summary="refactor: add numerator and denominator for new fraction">
-      <created>1675800744612</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1675800744612</updated>
     </task>
     <task id="LOCAL-00058" summary="fix: fix task4">
       <created>1675928212399</created>
@@ -468,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676650596660</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="build: additional task &quot;Airline&quot; init">
+      <created>1676658762421</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1676658762421</updated>
+    </task>
+    <task id="LOCAL-00106" summary="feat: add abstract class &quot;Aircraft&quot;">
+      <created>1676658788429</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1676658788429</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,8 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: change toString methods" />
-    <MESSAGE value="commit" />
     <MESSAGE value="refactor: change package name" />
     <MESSAGE value="refactor: delete package &quot;car&quot;" />
     <MESSAGE value="build: init homework4" />
@@ -508,6 +507,8 @@
     <MESSAGE value="feat: add CarShowroom" />
     <MESSAGE value="refactor: remove arrays" />
     <MESSAGE value="feat: add methods for changing one option of clientCar" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add methods for changing one option of clientCar" />
+    <MESSAGE value="build: additional task &quot;Airline&quot; init" />
+    <MESSAGE value="feat: add abstract class &quot;Aircraft&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add abstract class &quot;Aircraft&quot;" />
   </component>
 </project>
