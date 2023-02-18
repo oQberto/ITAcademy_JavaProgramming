@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add AirlineGarage class">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add enum of helicopter brands">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/airlineService/AirlineService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/airlineService/Countable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/airplane/AirplaneBrand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/airplane/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/helicopter/Helicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/airline/aircraft/helicopter/Helicopter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,27 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00061" summary="feat: flower task init">
-      <created>1675951876816</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1675951876816</updated>
-    </task>
-    <task id="LOCAL-00062" summary="feat: add fields in &quot;Flower&quot; class">
-      <created>1675953209809</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1675953209810</updated>
-    </task>
-    <task id="LOCAL-00063" summary="feat: fill &quot;FlowerColor&quot;, &quot;FlowerType&quot; enums">
-      <created>1675953653310</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1675953653311</updated>
     </task>
     <task id="LOCAL-00064" summary="feat: add wild flowers">
       <created>1675953990382</created>
@@ -470,7 +447,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676721936569</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="feat: add enum of airplane brands">
+      <created>1676723302642</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1676723302642</updated>
+    </task>
+    <task id="LOCAL-00111" summary="style: change toString() method">
+      <created>1676723328594</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1676723328594</updated>
+    </task>
+    <task id="LOCAL-00112" summary="feat: add enum of helicopter brands">
+      <created>1676723562776</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1676723562776</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,9 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add Car class and his enums" />
-    <MESSAGE value="feat: override toString method" />
-    <MESSAGE value="feat: add setters for changeable fields" />
     <MESSAGE value="refactor: change car package" />
     <MESSAGE value="refactor: change names" />
     <MESSAGE value="feat: add service" />
@@ -510,6 +505,9 @@
     <MESSAGE value="feat: add constructor in Aircraft" />
     <MESSAGE value="feat: add comparator for Aircraft's flightRage" />
     <MESSAGE value="feat: add AirlineGarage class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add AirlineGarage class" />
+    <MESSAGE value="feat: add enum of airplane brands" />
+    <MESSAGE value="style: change toString() method" />
+    <MESSAGE value="feat: add enum of helicopter brands" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add enum of helicopter brands" />
   </component>
 </project>
