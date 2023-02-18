@@ -15,12 +15,12 @@ public abstract class Aircraft {
 
     @Override
     public String toString() {
-        return "Aircraft{" +
+        return "Aircraft{ " +
                 "flightRage=" + flightRage +
                 ", flightHeight=" + flightHeight +
                 ", capacity=" + capacity +
                 ", loadCapacity=" + loadCapacity +
-                '}';
+                " }";
     }
 
     public int getFlightRage() {
