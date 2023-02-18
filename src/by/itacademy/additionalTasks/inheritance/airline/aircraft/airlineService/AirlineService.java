@@ -9,7 +9,7 @@ import java.util.TreeSet;
 public class AirlineService implements Countable {
     private final List<Aircraft> aircraftList = new ArrayList<>();
 
-    public List<Aircraft> getAircraftByFlightRage(TreeSet<Aircraft> aircraftTreeSet, int flightRage) {
+    public List<Aircraft> getAircraftByFlightRage(List<Aircraft> aircraftTreeSet, int flightRage) {
         aircraftList.clear();
         for (Aircraft aircraft : aircraftTreeSet) {
             if (aircraft.getFlightRage() == flightRage) {
@@ -19,7 +19,7 @@ public class AirlineService implements Countable {
         return aircraftList;
     }
 
-    public List<Aircraft> getAircraftByCapacity(TreeSet<Aircraft> aircraftTreeSet, int capacity) {
+    public List<Aircraft> getAircraftByCapacity(List<Aircraft> aircraftTreeSet, int capacity) {
         aircraftList.clear();
         for (Aircraft aircraft : aircraftTreeSet) {
             if (aircraft.getFlightRage() == capacity) {
@@ -29,7 +29,7 @@ public class AirlineService implements Countable {
         return aircraftList;
     }
 
-    public List<Aircraft> getAircraftByLoadCapacity(TreeSet<Aircraft> aircraftTreeSet, int loadCapacity) {
+    public List<Aircraft> getAircraftByLoadCapacity(List<Aircraft> aircraftTreeSet, int loadCapacity) {
         aircraftList.clear();
         for (Aircraft aircraft : aircraftTreeSet) {
             if (aircraft.getLoadCapacity() == loadCapacity) {
@@ -40,7 +40,7 @@ public class AirlineService implements Countable {
     }
 
     @Override
-    public int calculateTotalCapacity(TreeSet<Aircraft> aircraftTreeSet) {
+    public int calculateTotalCapacity(List<Aircraft> aircraftTreeSet) {
         int totalCapacity = 0;
         for (Aircraft aircraft : aircraftTreeSet) {
             totalCapacity += aircraft.getCapacity();
@@ -49,7 +49,7 @@ public class AirlineService implements Countable {
     }
 
     @Override
-    public int calculateTotalLoadCapacity(TreeSet<Aircraft> aircraftTreeSet) {
+    public int calculateTotalLoadCapacity(List<Aircraft> aircraftTreeSet) {
         int totalLoadCapacity = 0;
         for (Aircraft aircraft : aircraftTreeSet) {
             totalLoadCapacity += aircraft.getLoadCapacity();

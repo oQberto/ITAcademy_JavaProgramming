@@ -1,5 +1,7 @@
 package by.itacademy.additionalTasks.inheritance.airline.aircraft;
 
+import java.util.Objects;
+
 public abstract class Aircraft {
     protected int flightRage;
     protected int flightHeight;
@@ -21,6 +23,22 @@ public abstract class Aircraft {
                 ", capacity=" + capacity +
                 ", loadCapacity=" + loadCapacity +
                 " }";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aircraft aircraft = (Aircraft) o;
+        return flightRage == aircraft.flightRage
+                && flightHeight == aircraft.flightHeight
+                && capacity == aircraft.capacity
+                && loadCapacity == aircraft.loadCapacity;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(flightRage, flightHeight, capacity, loadCapacity);
     }
 
     public int getFlightRage() {
