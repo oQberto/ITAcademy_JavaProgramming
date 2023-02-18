@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add transport garage">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add getter and setter for consumption field">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/Countable.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransportComparator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransportUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransportGarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/PublicTransportGarage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/electrictransport/ElectricTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/ElectricTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/electrictransport/Tram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/electrictransport/Trolleybus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/Trolleybus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/fueltransport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/fueltransport/FuelTransport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/fueltransport/Minibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/publicTransportPark/Minibus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,27 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00075" summary="feat: add BouquetUtils class">
-      <created>1676040029706</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1676040029706</updated>
-    </task>
-    <task id="LOCAL-00076" summary="feat: add &quot;main&quot; method">
-      <created>1676040252689</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1676040252689</updated>
-    </task>
-    <task id="LOCAL-00077" summary="feat: override &quot;toString&quot; methods">
-      <created>1676040497384</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1676040497384</updated>
     </task>
     <task id="LOCAL-00078" summary="feat: add prices for plants">
       <created>1676040701372</created>
@@ -475,7 +447,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676739407833</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="refactor: change public transport classes">
+      <created>1676739951591</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1676739951592</updated>
+    </task>
+    <task id="LOCAL-00125" summary="refactor: delete electric transport">
+      <created>1676740008120</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1676740008121</updated>
+    </task>
+    <task id="LOCAL-00126" summary="feat: add getter and setter for consumption field">
+      <created>1676740074853</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1676740074853</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,9 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: change lists initialization&#10;complete task3" />
-    <MESSAGE value="style: change createCar() method" />
-    <MESSAGE value="refactor: change access modifier." />
     <MESSAGE value="feat: add CarShowroom" />
     <MESSAGE value="refactor: remove arrays" />
     <MESSAGE value="feat: add methods for changing one option of clientCar" />
@@ -515,6 +505,9 @@
     <MESSAGE value="refactor: delete fuelConsumption field" />
     <MESSAGE value="feat: add inheritance hierarchy" />
     <MESSAGE value="feat: add transport garage" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add transport garage" />
+    <MESSAGE value="refactor: change public transport classes" />
+    <MESSAGE value="refactor: delete electric transport" />
+    <MESSAGE value="feat: add getter and setter for consumption field" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add getter and setter for consumption field" />
   </component>
 </project>
