@@ -1,6 +1,6 @@
 package by.itacademy.additionalTasks.inheritance.airline.aircraft.helicopter;
 
-import by.itacademy.additionalTasks.inheritance.airline.aircraft.Quadcopter;
+import by.itacademy.additionalTasks.inheritance.airline.aircraft.quadcopter.Quadcopter;
 
 public class Helicopter extends Quadcopter {
     private HelicopterBrand helicopterBrand;

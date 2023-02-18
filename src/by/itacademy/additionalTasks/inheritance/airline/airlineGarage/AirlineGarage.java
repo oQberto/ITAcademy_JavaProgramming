@@ -1,7 +1,7 @@
 package by.itacademy.additionalTasks.inheritance.airline.airlineGarage;
 
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.Aircraft;
-import by.itacademy.additionalTasks.inheritance.airline.aircraft.Quadcopter;
+import by.itacademy.additionalTasks.inheritance.airline.aircraft.quadcopter.Quadcopter;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.airplane.Airplane;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.airplane.AirplaneBrand;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.helicopter.Helicopter;

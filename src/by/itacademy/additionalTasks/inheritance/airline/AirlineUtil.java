@@ -1,4 +1,4 @@
-package by.itacademy.additionalTasks.inheritance.airline.aircraft.airlineService;
+package by.itacademy.additionalTasks.inheritance.airline;
 
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.Aircraft;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.AircraftComparator;

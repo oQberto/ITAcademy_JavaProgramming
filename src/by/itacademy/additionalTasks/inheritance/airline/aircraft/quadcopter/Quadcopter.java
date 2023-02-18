@@ -1,4 +1,6 @@
-package by.itacademy.additionalTasks.inheritance.airline.aircraft;
+package by.itacademy.additionalTasks.inheritance.airline.aircraft.quadcopter;
+
+import by.itacademy.additionalTasks.inheritance.airline.aircraft.Aircraft;
 
 public class Quadcopter extends Aircraft {
 
