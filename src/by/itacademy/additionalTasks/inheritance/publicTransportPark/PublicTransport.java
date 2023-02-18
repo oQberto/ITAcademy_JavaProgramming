@@ -2,10 +2,12 @@ package by.itacademy.additionalTasks.inheritance.publicTransportPark;
 
 public class PublicTransport {
     protected int transportCost;
+    protected int consumption;
     protected boolean isRide;
 
-    public PublicTransport(int transportCost, boolean isRide) {
+    public PublicTransport(int transportCost, int consumption, boolean isRide) {
         this.transportCost = transportCost;
+        this.consumption = consumption;
         this.isRide = isRide;
     }
 

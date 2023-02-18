@@ -1,4 +1,4 @@
-package by.itacademy.additionalTasks.inheritance.publicTransportPark.electrictransport;
+package by.itacademy.additionalTasks.inheritance.publicTransportPark;
 
 import by.itacademy.additionalTasks.inheritance.publicTransportPark.PublicTransport;
 
