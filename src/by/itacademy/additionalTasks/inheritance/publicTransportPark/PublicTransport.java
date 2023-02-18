@@ -27,6 +27,14 @@ public class PublicTransport {
         this.transportCost = transportCost;
     }
 
+    public int getConsumption() {
+        return consumption;
+    }
+
+    public void setConsumption(int consumption) {
+        this.consumption = consumption;
+    }
+
     public boolean isRide() {
         return isRide;
     }
