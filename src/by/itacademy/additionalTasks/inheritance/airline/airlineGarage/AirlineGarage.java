@@ -1,7 +1,6 @@
 package by.itacademy.additionalTasks.inheritance.airline.airlineGarage;
 
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.Aircraft;
-import by.itacademy.additionalTasks.inheritance.airline.aircraft.AircraftComparator;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.Quadcopter;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.airplane.Airplane;
 import by.itacademy.additionalTasks.inheritance.airline.aircraft.airplane.AirplaneBrand;
@@ -10,10 +9,8 @@ import by.itacademy.additionalTasks.inheritance.airline.aircraft.helicopter.Heli
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeSet;
 
 public class AirlineGarage {
-    private final AircraftComparator aircraftComparator = new AircraftComparator();
     private List<Aircraft> aircraftTreeSet = new ArrayList<>();
 
     {
@@ -32,11 +29,11 @@ public class AirlineGarage {
         aircraftTreeSet.add(aircraft);
     }
 
-    public List<Aircraft> getAircraftTreeSet() {
+    public List<Aircraft> getAircraftList() {
         return aircraftTreeSet;
     }
 
-    public void setAircraftTreeSet(List<Aircraft> aircraftTreeSet) {
+    public void setAircraftList(List<Aircraft> aircraftTreeSet) {
         this.aircraftTreeSet = aircraftTreeSet;
     }
 }

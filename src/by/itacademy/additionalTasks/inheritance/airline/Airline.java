@@ -8,6 +8,5 @@ public class Airline {
     static AirlineService airlineService = new AirlineService();
 
     public static void main(String[] args) {
-        System.out.println(airlineService.calculateTotalCapacity(airlineGarage.getAircraftTreeSet()));
     }
 }
