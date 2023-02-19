@@ -35,6 +35,7 @@ public class Order {
 
 
     public boolean equals(Car car) {
+        if (car == null) return false;
         return issueYear == car.getIssueYear()
                 && carBrand == car.getCarBrand()
                 && carEngine == car.getCarEngine()
