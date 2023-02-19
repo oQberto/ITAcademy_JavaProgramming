@@ -18,7 +18,21 @@ public class FactoryStock {
                 CarColor.YELLOW, CarWheelSize.LARGE));
     }
 
-    public Car chooseMoreSuitableCar(Order clientOrder) {
+    static Car carForClient = null;
+    protected boolean checkCarInTheStock(Order clientOrder) {
+        boolean isCar = false;
+        for (Car car : cars) {
+            if (clientOrder.equals(car)) {
+                isCar = true;
+                carForClient = car;
+                cars.remove(car);
+
+            }
+        }
+        return isCar;
+    }
+
+    protected Car chooseMoreSuitableCar(Order clientOrder) {
         Car moreSuitableCar = null;
         int count = 0;
         int maxMatches = 0;
@@ -58,13 +72,5 @@ public class FactoryStock {
 
     public List<Car> getCars() {
         return cars;
-    }
-
-    private void removeCar(Car car) {
-        for (Car car1 : cars) {
-            if (car1.equals(car)) {
-                cars.remove(car1);
-            }
-        }
     }
 }

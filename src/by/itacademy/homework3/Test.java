@@ -20,7 +20,7 @@ public class Test {
         List<Options> options = new ArrayList<>();
         options.add(Options.CRUISE_CONTROL);
         Order clientOrder = new Order(CarBrand.KIA, CarEngine.G4KM_MPI, 2010,
-                CarColor.WHITE, CarWheelSize.LARGE, options);
+                CarColor.RED, CarWheelSize.SMALL, options);
         Car clientCar = carShowroom.orderCar(clientOrder);
         System.out.println(clientCar + "\n");
         factoryStock.showFactoryStock();

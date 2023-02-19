@@ -29,22 +29,12 @@ public class CarFactory {
     }
 
     public Car createCar(Order clientOrder) {
-        if (checkCarInTheStock(clientOrder) != null) {
-            return new Car(clientOrder.getCarBrand(), clientOrder.getCarEngine(), clientOrder.getIssueYear(),
-                    clientOrder.getCarColor(), clientOrder.getWheelSize(), clientOrder.getOptions());
+        if (factoryStock.checkCarInTheStock(clientOrder)) {
+            return FactoryStock.carForClient;
         } else {
             return replaceInappropriateOptions(
                    factoryStock.chooseMoreSuitableCar(clientOrder), clientOrder);
         }
-    }
-
-    private Car checkCarInTheStock(Order clientCar) {
-        for (Car car : factoryStock.getCars()) {
-            if (clientCar.equals(car)) {
-                return car;
-            }
-        }
-        return null;
     }
 
     private Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder) {
