@@ -6,9 +6,10 @@ public class Flower {
     protected FlowerColor flowerColor;
     protected FlowerType flowerType;
 
-    public Flower(int flowerCost, int flowerLiveTime, FlowerColor flowerColor) {
+    public Flower(int flowerCost, int flowerLiveTime, FlowerType flowerType, FlowerColor flowerColor) {
         this.flowerCost = flowerCost;
         this.flowerLifeTime = flowerLiveTime;
+        this.flowerType = flowerType;
         this.flowerColor = flowerColor;
     }
 
