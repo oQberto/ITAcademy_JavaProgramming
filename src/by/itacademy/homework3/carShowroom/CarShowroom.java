@@ -15,8 +15,8 @@ public class CarShowroom {
     private final WheelService wheelService = new WheelService();
     private final OptionService optionService = new OptionService();
 
-    public void orderCar(Car clientOrder) {
-        carFactory.createCar(clientOrder);
+    public Car orderCar(Order clientOrder) {
+        return carFactory.createCar(clientOrder);
     }
 
     public void changeColor(Car car, CarColor newCarColor) {

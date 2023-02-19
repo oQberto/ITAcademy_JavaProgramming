@@ -1,6 +1,7 @@
 package by.itacademy.homework3.carFactory;
 
 import by.itacademy.homework3.car.*;
+import by.itacademy.homework3.carShowroom.Order;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +13,8 @@ public class CarFactory {
     private final List<CarColor> carColors;
     private final List<CarWheelSize> carWheelSizes;
     private final FactoryStock factoryStock;
-    {
+
+    public CarFactory() {
         carBrands = new ArrayList<>(Arrays.asList(CarBrand.values()));
         carEngines = new ArrayList<>(Arrays.asList(CarEngine.values()));
         carColors = new ArrayList<>(Arrays.asList(CarColor.values()));
@@ -26,16 +28,17 @@ public class CarFactory {
         }
     }
 
-    public Car createCar(Car clientOrder) {
-        if (checkCarInTheStock(clientOrder) == null) {
-            return replaceInappropriateOptions(
-                    chooseMoreSuitableCar(clientOrder), clientOrder);
+    public Car createCar(Order clientOrder) {
+        if (checkCarInTheStock(clientOrder) != null) {
+            return new Car(clientOrder.getCarBrand(), clientOrder.getCarEngine(), clientOrder.getIssueYear(),
+                    clientOrder.getCarColor(), clientOrder.getWheelSize(), clientOrder.getOptions());
         } else {
-            return clientOrder;
+            return replaceInappropriateOptions(
+                   factoryStock.chooseMoreSuitableCar(clientOrder), clientOrder);
         }
     }
 
-    private Car checkCarInTheStock(Car clientCar) {
+    private Car checkCarInTheStock(Order clientCar) {
         for (Car car : factoryStock.getCars()) {
             if (clientCar.equals(car)) {
                 return car;
@@ -44,33 +47,7 @@ public class CarFactory {
         return null;
     }
 
-    private Car chooseMoreSuitableCar(Car clientOrder) {
-        Car moreSuitableCar = null;
-        int count = 0;
-        int maxMatches = 0;
-        for (Car car : factoryStock.getCars()) {
-            if (car.getCarBrand().equals(clientOrder.getCarBrand())
-                    && car.getCarEngine().equals(clientOrder.getCarEngine())
-                    && car.getIssueYear() == clientOrder.getIssueYear()) {
-                count++;
-
-                if (car.getCarColor().equals(clientOrder.getCarColor())) {
-                    count++;
-                }
-                if (car.getWheelSize().equals(clientOrder.getWheelSize())) {
-                    count++;
-                }
-            }
-            if (count > maxMatches) {
-                moreSuitableCar = car;
-                maxMatches = count;
-            }
-            count = 0;
-        }
-        return moreSuitableCar;
-    }
-
-    private Car replaceInappropriateOptions(Car moreSuitableCar,  Car clientOrder) {
+    private Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder) {
         if (moreSuitableCar == null) {
             return null;
         }
@@ -80,7 +57,7 @@ public class CarFactory {
         if (!(moreSuitableCar.getWheelSize().equals(clientOrder.getWheelSize()))) {
             moreSuitableCar.setWheelSize(clientOrder.getWheelSize());
         }
-        if (moreSuitableCar.getOptions() == null
+        if (moreSuitableCar.getOptions().size() == 0
                 || moreSuitableCar.getOptions().equals(clientOrder.getOptions())) {
             moreSuitableCar.setOptions(clientOrder.getOptions());
         }

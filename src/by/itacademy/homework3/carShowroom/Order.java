@@ -1,10 +1,11 @@
-package by.itacademy.homework3.car;
+package by.itacademy.homework3.carShowroom;
+
+import by.itacademy.homework3.car.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
-public class Car {
+public class Order {
     private final CarBrand carBrand;
     private final CarEngine carEngine;
     private final int issueYear;
@@ -12,7 +13,7 @@ public class Car {
     private CarWheelSize wheelSize;
     private List<Options> options;
 
-    public Car(CarBrand carBrand, CarEngine carEngine, int issueYear,
+    public Order(CarBrand carBrand, CarEngine carEngine, int issueYear,
                CarColor carColor, CarWheelSize wheelSize, List<Options> options) {
         this.carBrand = carBrand;
         this.carEngine = carEngine;
@@ -22,7 +23,7 @@ public class Car {
         this.options = options;
     }
 
-    public Car(CarBrand carBrand, CarEngine carEngine, int issueYear,
+    public Order(CarBrand carBrand, CarEngine carEngine, int issueYear,
                CarColor carColor, CarWheelSize wheelSize) {
         this.carBrand = carBrand;
         this.carEngine = carEngine;
@@ -32,27 +33,19 @@ public class Car {
         this.options = new ArrayList<>();
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Car car = (Car) o;
-        return issueYear == car.issueYear
-                && carBrand == car.carBrand
-                && carEngine == car.carEngine
-                && carColor == car.carColor
-                && wheelSize == car.wheelSize;
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(carBrand, carEngine, issueYear,
-                carColor, wheelSize, options);
+    public boolean equals(Car car) {
+        return issueYear == car.getIssueYear()
+                && carBrand == car.getCarBrand()
+                && carEngine == car.getCarEngine()
+                && carColor == car.getCarColor()
+                && wheelSize == car.getWheelSize()
+                && options.equals(car.getOptions());
     }
 
     @Override
     public String toString() {
-        return "Car{ " +
+        return "Order{ " +
                 "carBrand=" + carBrand +
                 ", carEngine=" + carEngine +
                 ", issueYear=" + issueYear +

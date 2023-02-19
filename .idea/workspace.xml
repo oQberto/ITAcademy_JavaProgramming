@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change constructors">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: flower task test">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/ColorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/OptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/service/WheelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/service/WheelService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,7 +52,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Airline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.additionalTasks.inheritance.airline.Airline" />
       <module name="ITAcademy_JavaProgramming" />
@@ -105,9 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Airline" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Florist" />
         <item itemvalue="Application.RegExCheck" />
       </list>
@@ -121,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00084" summary="build: init homework4">
-      <created>1676198986304</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1676198986305</updated>
     </task>
     <task id="LOCAL-00085" summary="feat: add Car class and his enums">
       <created>1676213072926</created>
@@ -465,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676796385844</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="refactor: flower task test">
+      <created>1676796674971</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1676796674971</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -480,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add comparator for Aircraft's flightRage" />
     <MESSAGE value="feat: add AirlineGarage class" />
     <MESSAGE value="feat: add enum of airplane brands" />
     <MESSAGE value="style: change toString() method" />
@@ -505,6 +513,22 @@
     <MESSAGE value="feat: add enum with flowers names" />
     <MESSAGE value="feat: add FlowerType field" />
     <MESSAGE value="refactor: change constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change constructors" />
+    <MESSAGE value="refactor: flower task test" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: flower task test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java</url>
+          <line>20</line>
+          <properties class="by.itacademy.homework3.carFactory.FactoryStock" method="chooseMoreSuitableCar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

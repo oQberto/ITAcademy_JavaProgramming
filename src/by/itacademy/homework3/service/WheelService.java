@@ -6,10 +6,12 @@ import by.itacademy.homework3.car.CarWheelSize;
 public class WheelService implements Changeable<CarWheelSize> {
     @Override
     public void change(Car car, CarWheelSize carWheel) {
-        for (CarWheelSize carWheelSize : CarWheelSize.values()) {
-            if (carWheelSize.getWheelDiameter() == carWheel.getWheelDiameter()) {
-                car.setWheelSize(carWheel);
-                break;
+        if (car != null && carWheel != null) {
+            for (CarWheelSize carWheelSize : CarWheelSize.values()) {
+                if (carWheelSize.getWheelDiameter() == carWheel.getWheelDiameter()) {
+                    car.setWheelSize(carWheel);
+                    break;
+                }
             }
         }
     }

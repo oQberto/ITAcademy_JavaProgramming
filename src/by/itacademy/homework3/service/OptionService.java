@@ -17,6 +17,8 @@ public class OptionService implements Changeable<List<Options>> {
 
     @Override
     public void change(Car car, List<Options> options) {
-        car.setOptions(options);
+        if (car != null && options != null) {
+            car.setOptions(options);
+        }
     }
 }
