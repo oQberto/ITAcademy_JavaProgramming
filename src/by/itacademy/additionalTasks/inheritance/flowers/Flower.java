@@ -28,7 +28,7 @@ public class Flower {
         this.flowerCost = flowerCost;
     }
 
-    public int getFlowerLiveTime() {
+    public int getFlowerLifeTime() {
         return flowerLiveTime;
     }
 
