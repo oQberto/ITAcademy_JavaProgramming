@@ -2,12 +2,13 @@ package by.itacademy.additionalTasks.inheritance.flowers;
 
 public class Flower {
     protected int flowerCost;
-    protected int flowerLiveTime;
+    protected int flowerLifeTime;
     protected FlowerColor flowerColor;
+    protected FlowerType flowerType;
 
     public Flower(int flowerCost, int flowerLiveTime, FlowerColor flowerColor) {
         this.flowerCost = flowerCost;
-        this.flowerLiveTime = flowerLiveTime;
+        this.flowerLifeTime = flowerLiveTime;
         this.flowerColor = flowerColor;
     }
 
@@ -15,7 +16,7 @@ public class Flower {
     public String toString() {
         return "Flower{ " +
                 "flowerCost=" + flowerCost +
-                ", flowerLiveTime=" + flowerLiveTime +
+                ", flowerLiveTime=" + flowerLifeTime +
                 ", flowerColor=" + flowerColor +
                 " }";
     }
@@ -29,11 +30,11 @@ public class Flower {
     }
 
     public int getFlowerLifeTime() {
-        return flowerLiveTime;
+        return flowerLifeTime;
     }
 
-    public void setFlowerLiveTime(int flowerLiveTime) {
-        this.flowerLiveTime = flowerLiveTime;
+    public void setFlowerLifeTime(int flowerLifeTime) {
+        this.flowerLifeTime = flowerLifeTime;
     }
 
     public FlowerColor getFlowerColor() {
@@ -42,5 +43,13 @@ public class Flower {
 
     public void setFlowerColor(FlowerColor flowerColor) {
         this.flowerColor = flowerColor;
+    }
+
+    public FlowerType getFlowerType() {
+        return flowerType;
+    }
+
+    public void setFlowerType(FlowerType flowerType) {
+        this.flowerType = flowerType;
     }
 }
