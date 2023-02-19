@@ -7,9 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FactoryStock {
-    private final List<Car> cars = new ArrayList<>();
+    private final List<Car> cars;
 
-    {
+    public FactoryStock() {
+        cars = new ArrayList<>();
         cars.add(new Car(CarBrand.AUDI, CarEngine.B4204T26, 2008,
                 CarColor.BLACK, CarWheelSize.MIDDLE));
         cars.add(new Car(CarBrand.KIA, CarEngine.G4KM_MPI, 2010,
@@ -18,50 +19,42 @@ public class FactoryStock {
                 CarColor.YELLOW, CarWheelSize.LARGE));
     }
 
-    static Car carForClient = null;
-    protected boolean checkCarInTheStock(Order clientOrder) {
-        boolean isCar = false;
+    public Car checkCar(Order order) {
+        Car clientCar = null;
         for (Car car : cars) {
-            if (clientOrder.equals(car)) {
-                isCar = true;
-                carForClient = car;
-                cars.remove(car);
-
+            if (order.equals(car)) {
+                clientCar = car;
             }
         }
-        return isCar;
+        cars.remove(clientCar);
+        return clientCar;
     }
 
     protected Car chooseMoreSuitableCar(Order clientOrder) {
         Car moreSuitableCar = null;
-        int count = 0;
-        int maxMatches = 0;
 
         for (Car car : cars) {
             if (car.getCarBrand().equals(clientOrder.getCarBrand())
                     && car.getCarEngine().equals(clientOrder.getCarEngine())
                     && car.getIssueYear() == clientOrder.getIssueYear()) {
-                count++;
-
-                if (car.getCarColor().equals(clientOrder.getCarColor())) {
-                    count++;
-                }
-                if (car.getWheelSize().equals(clientOrder.getWheelSize())) {
-                    count++;
-                }
-            }
-            if (count > maxMatches) {
                 moreSuitableCar = car;
-                maxMatches = count;
             }
-            count = 0;
+            if (car.getCarBrand().equals(clientOrder.getCarBrand())
+                    && car.getCarEngine().equals(clientOrder.getCarEngine())
+                    && car.getIssueYear() == clientOrder.getIssueYear()
+                    && car.getCarColor().equals(clientOrder.getCarColor())) {
+                moreSuitableCar = car;
+            }
+            if (car.getCarBrand().equals(clientOrder.getCarBrand())
+                    && car.getCarEngine().equals(clientOrder.getCarEngine())
+                    && car.getIssueYear() == clientOrder.getIssueYear()
+                    && car.getCarColor().equals(clientOrder.getCarColor())
+                    && car.getWheelSize().equals(clientOrder.getWheelSize())) {
+                moreSuitableCar = car;
+            }
         }
         cars.remove(moreSuitableCar);
         return moreSuitableCar;
-    }
-
-    public void addCar(Car car) {
-        cars.add(car);
     }
 
     public void showFactoryStock() {

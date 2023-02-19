@@ -14,12 +14,12 @@ public class CarFactory {
     private final List<CarWheelSize> carWheelSizes;
     private final FactoryStock factoryStock;
 
-    public CarFactory() {
+    public CarFactory(FactoryStock factoryStock) {
         carBrands = new ArrayList<>(Arrays.asList(CarBrand.values()));
         carEngines = new ArrayList<>(Arrays.asList(CarEngine.values()));
         carColors = new ArrayList<>(Arrays.asList(CarColor.values()));
         carWheelSizes = new ArrayList<>(Arrays.asList(CarWheelSize.values()));
-        factoryStock = new FactoryStock();
+        this.factoryStock = factoryStock;
     }
 
     public <T> void showWorkShopCatalogue(List<T> catalogue) {
@@ -28,15 +28,13 @@ public class CarFactory {
         }
     }
 
-    public Car createCar(Order clientOrder) {
-        if (factoryStock.checkCarInTheStock(clientOrder)) {
-            return FactoryStock.carForClient;
+    public Car createCar(Order order) {
+        if (factoryStock.checkCar(order) != null) {
+            return factoryStock.checkCar(order);
         } else {
-            return replaceInappropriateOptions(
-                   factoryStock.chooseMoreSuitableCar(clientOrder), clientOrder);
+            return replaceInappropriateOptions(factoryStock.chooseMoreSuitableCar(order), order);
         }
     }
-
     private Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder) {
         if (moreSuitableCar == null) {
             return null;

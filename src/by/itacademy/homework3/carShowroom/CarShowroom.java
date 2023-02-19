@@ -10,10 +10,14 @@ import by.itacademy.homework3.service.*;
 import java.util.List;
 
 public class CarShowroom {
-    private final CarFactory carFactory = new CarFactory();
+    private final CarFactory carFactory;
     private final ColorService colorService = new ColorService();
     private final WheelService wheelService = new WheelService();
     private final OptionService optionService = new OptionService();
+
+    public CarShowroom(CarFactory carFactory) {
+        this.carFactory = carFactory;
+    }
 
     public Car orderCar(Order clientOrder) {
         return carFactory.createCar(clientOrder);
@@ -36,5 +40,9 @@ public class CarShowroom {
 
     public void removeOption(Car car, Options option) {
         optionService.removeOption(car, option);
+    }
+
+    public CarFactory getCarFactory() {
+        return carFactory;
     }
 }
