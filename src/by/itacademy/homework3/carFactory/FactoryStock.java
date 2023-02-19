@@ -20,6 +20,7 @@ public class FactoryStock {
     }
 
     public Car checkCar(Order order) {
+        if (order == null) return null;
         Car clientCar = null;
         for (Car car : cars) {
             if (order.equals(car)) {
@@ -30,15 +31,16 @@ public class FactoryStock {
         return clientCar;
     }
 
-    protected Car chooseMoreSuitableCar(Order clientOrder) {
+    protected Car chooseMoreSuitableCar(Order order) {
+        if (order == null) return null;
         Car moreSuitableCar = null;
 
         for (Car car : cars) {
-            if (checkImmutableParams(car, clientOrder)) {
+            if (checkImmutableParams(car, order)) {
                 moreSuitableCar = car;
             }
-            if (checkImmutableParams(car, clientOrder)
-                    && checkChangeableParams(car, clientOrder)) {
+            if (checkImmutableParams(car, order)
+                    && checkChangeableParams(car, order)) {
                 moreSuitableCar = car;
             }
         }

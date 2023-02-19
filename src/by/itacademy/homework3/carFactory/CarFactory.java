@@ -29,16 +29,16 @@ public class CarFactory {
     }
 
     public Car createCar(Order order) {
+        if (order == null) return null;
         if (factoryStock.checkCar(order) != null) {
             return factoryStock.checkCar(order);
         } else {
             return replaceInappropriateOptions(factoryStock.chooseMoreSuitableCar(order), order);
         }
     }
+
     private Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder) {
-        if (moreSuitableCar == null) {
-            return null;
-        }
+        if (moreSuitableCar == null || clientOrder == null) return null;
         if (!(moreSuitableCar.getCarColor().equals(clientOrder.getCarColor()))) {
             moreSuitableCar.setCarColor(clientOrder.getCarColor());
         }
