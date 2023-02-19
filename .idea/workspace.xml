@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add Bouquet class">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/inheritance/flowers/FlowerType.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change constructors">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Airline">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Airline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.additionalTasks.inheritance.airline.Airline" />
       <module name="ITAcademy_JavaProgramming" />
@@ -106,10 +105,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Airline" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Florist" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RegExCheck" />
       </list>
     </recent_temporary>
@@ -122,27 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00081" summary="commit">
-      <created>1676053601761</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1676053601761</updated>
-    </task>
-    <task id="LOCAL-00082" summary="refactor: change package name">
-      <created>1676053752467</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1676053752467</updated>
-    </task>
-    <task id="LOCAL-00083" summary="refactor: delete package &quot;car&quot;">
-      <created>1676053938193</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1676053938193</updated>
     </task>
     <task id="LOCAL-00084" summary="build: init homework4">
       <created>1676198986304</created>
@@ -466,7 +444,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676796013756</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="feat: add enum with flowers names">
+      <created>1676796260489</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1676796260489</updated>
+    </task>
+    <task id="LOCAL-00131" summary="feat: add FlowerType field">
+      <created>1676796303089</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1676796303089</updated>
+    </task>
+    <task id="LOCAL-00132" summary="refactor: change constructors">
+      <created>1676796385844</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1676796385844</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,9 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build: additional task &quot;Airline&quot; init" />
-    <MESSAGE value="feat: add abstract class &quot;Aircraft&quot;" />
-    <MESSAGE value="feat: add constructor in Aircraft" />
     <MESSAGE value="feat: add comparator for Aircraft's flightRage" />
     <MESSAGE value="feat: add AirlineGarage class" />
     <MESSAGE value="feat: add enum of airplane brands" />
@@ -506,6 +502,9 @@
     <MESSAGE value="feat: add sort and search" />
     <MESSAGE value="build: flower task init" />
     <MESSAGE value="feat: add Bouquet class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Bouquet class" />
+    <MESSAGE value="feat: add enum with flowers names" />
+    <MESSAGE value="feat: add FlowerType field" />
+    <MESSAGE value="refactor: change constructors" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change constructors" />
   </component>
 </project>
