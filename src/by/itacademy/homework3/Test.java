@@ -2,7 +2,6 @@ package by.itacademy.homework3;
 
 import by.itacademy.homework3.car.*;
 import by.itacademy.homework3.carFactory.CarFactory;
-import by.itacademy.homework3.carFactory.FactoryStock;
 import by.itacademy.homework3.carShowroom.CarShowroom;
 import by.itacademy.homework3.carShowroom.Order;
 
@@ -11,7 +10,7 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        CarShowroom carShowroom = new CarShowroom(new CarFactory(new FactoryStock()));
+        CarShowroom carShowroom = new CarShowroom(new CarFactory());
 
         List<Options> options = new ArrayList<>();
         options.add(Options.CRUISE_CONTROL);

@@ -12,14 +12,16 @@ public class CarFactory {
     private final List<CarEngine> carEngines;
     private final List<CarColor> carColors;
     private final List<CarWheelSize> carWheelSizes;
+    private  List<Car> carsInStock;
     private final FactoryStock factoryStock;
 
-    public CarFactory(FactoryStock factoryStock) {
+    public CarFactory() {
         carBrands = new ArrayList<>(Arrays.asList(CarBrand.values()));
         carEngines = new ArrayList<>(Arrays.asList(CarEngine.values()));
         carColors = new ArrayList<>(Arrays.asList(CarColor.values()));
         carWheelSizes = new ArrayList<>(Arrays.asList(CarWheelSize.values()));
-        this.factoryStock = factoryStock;
+        fillStock();
+        this.factoryStock = new FactoryStock(carsInStock);
     }
 
     public <T> void showWorkShopCatalogue(List<T> catalogue) {
@@ -50,6 +52,16 @@ public class CarFactory {
             moreSuitableCar.setOptions(clientOrder.getOptions());
         }
         return moreSuitableCar;
+    }
+
+    private void fillStock() {
+        carsInStock = new ArrayList<>();
+        carsInStock.add(new Car(CarBrand.AUDI, CarEngine.B4204T26, 2008,
+                CarColor.BLACK, CarWheelSize.MIDDLE));
+        carsInStock.add(new Car(CarBrand.KIA, CarEngine.G4KM_MPI, 2010,
+                CarColor.RED, CarWheelSize.SMALL));
+        carsInStock.add(new Car(CarBrand.VOLVO, CarEngine.T6_AWD, 2012,
+                CarColor.YELLOW, CarWheelSize.LARGE));
     }
 
     public List<CarBrand> getCarBrands() {

@@ -3,20 +3,13 @@ package by.itacademy.homework3.carFactory;
 import by.itacademy.homework3.car.*;
 import by.itacademy.homework3.carShowroom.Order;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FactoryStock {
     private final List<Car> cars;
 
-    public FactoryStock() {
-        cars = new ArrayList<>();
-        cars.add(new Car(CarBrand.AUDI, CarEngine.B4204T26, 2008,
-                CarColor.BLACK, CarWheelSize.MIDDLE));
-        cars.add(new Car(CarBrand.KIA, CarEngine.G4KM_MPI, 2010,
-                CarColor.RED, CarWheelSize.SMALL));
-        cars.add(new Car(CarBrand.VOLVO, CarEngine.T6_AWD, 2012,
-                CarColor.YELLOW, CarWheelSize.LARGE));
+    public FactoryStock(List<Car> cars) {
+        this.cars = cars;
     }
 
     public Car checkCar(Order order) {
