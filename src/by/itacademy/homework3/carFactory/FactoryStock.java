@@ -34,27 +34,30 @@ public class FactoryStock {
         Car moreSuitableCar = null;
 
         for (Car car : cars) {
-            if (car.getCarBrand().equals(clientOrder.getCarBrand())
-                    && car.getCarEngine().equals(clientOrder.getCarEngine())
-                    && car.getIssueYear() == clientOrder.getIssueYear()) {
+            if (checkImmutableParams(car, clientOrder)) {
                 moreSuitableCar = car;
             }
-            if (car.getCarBrand().equals(clientOrder.getCarBrand())
-                    && car.getCarEngine().equals(clientOrder.getCarEngine())
-                    && car.getIssueYear() == clientOrder.getIssueYear()
-                    && car.getCarColor().equals(clientOrder.getCarColor())) {
-                moreSuitableCar = car;
-            }
-            if (car.getCarBrand().equals(clientOrder.getCarBrand())
-                    && car.getCarEngine().equals(clientOrder.getCarEngine())
-                    && car.getIssueYear() == clientOrder.getIssueYear()
-                    && car.getCarColor().equals(clientOrder.getCarColor())
-                    && car.getWheelSize().equals(clientOrder.getWheelSize())) {
+            if (checkImmutableParams(car, clientOrder)
+                    && checkChangeableParams(car, clientOrder)) {
                 moreSuitableCar = car;
             }
         }
         cars.remove(moreSuitableCar);
         return moreSuitableCar;
+    }
+
+    private boolean checkImmutableParams(Car car, Order order) {
+        return car.getCarBrand().equals(order.getCarBrand())
+                && car.getCarEngine().equals(order.getCarEngine())
+                && car.getIssueYear() == order.getIssueYear();
+    }
+
+    private boolean checkChangeableParams(Car car, Order order) {
+        if (car.getCarColor().equals(order.getCarColor())
+                && car.getWheelSize().equals(order.getWheelSize())) {
+            return true;
+        }
+        return car.getCarColor().equals(order.getCarColor());
     }
 
     public void showFactoryStock() {

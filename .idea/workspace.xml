@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: fix equals method">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/CarShowroom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,13 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00088" summary="refactor: change car package">
-      <created>1676442324863</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1676442324864</updated>
     </task>
     <task id="LOCAL-00089" summary="refactor: change names">
       <created>1676466920421</created>
@@ -470,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676819103333</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="fix: fix bugs">
+      <created>1676827433826</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1676827433826</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add enum of helicopter brands" />
     <MESSAGE value="feat: add HelicopterBrand field" />
     <MESSAGE value="feat: add AirlineService class" />
     <MESSAGE value="feat: add aircrafts to AirlineGarage" />
@@ -510,6 +505,7 @@
     <MESSAGE value="refactor: fix bugs" />
     <MESSAGE value="feat: checkCarInTheStock return boolean type now" />
     <MESSAGE value="refactor: fix equals method" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix equals method" />
+    <MESSAGE value="fix: fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix bugs" />
   </component>
 </project>
