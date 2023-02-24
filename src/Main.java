@@ -5,12 +5,12 @@ import by.itacademy.additionalTasks.inheritance.flowers.FlowerType;
 import by.itacademy.additionalTasks.inheritance.flowers.bouquet.Bouquet;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> integerList = new ArrayList<>();
-        integerList.add(2);
-        integerList.remove(null);
+
     }
 }

@@ -19,6 +19,5 @@ public class Test {
         Car clientCar = carShowroom.orderCar(clientOrder);
         System.out.println(clientCar + "\n");
         carShowroom.getCarFactory().getFactoryStock().showFactoryStock();
-
     }
 }
