@@ -5,44 +5,50 @@ import by.itacademy.homework3.car.*;
 import java.util.List;
 
 public class SpecialCar extends Car {
-    private final SpecialCarType specialCarType;
+    private final SpecialCarType carType;
+    private final SpecialCarBrand carBrand;
+    private final SpecialCarEngine carEngine;
     private boolean flashLight;
 
-    public SpecialCar(CarBrand carBrand,
-                      CarEngine carEngine,
+    public SpecialCar(SpecialCarBrand carBrand,
+                      SpecialCarEngine carEngine,
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
                       List<Options> options,
-                      SpecialCarType specialCarType,
+                      SpecialCarType carType,
                       boolean flashLight) {
-        super(carBrand, carEngine, issueYear, carColor, wheelSize, options);
-        this.specialCarType = specialCarType;
+        super(issueYear, carColor, wheelSize, options);
+        this.carBrand = carBrand;
+        this.carEngine = carEngine;
+        this.carType = carType;
         this.flashLight = flashLight;
     }
 
-    public SpecialCar(CarBrand carBrand,
-                      CarEngine carEngine,
+    public SpecialCar(SpecialCarBrand carBrand,
+                      SpecialCarEngine carEngine,
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
-                      SpecialCarType specialCarType,
+                      SpecialCarType carType,
                       boolean flashLight) {
-        super(carBrand, carEngine, issueYear, carColor, wheelSize);
-        this.specialCarType = specialCarType;
+        super(issueYear, carColor, wheelSize);
+        this.carBrand = carBrand;
+        this.carEngine = carEngine;
+        this.carType = carType;
         this.flashLight = flashLight;
     }
 
-    @Override
-    public String toString() {
-        return "SpecialCar{ " +
-                "specialCarType=" + specialCarType +
-                ", flashLight=" + flashLight +
-                " }";
+    public SpecialCarType getCarType() {
+        return carType;
     }
 
-    public SpecialCarType getSpecialCarType() {
-        return specialCarType;
+    public SpecialCarBrand getCarBrand() {
+        return carBrand;
+    }
+
+    public SpecialCarEngine getCarEngine() {
+        return carEngine;
     }
 
     public boolean isFlashLight() {

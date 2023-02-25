@@ -5,31 +5,38 @@ import java.util.List;
 import java.util.Objects;
 
 public class Car {
-    private final CarBrand carBrand;
-    private final CarEngine carEngine;
     private final int issueYear;
     private CarColor carColor;
     private CarWheelSize wheelSize;
     private List<Options> options;
 
-    public Car(CarBrand carBrand, CarEngine carEngine, int issueYear,
-               CarColor carColor, CarWheelSize wheelSize, List<Options> options) {
-        this.carBrand = carBrand;
-        this.carEngine = carEngine;
+    public Car(int issueYear,
+               CarColor carColor,
+               CarWheelSize wheelSize,
+               List<Options> options) {
         this.issueYear = issueYear;
         this.carColor = carColor;
         this.wheelSize = wheelSize;
         this.options = options;
     }
 
-    public Car(CarBrand carBrand, CarEngine carEngine, int issueYear,
-               CarColor carColor, CarWheelSize wheelSize) {
-        this.carBrand = carBrand;
-        this.carEngine = carEngine;
+    public Car(int issueYear,
+               CarColor carColor,
+               CarWheelSize wheelSize) {
         this.issueYear = issueYear;
         this.carColor = carColor;
         this.wheelSize = wheelSize;
         this.options = new ArrayList<>();
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "issueYear=" + issueYear +
+                ", carColor=" + carColor +
+                ", wheelSize=" + wheelSize +
+                ", options=" + options +
+                '}';
     }
 
     @Override
@@ -38,36 +45,17 @@ public class Car {
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
         return issueYear == car.issueYear
-                && carBrand == car.carBrand
-                && carEngine == car.carEngine
                 && carColor == car.carColor
-                && wheelSize == car.wheelSize;
+                && wheelSize == car.wheelSize
+                && options.equals(car.options);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(carBrand, carEngine, issueYear,
-                carColor, wheelSize, options);
-    }
-
-    @Override
-    public String toString() {
-        return "Car{ " +
-                "carBrand=" + carBrand +
-                ", carEngine=" + carEngine +
-                ", issueYear=" + issueYear +
-                ", carColor=" + carColor +
-                ", wheelSize=" + wheelSize +
-                ", options=" + options +
-                " }";
-    }
-
-    public CarBrand getCarBrand() {
-        return carBrand;
-    }
-
-    public CarEngine getCarEngine() {
-        return carEngine;
+        return Objects.hash(issueYear,
+                            carColor,
+                            wheelSize,
+                            options);
     }
 
     public int getIssueYear() {
