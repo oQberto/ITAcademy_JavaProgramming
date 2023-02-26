@@ -50,8 +50,8 @@ public class Order {
     public boolean equals(Car car) {
         if (car == null) return false;
         return issueYear == car.getIssueYear()
-                && carBrand == car.getCarBrand()
-                && carEngine == car.getCarEngine()
+                && carBrand.name().equals(car.getCarBrand())
+                && carEngine.name().equals(car.getCarEngine())
                 && carColor == car.getCarColor()
                 && wheelSize == car.getWheelSize()
                 && options.equals(car.getOptions());
@@ -69,8 +69,20 @@ public class Order {
                 " }";
     }
 
+    public String getCarTypeName() {
+        return carType.name();
+    }
+
     public CarType getCarType() {
         return carType;
+    }
+
+    public String getCarBrandName() {
+        return carBrand.name();
+    }
+
+    public String getCarEngineName() {
+        return carEngine.name();
     }
 
     public CarBrand getCarBrand() {
@@ -80,6 +92,7 @@ public class Order {
     public CarEngine getCarEngine() {
         return carEngine;
     }
+
 
     public int getIssueYear() {
         return issueYear;

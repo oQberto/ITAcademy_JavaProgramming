@@ -62,9 +62,9 @@ public abstract class Car {
                             options);
     }
 
-    public abstract CarBrand getCarBrand();
-    public abstract CarEngine getCarEngine();
-    public abstract CarType getCarType();
+    public abstract String getCarBrand();
+    public abstract String getCarEngine();
+    public abstract String getCarType();
 
     public int getIssueYear() {
         return issueYear;

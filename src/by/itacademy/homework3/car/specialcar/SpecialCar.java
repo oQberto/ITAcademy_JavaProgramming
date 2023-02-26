@@ -50,18 +50,18 @@ public class SpecialCar extends Car {
     }
 
     @Override
-    public CarType getCarType() {
-        return carType;
+    public String getCarType() {
+        return carType.name();
     }
 
     @Override
-    public CarBrand getCarBrand() {
-        return carBrand;
+    public String getCarBrand() {
+        return carBrand.name();
     }
 
     @Override
-    public CarEngine getCarEngine() {
-        return carEngine;
+    public String getCarEngine() {
+        return carEngine.name();
     }
 
     public boolean isFlashLight() {

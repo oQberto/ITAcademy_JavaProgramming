@@ -43,10 +43,10 @@ public class FactoryStock<T extends Car> {
     }
 
     private boolean checkImmutableParams(T car, Order order) {
-        return car.getCarBrand().equals(order.getCarBrand())
-                && car.getCarEngine().equals(order.getCarEngine())
+        return car.getCarBrand().equals(order.getCarBrandName())
+                && car.getCarEngine().equals(order.getCarEngineName())
                 && car.getIssueYear() == order.getIssueYear()
-                && car.getCarType() == order.getCarType();
+                && car.getCarType().equals(order.getCarTypeName());
     }
 
     private boolean checkChangeableParams(T car, Order order) {
