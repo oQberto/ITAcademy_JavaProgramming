@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public abstract class CarFactory {
+public abstract class CarFactory<T extends Car> {
     private final List<CarBrand> carBrands;
     private final List<CarEngine> carEngines;
     private final List<CarColor> carColors;
@@ -21,15 +21,16 @@ public abstract class CarFactory {
         carWheelSizes = new ArrayList<>(Arrays.asList(CarWheelSize.values()));
     }
 
-    public <T> void showWorkShopCatalogue(List<T> catalogue) {
+    public void showWorkShopCatalogue(List<T> catalogue) {
         for (T t : catalogue) {
             System.out.println(t);
         }
     }
 
-    public abstract Car createCar(Order order);
-    protected abstract Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder);
+    public abstract T createCar(Order order);
+    protected abstract T replaceInappropriateOptions(T moreSuitableCar,  Order clientOrder);
     protected abstract void fillStock();
+    public abstract List<T> getCarsInStock();
 
     public List<CarBrand> getCarBrands() {
         return carBrands;

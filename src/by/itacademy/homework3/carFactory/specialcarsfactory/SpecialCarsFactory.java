@@ -8,29 +8,38 @@ import by.itacademy.homework3.carShowroom.Order;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpecialCarsFactory extends CarFactory {
-    private List<Car> carsInStock;
-    private final FactoryStock factoryStock;
+public class SpecialCarsFactory extends CarFactory<SpecialCar> {
+    private List<SpecialCar> carsInStock;
+    private final FactoryStock<SpecialCar> factoryStock;
 
     public SpecialCarsFactory() {
         fillStock();
-        this.factoryStock = new FactoryStock(carsInStock);
+        this.factoryStock = new FactoryStock<>(carsInStock);
     }
 
     @Override
-    public Car createCar(Order order) {
+    public SpecialCar createCar(Order order) {
         if (order == null) return null;
         if (factoryStock.checkCar(order) != null) {
-            return factoryStock.checkCar(order);
-        } else {
+            return factoryStock.getCarFromStock();
+        } else if (replaceInappropriateOptions
+                (factoryStock.chooseMoreSuitableCar(order), order) != null){
             return replaceInappropriateOptions(
-                    factoryStock.chooseMoreSuitableCar(order), order
+                    factoryStock.getMoreSuitableCar(), order
             );
         }
+        return new SpecialCar(order.getCarType(),
+                order.getCarBrand(),
+                order.getCarEngine(),
+                order.getIssueYear(),
+                order.getCarColor(),
+                order.getWheelSize(),
+                order.getOptions(),
+                false);
     }
 
     @Override
-    protected Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder) {
+    protected SpecialCar replaceInappropriateOptions(SpecialCar moreSuitableCar,  Order clientOrder) {
         if (moreSuitableCar == null || clientOrder == null) return null;
         if (!(moreSuitableCar.getCarColor().equals(clientOrder.getCarColor()))) {
             moreSuitableCar.setCarColor(clientOrder.getCarColor());
@@ -49,10 +58,11 @@ public class SpecialCarsFactory extends CarFactory {
     protected void fillStock() {
         carsInStock = new ArrayList<>();
         carsInStock.add(new SpecialCar(CarType.FIRE_CAR, CarBrand.FORD, CarEngine.GAS_ENGINE,
-                2010, CarColor.RED, CarWheelSize.MIDDLE,false));
+                2011, CarColor.RED, CarWheelSize.MIDDLE,false));
     }
 
-    public List<Car> getCarsInStock() {
+    @Override
+    public List<SpecialCar> getCarsInStock() {
         return carsInStock;
     }
 }

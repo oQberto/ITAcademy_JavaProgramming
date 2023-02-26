@@ -9,13 +9,13 @@ import by.itacademy.homework3.service.*;
 
 import java.util.List;
 
-public class CarShowroom {
-    private final CarFactory carFactory;
+public class CarShowroom<T extends Car> {
+    private final CarFactory<T> carFactory;
     private final ColorService colorService = new ColorService();
     private final WheelService wheelService = new WheelService();
     private final OptionService optionService = new OptionService();
 
-    public CarShowroom(CarFactory carFactory) {
+    public CarShowroom(CarFactory<T> carFactory) {
         this.carFactory = carFactory;
     }
 
@@ -42,7 +42,7 @@ public class CarShowroom {
         optionService.removeOption(car, option);
     }
 
-    public CarFactory getCarFactory() {
+    public CarFactory<T> getCarFactory() {
         return carFactory;
     }
 }

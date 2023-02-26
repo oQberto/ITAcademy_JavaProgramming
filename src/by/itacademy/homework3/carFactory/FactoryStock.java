@@ -5,30 +5,31 @@ import by.itacademy.homework3.carShowroom.Order;
 
 import java.util.List;
 
-public class FactoryStock {
-    private final List<Car> cars;
+public class FactoryStock<T extends Car> {
+    private final List<T> cars;
+    private T carFromStock = null;
+    private T moreSuitableCar = null;
 
-    public FactoryStock(List<Car> cars) {
+    public FactoryStock(List<T> cars) {
         this.cars = cars;
     }
 
-    public Car checkCar(Order order) {
+    public T checkCar(Order order) {
         if (order == null) return null;
-        Car clientCar = null;
-        for (Car car : cars) {
+//        T clientCar = null;
+        for (T car : cars) {
             if (order.equals(car)) {
-                clientCar = car;
+                carFromStock = car;
             }
         }
-        cars.remove(clientCar);
-        return clientCar;
+        cars.remove(carFromStock);
+        return carFromStock;
     }
 
-    public Car chooseMoreSuitableCar(Order order) {
+    public T chooseMoreSuitableCar(Order order) {
         if (order == null) return null;
-        Car moreSuitableCar = null;
 
-        for (Car car : cars) {
+        for (T car : cars) {
             if (checkImmutableParams(car, order)) {
                 moreSuitableCar = car;
             }
@@ -41,14 +42,14 @@ public class FactoryStock {
         return moreSuitableCar;
     }
 
-    private boolean checkImmutableParams(Car car, Order order) {
+    private boolean checkImmutableParams(T car, Order order) {
         return car.getCarBrand().equals(order.getCarBrand())
                 && car.getCarEngine().equals(order.getCarEngine())
                 && car.getIssueYear() == order.getIssueYear()
                 && car.getCarType() == order.getCarType();
     }
 
-    private boolean checkChangeableParams(Car car, Order order) {
+    private boolean checkChangeableParams(T car, Order order) {
         if (car.getCarColor().equals(order.getCarColor())
                 && car.getWheelSize().equals(order.getWheelSize())) {
             return true;
@@ -57,12 +58,20 @@ public class FactoryStock {
     }
 
     public void showFactoryStock() {
-        for (Car car : cars) {
+        for (T car : cars) {
             System.out.println(car);
         }
     }
 
-    public List<Car> getCars() {
+    public List<T> getCars() {
         return cars;
+    }
+
+    public T getCarFromStock() {
+        return carFromStock;
+    }
+
+    public T getMoreSuitableCar() {
+        return moreSuitableCar;
     }
 }
