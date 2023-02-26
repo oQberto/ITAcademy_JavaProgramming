@@ -1,27 +1,24 @@
 package by.itacademy.homework3.carFactory;
 
 import by.itacademy.homework3.car.*;
+import by.itacademy.homework3.car.specialcar.*;
 import by.itacademy.homework3.carShowroom.Order;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CarFactory {
+public abstract class CarFactory {
     private final List<CarBrand> carBrands;
     private final List<CarEngine> carEngines;
     private final List<CarColor> carColors;
     private final List<CarWheelSize> carWheelSizes;
-    private  List<Car> carsInStock;
-    private final FactoryStock factoryStock;
 
     public CarFactory() {
         carBrands = new ArrayList<>(Arrays.asList(CarBrand.values()));
         carEngines = new ArrayList<>(Arrays.asList(CarEngine.values()));
         carColors = new ArrayList<>(Arrays.asList(CarColor.values()));
         carWheelSizes = new ArrayList<>(Arrays.asList(CarWheelSize.values()));
-        fillStock();
-        this.factoryStock = new FactoryStock(carsInStock);
     }
 
     public <T> void showWorkShopCatalogue(List<T> catalogue) {
@@ -30,39 +27,9 @@ public class CarFactory {
         }
     }
 
-    public Car createCar(Order order) {
-        if (order == null) return null;
-        if (factoryStock.checkCar(order) != null) {
-            return factoryStock.checkCar(order);
-        } else {
-            return replaceInappropriateOptions(factoryStock.chooseMoreSuitableCar(order), order);
-        }
-    }
-
-    private Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder) {
-        if (moreSuitableCar == null || clientOrder == null) return null;
-        if (!(moreSuitableCar.getCarColor().equals(clientOrder.getCarColor()))) {
-            moreSuitableCar.setCarColor(clientOrder.getCarColor());
-        }
-        if (!(moreSuitableCar.getWheelSize().equals(clientOrder.getWheelSize()))) {
-            moreSuitableCar.setWheelSize(clientOrder.getWheelSize());
-        }
-        if (moreSuitableCar.getOptions().size() == 0
-                || moreSuitableCar.getOptions().equals(clientOrder.getOptions())) {
-            moreSuitableCar.setOptions(clientOrder.getOptions());
-        }
-        return moreSuitableCar;
-    }
-
-    private void fillStock() {
-        carsInStock = new ArrayList<>();
-        carsInStock.add(new Car(CarBrand.AUDI, CarEngine.B4204T26, 2008,
-                CarColor.BLACK, CarWheelSize.MIDDLE));
-        carsInStock.add(new Car(CarBrand.KIA, CarEngine.G4KM_MPI, 2010,
-                CarColor.RED, CarWheelSize.SMALL));
-        carsInStock.add(new Car(CarBrand.VOLVO, CarEngine.T6_AWD, 2012,
-                CarColor.YELLOW, CarWheelSize.LARGE));
-    }
+    public abstract Car createCar(Order order);
+    protected abstract Car replaceInappropriateOptions(Car moreSuitableCar,  Order clientOrder);
+    protected abstract void fillStock();
 
     public List<CarBrand> getCarBrands() {
         return carBrands;
@@ -78,9 +45,5 @@ public class CarFactory {
 
     public List<CarWheelSize> getCarWheelSizes() {
         return carWheelSizes;
-    }
-
-    public FactoryStock getFactoryStock() {
-        return factoryStock;
     }
 }

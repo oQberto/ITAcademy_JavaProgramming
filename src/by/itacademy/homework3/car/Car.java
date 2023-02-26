@@ -2,6 +2,7 @@ package by.itacademy.homework3.car;
 
 import by.itacademy.homework3.car.specialcar.CarBrand;
 import by.itacademy.homework3.car.specialcar.CarEngine;
+import by.itacademy.homework3.car.specialcar.CarType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,8 +63,8 @@ public abstract class Car {
     }
 
     public abstract CarBrand getCarBrand();
-
     public abstract CarEngine getCarEngine();
+    public abstract CarType getCarType();
 
     public int getIssueYear() {
         return issueYear;

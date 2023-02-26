@@ -24,7 +24,7 @@ public class FactoryStock {
         return clientCar;
     }
 
-    protected Car chooseMoreSuitableCar(Order order) {
+    public Car chooseMoreSuitableCar(Order order) {
         if (order == null) return null;
         Car moreSuitableCar = null;
 
@@ -44,7 +44,8 @@ public class FactoryStock {
     private boolean checkImmutableParams(Car car, Order order) {
         return car.getCarBrand().equals(order.getCarBrand())
                 && car.getCarEngine().equals(order.getCarEngine())
-                && car.getIssueYear() == order.getIssueYear();
+                && car.getIssueYear() == order.getIssueYear()
+                && car.getCarType() == order.getCarType();
     }
 
     private boolean checkChangeableParams(Car car, Order order) {

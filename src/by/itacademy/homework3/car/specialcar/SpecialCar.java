@@ -5,7 +5,7 @@ import by.itacademy.homework3.car.*;
 import java.util.List;
 
 public class SpecialCar extends Car {
-    private final SpecialCarType carType;
+    private final CarType carType;
     private final CarBrand carBrand;
     private final CarEngine carEngine;
     private boolean flashLight;
@@ -16,7 +16,7 @@ public class SpecialCar extends Car {
                       CarColor carColor,
                       CarWheelSize wheelSize,
                       List<Options> options,
-                      SpecialCarType carType,
+                      CarType carType,
                       boolean flashLight) {
         super(issueYear, carColor, wheelSize, options);
         this.carBrand = carBrand;
@@ -30,7 +30,7 @@ public class SpecialCar extends Car {
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
-                      SpecialCarType carType,
+                      CarType carType,
                       boolean flashLight) {
         super(issueYear, carColor, wheelSize);
         this.carBrand = carBrand;
@@ -39,10 +39,10 @@ public class SpecialCar extends Car {
         this.flashLight = flashLight;
     }
 
-    public SpecialCarType getCarType() {
+    @Override
+    public CarType getCarType() {
         return carType;
     }
-
 
     @Override
     public CarBrand getCarBrand() {
