@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix bugs">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/truck/CarBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/truck/CarEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/truck/CarType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/truck/Truck.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add Truck class and its enums">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/truckcarfactory/TruckCarFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
     </list>
@@ -18,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -126,13 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00101" summary="refactor: change access modifier.">
-      <created>1676553504653</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1676553504653</updated>
     </task>
     <task id="LOCAL-00102" summary="feat: add CarShowroom">
       <created>1676559978644</created>
@@ -470,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677427996196</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="feat: add Truck class and its enums">
+      <created>1677431448983</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1677431448983</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: change public transport classes" />
     <MESSAGE value="refactor: delete electric transport" />
     <MESSAGE value="feat: add getter and setter for consumption field" />
     <MESSAGE value="feat: add sort and search" />
@@ -510,7 +506,8 @@
     <MESSAGE value="style: delete &quot;space&quot;" />
     <MESSAGE value="feat: make SpecialCarsFactory work" />
     <MESSAGE value="fix: fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix bugs" />
+    <MESSAGE value="feat: add Truck class and its enums" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Truck class and its enums" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
