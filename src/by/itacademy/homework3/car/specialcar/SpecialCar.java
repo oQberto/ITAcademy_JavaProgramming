@@ -17,7 +17,6 @@ public class SpecialCar extends Car {
                       CarColor carColor,
                       CarWheelSize wheelSize,
                       List<Options> options,
-
                       boolean flashLight) {
         super(issueYear, carColor, wheelSize, options);
         this.carType = carType;
