@@ -48,9 +48,8 @@ public class SpecialCarsFactory extends CarFactory {
     @Override
     protected void fillStock() {
         carsInStock = new ArrayList<>();
-        carsInStock.add(new SpecialCar(CarBrand.FORD, CarEngine.GAS_ENGINE,
-                2010, CarColor.RED, CarWheelSize.MIDDLE,
-                CarType.AMBULANCE, false));
+        carsInStock.add(new SpecialCar(CarType.FIRE_CAR, CarBrand.FORD, CarEngine.GAS_ENGINE,
+                2010, CarColor.RED, CarWheelSize.MIDDLE,false));
     }
 
     public List<Car> getCarsInStock() {

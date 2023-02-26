@@ -10,32 +10,33 @@ public class SpecialCar extends Car {
     private final CarEngine carEngine;
     private boolean flashLight;
 
-    public SpecialCar(CarBrand carBrand,
+    public SpecialCar(CarType carType,
+                      CarBrand carBrand,
                       CarEngine carEngine,
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
                       List<Options> options,
-                      CarType carType,
+
                       boolean flashLight) {
         super(issueYear, carColor, wheelSize, options);
+        this.carType = carType;
         this.carBrand = carBrand;
         this.carEngine = carEngine;
-        this.carType = carType;
         this.flashLight = flashLight;
     }
 
-    public SpecialCar(CarBrand carBrand,
+    public SpecialCar(CarType carType,
+                      CarBrand carBrand,
                       CarEngine carEngine,
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
-                      CarType carType,
                       boolean flashLight) {
         super(issueYear, carColor, wheelSize);
+        this.carType = carType;
         this.carBrand = carBrand;
         this.carEngine = carEngine;
-        this.carType = carType;
         this.flashLight = flashLight;
     }
 
