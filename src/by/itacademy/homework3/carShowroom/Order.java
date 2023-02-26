@@ -1,6 +1,8 @@
 package by.itacademy.homework3.carShowroom;
 
 import by.itacademy.homework3.car.*;
+import by.itacademy.homework3.car.specialcar.CarBrand;
+import by.itacademy.homework3.car.specialcar.CarEngine;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +15,12 @@ public class Order {
     private CarWheelSize wheelSize;
     private List<Options> options;
 
-    public Order(CarBrand carBrand, CarEngine carEngine, int issueYear,
-               CarColor carColor, CarWheelSize wheelSize, List<Options> options) {
+    public Order(CarBrand carBrand,
+                 CarEngine carEngine,
+                 int issueYear,
+                 CarColor carColor,
+                 CarWheelSize wheelSize,
+                 List<Options> options) {
         this.carBrand = carBrand;
         this.carEngine = carEngine;
         this.issueYear = issueYear;
@@ -23,8 +29,11 @@ public class Order {
         this.options = options;
     }
 
-    public Order(CarBrand carBrand, CarEngine carEngine, int issueYear,
-               CarColor carColor, CarWheelSize wheelSize) {
+    public Order(CarBrand carBrand,
+                 CarEngine carEngine,
+                 int issueYear,
+                 CarColor carColor,
+                 CarWheelSize wheelSize) {
         this.carBrand = carBrand;
         this.carEngine = carEngine;
         this.issueYear = issueYear;

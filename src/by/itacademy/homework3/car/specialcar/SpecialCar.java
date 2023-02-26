@@ -6,12 +6,12 @@ import java.util.List;
 
 public class SpecialCar extends Car {
     private final SpecialCarType carType;
-    private final SpecialCarBrand carBrand;
-    private final SpecialCarEngine carEngine;
+    private final CarBrand carBrand;
+    private final CarEngine carEngine;
     private boolean flashLight;
 
-    public SpecialCar(SpecialCarBrand carBrand,
-                      SpecialCarEngine carEngine,
+    public SpecialCar(CarBrand carBrand,
+                      CarEngine carEngine,
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
@@ -25,8 +25,8 @@ public class SpecialCar extends Car {
         this.flashLight = flashLight;
     }
 
-    public SpecialCar(SpecialCarBrand carBrand,
-                      SpecialCarEngine carEngine,
+    public SpecialCar(CarBrand carBrand,
+                      CarEngine carEngine,
                       int issueYear,
                       CarColor carColor,
                       CarWheelSize wheelSize,
@@ -43,11 +43,14 @@ public class SpecialCar extends Car {
         return carType;
     }
 
-    public SpecialCarBrand getCarBrand() {
+
+    @Override
+    public CarBrand getCarBrand() {
         return carBrand;
     }
 
-    public SpecialCarEngine getCarEngine() {
+    @Override
+    public CarEngine getCarEngine() {
         return carEngine;
     }
 

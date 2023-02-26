@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add specialCar class and specialCarType enum">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCarBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCarEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/specialcarsfactory/SpecialCarsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/specialcarsfactory/SpecialCarsFactoryStock.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add SpecialCar class and its enums. Add SpecialCarsFactory and its stock">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/CarBrand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCarType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCarBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/CarBrand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/SpecialCarEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/car/specialcar/CarEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/CarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carShowroom/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00094" summary="refactor: change Changeable interface, implements this interface to OptionService">
-      <created>1676493711040</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1676493711041</updated>
     </task>
     <task id="LOCAL-00095" summary="refactor: move issueYear field from CarBrand to Car&#10;add Override equals() &amp; hashCode() methods&#10;change Car constructors">
       <created>1676535192904</created>
@@ -474,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677233381238</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="feat: add SpecialCar class and its enums. Add SpecialCarsFactory and its stock">
+      <created>1677350955310</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1677350955310</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: change getAircraftByCapacity() method" />
     <MESSAGE value="style: change package structure" />
     <MESSAGE value="build: PublicTransport init" />
     <MESSAGE value="refactor: delete fuelConsumption field" />
@@ -514,6 +512,7 @@
     <MESSAGE value="refactor: add List&lt;Car&gt; cars init &amp; fill in CarFactory constructor" />
     <MESSAGE value="commit" />
     <MESSAGE value="feat: add specialCar class and specialCarType enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add specialCar class and specialCarType enum" />
+    <MESSAGE value="feat: add SpecialCar class and its enums. Add SpecialCarsFactory and its stock" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add SpecialCar class and its enums. Add SpecialCarsFactory and its stock" />
   </component>
 </project>

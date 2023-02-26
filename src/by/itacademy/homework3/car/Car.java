@@ -1,10 +1,13 @@
 package by.itacademy.homework3.car;
 
+import by.itacademy.homework3.car.specialcar.CarBrand;
+import by.itacademy.homework3.car.specialcar.CarEngine;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Car {
+public abstract class Car {
     private final int issueYear;
     private CarColor carColor;
     private CarWheelSize wheelSize;
@@ -57,6 +60,10 @@ public class Car {
                             wheelSize,
                             options);
     }
+
+    public abstract CarBrand getCarBrand();
+
+    public abstract CarEngine getCarEngine();
 
     public int getIssueYear() {
         return issueYear;

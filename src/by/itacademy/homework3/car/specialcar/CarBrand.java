@@ -1,13 +1,13 @@
 package by.itacademy.homework3.car.specialcar;
 
-public enum SpecialCarBrand {
+public enum CarBrand {
     VOLVO("Volvo"),
     FORD("Ford"),
     NISSAN("Nissan"),
     ;
     private final String carBrandName;
 
-    SpecialCarBrand(String carBrandName) {
+    CarBrand(String carBrandName) {
         this.carBrandName = carBrandName;
     }
 
