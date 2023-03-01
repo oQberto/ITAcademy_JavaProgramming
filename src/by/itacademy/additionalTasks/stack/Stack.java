@@ -31,6 +31,7 @@ public class Stack {
     public boolean isEmpty() {
         return integersStack.isEmpty();
     }
+
     private int findMax(int number) {
         int max = number;
         if (!maxFromStack.isEmpty() && max < peek(maxFromStack)) {
