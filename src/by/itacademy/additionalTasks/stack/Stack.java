@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Stack {
-    public final List<Integer> integersStack = new LinkedList<>();
+    private final List<Integer> integersStack = new LinkedList<>();
     private final List<Integer> maxFromStack = new LinkedList<>();
 
     public void push(int number) {
