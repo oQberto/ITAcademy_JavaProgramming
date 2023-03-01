@@ -16,7 +16,7 @@ public class Main {
         }
         System.out.println("\nMax in stack: " + stack.getMax());
 
-        System.out.println("\nDeleted values: ");
+        System.out.print("\nDeleted values: ");
         for (int i = 0; i < 6; i++) {
             System.out.print(stack.pop() + " ");
         }

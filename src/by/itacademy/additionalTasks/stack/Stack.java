@@ -17,8 +17,11 @@ public class Stack {
     }
 
     public int pop() {
-        maxFromStack.remove(maxFromStack.size() - 1);
-        return integersStack.remove(0);
+        int temp = integersStack.remove(0);
+        if (temp == peek(maxFromStack)) {
+            maxFromStack.remove(maxFromStack.size() - 1);
+        }
+        return temp;
     }
 
     public Integer getMax() {
@@ -33,10 +36,9 @@ public class Stack {
     }
 
     private void pushToMax(int number) {
-        int max = number;
-        if (!maxFromStack.isEmpty() && max < peek(maxFromStack)) {
-            max = peek(maxFromStack);
+        if (!maxFromStack.isEmpty() && number < peek(maxFromStack)) {
+            return;
         }
-        maxFromStack.add(max);
+        maxFromStack.add(number);
     }
 }
