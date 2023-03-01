@@ -8,7 +8,7 @@ public class Stack {
     private final List<Integer> maxFromStack = new LinkedList<>();
 
     public void push(int number) {
-        maxFromStack.add(findMax(number));
+        pushToMax(number);
         integersStack.add(0, number);
     }
 
@@ -32,12 +32,11 @@ public class Stack {
         return integersStack.isEmpty();
     }
 
-    private int findMax(int number) {
+    private void pushToMax(int number) {
         int max = number;
         if (!maxFromStack.isEmpty() && max < peek(maxFromStack)) {
             max = peek(maxFromStack);
         }
-        return max;
+        maxFromStack.add(max);
     }
-
 }
