@@ -13,10 +13,17 @@ public class Main {
             System.out.print(randomNum + " ");
             stack.push(randomNum);
         }
-        System.out.print("\nLast out: ");
+        System.out.println("\nMax in stack: " + stack.getMax());
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        System.out.println("Max in stack: " + stack.getMax());
+        System.out.print("Last out: ");
         while (!stack.isEmpty()) {
             System.out.print(stack.pop() + " ");
         }
-        System.out.println("\nMax in stack: " + stack.maxInStack);
+        System.out.println("\nMax in stack: " + stack.getMax());
     }
 }
