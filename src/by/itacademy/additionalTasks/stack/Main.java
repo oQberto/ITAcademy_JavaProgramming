@@ -14,8 +14,9 @@ public class Main {
             System.out.print(randomNum + " ");
             stack.push(randomNum);
         }
+        System.out.println("\nMax in stack: " + stack.getMax());
 
-        System.out.println("\n\nMax in stack: " + stack.getMax());
+        System.out.println("\nDeleted values: ");
         for (int i = 0; i < 6; i++) {
             System.out.print(stack.pop() + " ");
         }
