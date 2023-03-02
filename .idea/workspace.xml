@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change output">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change wrong addition in &quot;maxFromStackList&quot; list">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/InputOutputStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/stack/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/truckcarfactory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/carFactory/truckcarfactory/TruckFactory.java" afterDir="false" />
     </list>
@@ -34,33 +35,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Java Projects/PatternTest",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java Projects/PatternTest&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.by.itacademy.additionalTasks.stack.Main">
-    <configuration name="Airline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.additionalTasks.inheritance.airline.Airline" />
-      <module name="ITAcademy_JavaProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itacademy.additionalTasks.inheritance.airline.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.by.itacademy.homework5.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ITAcademy_JavaProgramming" />
@@ -107,13 +95,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="by.itacademy.homework5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.Main" />
+      <module name="ITAcademy_JavaProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itacademy.homework5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.by.itacademy.homework5.Main" />
         <item itemvalue="Application.by.itacademy.additionalTasks.stack.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Airline" />
       </list>
     </recent_temporary>
   </component>
@@ -125,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00109" summary="feat: add AirlineGarage class">
-      <created>1676721936569</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1676721936569</updated>
     </task>
     <task id="LOCAL-00110" summary="feat: add enum of airplane brands">
       <created>1676723302642</created>
@@ -469,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677667296337</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="refactor: change wrong addition in &quot;maxFromStackList&quot; list">
+      <created>1677680896970</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1677680896971</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add FlowerType field" />
     <MESSAGE value="refactor: change constructors" />
     <MESSAGE value="refactor: flower task test" />
     <MESSAGE value="refactor: fix bugs" />
@@ -509,7 +509,8 @@
     <MESSAGE value="style: add &quot;enter&quot;" />
     <MESSAGE value="refactor: change access modifier to &quot;integersStack&quot;" />
     <MESSAGE value="refactor: change output" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change output" />
+    <MESSAGE value="refactor: change wrong addition in &quot;maxFromStackList&quot; list" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change wrong addition in &quot;maxFromStackList&quot; list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
