@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: homework5 tasks 1-2">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add task3">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/calculator/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework3/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/InputOutputStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/InputOutputStreams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,13 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00111" summary="style: change toString() method">
-      <created>1676723328594</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1676723328594</updated>
     </task>
     <task id="LOCAL-00112" summary="feat: add enum of helicopter brands">
       <created>1676723562776</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677750810158</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="feat: add task3">
+      <created>1677751609819</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1677751609819</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: flower task test" />
     <MESSAGE value="refactor: fix bugs" />
     <MESSAGE value="feat: checkCarInTheStock return boolean type now" />
     <MESSAGE value="refactor: fix equals method" />
@@ -509,7 +508,8 @@
     <MESSAGE value="refactor: change output" />
     <MESSAGE value="refactor: change wrong addition in &quot;maxFromStackList&quot; list" />
     <MESSAGE value="feat: homework5 tasks 1-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: homework5 tasks 1-2" />
+    <MESSAGE value="feat: add task3" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add task3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
