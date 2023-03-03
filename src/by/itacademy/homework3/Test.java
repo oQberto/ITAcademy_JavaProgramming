@@ -1,23 +1,23 @@
 package by.itacademy.homework3;
 
-import by.itacademy.homework3.car.*;
-import by.itacademy.homework3.carFactory.CarFactory;
+import by.itacademy.homework3.car.Car;
+import by.itacademy.homework3.car.CarColor;
+import by.itacademy.homework3.car.CarWheelSize;
+import by.itacademy.homework3.car.specialcar.CarBrand;
+import by.itacademy.homework3.car.specialcar.CarEngine;
+import by.itacademy.homework3.car.specialcar.CarType;
+import by.itacademy.homework3.car.specialcar.SpecialCar;
+import by.itacademy.homework3.carFactory.specialcarsfactory.SpecialCarsFactory;
 import by.itacademy.homework3.carShowroom.CarShowroom;
 import by.itacademy.homework3.carShowroom.Order;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Test {
     public static void main(String[] args) {
-        CarShowroom carShowroom = new CarShowroom(new CarFactory());
-
-        List<Options> options = new ArrayList<>();
-        options.add(Options.CRUISE_CONTROL);
-        Order clientOrder = new Order(CarBrand.KIA, CarEngine.G4KM_MPI, 2010,
-                CarColor.WHITE, CarWheelSize.LARGE, options);
+        CarShowroom<SpecialCar> carShowroom = new CarShowroom<>(new SpecialCarsFactory());
+        Order clientOrder = new Order(CarType.FIRE_CAR, CarBrand.FORD, CarEngine.GAS_ENGINE,
+                2012, CarColor.WHITE, CarWheelSize.MIDDLE);
         Car clientCar = carShowroom.orderCar(clientOrder);
         System.out.println(clientCar + "\n");
-        carShowroom.getCarFactory().getFactoryStock().showFactoryStock();
+        carShowroom.getCarFactory().showWorkShopCatalogue(carShowroom.getCarFactory().getCarsInStock());
     }
 }
