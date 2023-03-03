@@ -2,15 +2,10 @@ package by.itacademy.game;
 
 import java.util.Random;
 import java.util.Scanner;
+import static by.itacademy.game.Messages.*;
 
 public class Game {
     private static final Random RANDOM = new Random();
-    private static final String START_MESSAGE = "Game started. Write a number from 1 to 100";
-    private static final String NOT_NUMBER_MESSAGE = "Write valid number from 1 to 100.";
-    private static final String SECRET_NUMBER_IS_MORE = "Secret number is more.";
-    private static final String SECRET_NUMBER_IS_LESS = "Secret number is less.";
-    public static final String WIN = "You win for %s turns";
-
     private static final Scanner IN = new Scanner(System.in);
     private int secret;
     private int turnsAmount = 0;
@@ -56,7 +51,6 @@ public class Game {
     }
 
     private int readUserInput() {
-        int userInput = -1;
         while (true) {
             if (IN.hasNext()) {
                 if (IN.hasNextInt()) {
