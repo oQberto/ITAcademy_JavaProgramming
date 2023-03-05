@@ -9,28 +9,23 @@ import java.util.regex.Pattern;
 public class Calculator {
     private static final BufferedReader BF = new BufferedReader(new InputStreamReader(System.in));
     private static final String STOP = "stop";
-    private String userExpression;
     private String operation;
     private double firstNum;
     private double secondNum;
-    private double result;
 
     public void calculate() throws IOException {
         while (true) {
-            userExpression = BF.readLine();
+            String userExpression = BF.readLine();
             if (userExpression.equalsIgnoreCase(STOP)) {
                 break;
             }
-            try {
-                getCharsFromUserExpression(userExpression);
-                checkAndDoOperation(operation);
-            } catch (RuntimeException e) {
-                System.err.println("Invalid input");
-            }
+            getCharsFromUserExpression(userExpression);
+            calculate(operation);
         }
     }
 
-    private void checkAndDoOperation(String operation) {
+    private void calculate(String operation) {
+        double result;
         switch (operation) {
             case "+" -> {
                 result = firstNum + secondNum;

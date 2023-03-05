@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add guess game">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/game/Messages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/game/user/User.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: move messages to &quot;Messages&quot; interface">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/game/GameUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/game/user/UsersDataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task5/Matrices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task6/SumOfMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task6/matrix" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameStarter">
+  <component name="RunManager" selected="Application.by.itacademy.homework5.Main">
     <configuration name="GameStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.game.GameStarter" />
       <module name="ITAcademy_JavaProgramming" />
@@ -64,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task6.SumOfMatrix" />
+    <configuration name="Matrices" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task5.Matrices" />
       <module name="ITAcademy_JavaProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.homework5.task6.*" />
+          <option name="PATTERN" value="by.itacademy.homework5.task5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework3.Test" />
+    <configuration name="SumOfMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task6.SumOfMatrix" />
       <module name="ITAcademy_JavaProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.homework3.*" />
+          <option name="PATTERN" value="by.itacademy.homework5.task6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GameStarter" />
-        <item itemvalue="Application.SumOfMatrix" />
         <item itemvalue="Application.by.itacademy.homework5.Main" />
+        <item itemvalue="Application.Matrices" />
+        <item itemvalue="Application.SumOfMatrix" />
+        <item itemvalue="Application.GameStarter" />
         <item itemvalue="Application.by.itacademy.additionalTasks.stack.Main" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -134,34 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00114" summary="feat: add AirlineService class">
-      <created>1676724798885</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1676724798885</updated>
-    </task>
-    <task id="LOCAL-00115" summary="feat: add aircrafts to AirlineGarage">
-      <created>1676726518612</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1676726518612</updated>
-    </task>
-    <task id="LOCAL-00116" summary="feat: replace TreeSet for List">
-      <created>1676727344471</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1676727344471</updated>
-    </task>
-    <task id="LOCAL-00117" summary="style: delete unused imports">
-      <created>1676727549508</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1676727549508</updated>
     </task>
     <task id="LOCAL-00118" summary="refactor: change getAircraftByCapacity() method">
       <created>1676728021674</created>
@@ -478,7 +454,35 @@
       <option name="project" value="LOCAL" />
       <updated>1677860805363</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="feat: add Messages for the game. &quot;Game instructions&quot;.">
+      <created>1677861836585</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1677861836586</updated>
+    </task>
+    <task id="LOCAL-00164" summary="feat: add User class. Add comparator for compare users by score">
+      <created>1677861913837</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1677861913837</updated>
+    </task>
+    <task id="LOCAL-00165" summary="feat: move messages to &quot;Messages&quot; interface">
+      <created>1677861965296</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1677861965296</updated>
+    </task>
+    <task id="LOCAL-00166" summary="feat: move messages to &quot;Messages&quot; interface">
+      <created>1677861974635</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1677861974635</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,9 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: fix equals method" />
-    <MESSAGE value="fix: fix car searching" />
-    <MESSAGE value="refactor: add null check" />
     <MESSAGE value="refactor: add List&lt;Car&gt; cars init &amp; fill in CarFactory constructor" />
     <MESSAGE value="commit" />
     <MESSAGE value="feat: add specialCar class and specialCarType enum" />
@@ -518,7 +519,10 @@
     <MESSAGE value="feat: add task3" />
     <MESSAGE value="feat: add task4" />
     <MESSAGE value="feat: add guess game" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add guess game" />
+    <MESSAGE value="feat: add Messages for the game. &quot;Game instructions&quot;." />
+    <MESSAGE value="feat: add User class. Add comparator for compare users by score" />
+    <MESSAGE value="feat: move messages to &quot;Messages&quot; interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: move messages to &quot;Messages&quot; interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
