@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: move messages to &quot;Messages&quot; interface">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change name of method">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/game/GameUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/game/user/UsersDataBase.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task5/Matrices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/calculator/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task6/SumOfMatrix.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task6/matrix" beforeDir="false" />
     </list>
@@ -138,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00118" summary="refactor: change getAircraftByCapacity() method">
-      <created>1676728021674</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1676728021674</updated>
     </task>
     <task id="LOCAL-00119" summary="style: change package structure">
       <created>1676728386962</created>
@@ -482,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677861974635</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="refactor: change name of method">
+      <created>1677999704700</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1677999704701</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: add List&lt;Car&gt; cars init &amp; fill in CarFactory constructor" />
     <MESSAGE value="commit" />
     <MESSAGE value="feat: add specialCar class and specialCarType enum" />
     <MESSAGE value="feat: add SpecialCar class and its enums. Add SpecialCarsFactory and its stock" />
@@ -522,7 +519,8 @@
     <MESSAGE value="feat: add Messages for the game. &quot;Game instructions&quot;." />
     <MESSAGE value="feat: add User class. Add comparator for compare users by score" />
     <MESSAGE value="feat: move messages to &quot;Messages&quot; interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: move messages to &quot;Messages&quot; interface" />
+    <MESSAGE value="refactor: change name of method" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change name of method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

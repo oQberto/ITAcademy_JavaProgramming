@@ -1,17 +1,14 @@
 package by.itacademy.game;
 
-import java.util.Random;
-import java.util.Scanner;
+import static by.itacademy.game.GameUtils.*;
 import static by.itacademy.game.Messages.*;
 
 public class Game {
-    private static final Random RANDOM = new Random();
-    private static final Scanner IN = new Scanner(System.in);
     private int secret;
-    private int turnsAmount = 0;
+    private int turnsCount = 0;
 
     public void start() {
-        generateNum();
+        secret = generateNum(0, 100);
         printMessage(START_MESSAGE);
         game();
     }
@@ -23,20 +20,12 @@ public class Game {
                 printMessage(NOT_NUMBER_MESSAGE);
                 continue;
             }
-            increaseTurnsAmount();
+            turnsCount++;
             if (checkNumber(number)) {
-                printMessage(String.format(WIN, turnsAmount));
+                printMessage(String.format(WIN, turnsCount));
                 break;
             }
         }
-    }
-
-    private void increaseTurnsAmount() {
-        turnsAmount++;
-    }
-
-    private boolean validateUserNum(int userNumber) {
-        return userNumber >= 1 && userNumber <= 100;
     }
 
     private boolean checkNumber(int userNumber) {
@@ -50,23 +39,7 @@ public class Game {
         return true;
     }
 
-    private int readUserInput() {
-        while (true) {
-            if (IN.hasNext()) {
-                if (IN.hasNextInt()) {
-                    return IN.nextInt();
-                }
-            }
-            IN.next();
-            printMessage(NOT_NUMBER_MESSAGE);
-        }
-    }
+    private void saveResult() {
 
-    private void printMessage(String message) {
-        System.out.println(message);
-    }
-
-    private void generateNum() {
-        secret = RANDOM.nextInt(100) + 1;
     }
 }
