@@ -11,7 +11,7 @@ public class Reader {
     private BufferedReader bf;
     private final Map<String, Integer> map = new HashMap<>();
 
-    public void writeEqualsStrings() throws IOException {
+    public void getEqualsLines() throws IOException {
         fillMap();
         compareFiles();
         writeEqualsLinesToFile();
