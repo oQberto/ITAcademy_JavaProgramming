@@ -12,7 +12,7 @@ public class Box implements Serializable {
         this.x = x;
         this.y = y;
         this.z = z;
-        volume = x * y * z;
+        this.volume = x * y * z;
     }
 
     @Override
@@ -27,29 +27,5 @@ public class Box implements Serializable {
 
     public int getVolume() {
         return volume;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public int getZ() {
-        return z;
-    }
-
-    public void setZ(int z) {
-        this.z = z;
     }
 }

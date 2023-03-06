@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: change method name">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/BoxSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/boxes" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/boxes" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/boxes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,20 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00123" summary="feat: add transport garage">
-      <created>1676739407833</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1676739407833</updated>
-    </task>
-    <task id="LOCAL-00124" summary="refactor: change public transport classes">
-      <created>1676739951591</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1676739951592</updated>
     </task>
     <task id="LOCAL-00125" summary="refactor: delete electric transport">
       <created>1676740008120</created>
@@ -479,7 +462,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678087419484</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="feat: add task 9-10">
+      <created>1678099421447</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099421447</updated>
+    </task>
+    <task id="LOCAL-00173" summary="commit">
+      <created>1678099457317</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099457317</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,8 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create SpecialCarsFactory &#10;refactor: change SpecialCarType enum name to CarType" />
-    <MESSAGE value="refactor: change arguments order in constructor" />
     <MESSAGE value="style: delete &quot;space&quot;" />
     <MESSAGE value="feat: make SpecialCarsFactory work" />
     <MESSAGE value="fix: fix bugs" />
@@ -519,7 +514,9 @@
     <MESSAGE value="feat: add task7" />
     <MESSAGE value="feat: add task8-homework5" />
     <MESSAGE value="feat: change method name" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change method name" />
+    <MESSAGE value="feat: add task 9-10" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
