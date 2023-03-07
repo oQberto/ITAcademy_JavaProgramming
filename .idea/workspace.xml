@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: remove getters and setters">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/OUTPUT" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix bugs and change style">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task5/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/BoxSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/BoxSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/boxes" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task9_10/boxes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/InputOutputStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/InputOutputStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework5/task5/Matrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework5/task5/Matrices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.by.itacademy.homework5.task9_10.Main">
+  <component name="RunManager" selected="Application.by.itacademy.homework5.task5.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task7.Main" />
       <module name="ITAcademy_JavaProgramming" />
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Matrices" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task5.Matrices" />
+    <configuration name="by.itacademy.homework5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.Main" />
       <module name="ITAcademy_JavaProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.homework5.task5.*" />
+          <option name="PATTERN" value="by.itacademy.homework5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="by.itacademy.homework5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.Main" />
+    <configuration name="by.itacademy.homework5.task5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task5.Main" />
       <module name="ITAcademy_JavaProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.homework5.*" />
+          <option name="PATTERN" value="by.itacademy.homework5.task5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.by.itacademy.homework5.task5.Main" />
         <item itemvalue="Application.by.itacademy.homework5.task9_10.Main" />
         <item itemvalue="Application.by.itacademy.homework5.task8.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.by.itacademy.homework5.Main" />
-        <item itemvalue="Application.Matrices" />
       </list>
     </recent_temporary>
   </component>
@@ -134,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00126" summary="feat: add getter and setter for consumption field">
-      <created>1676740074853</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1676740074853</updated>
     </task>
     <task id="LOCAL-00127" summary="feat: add sort and search">
       <created>1676740772008</created>
@@ -478,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678109027289</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="fix: fix bugs and change style">
+      <created>1678171342097</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1678171342097</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: make SpecialCarsFactory work" />
     <MESSAGE value="fix: fix bugs" />
     <MESSAGE value="feat: add Truck class and its enums" />
     <MESSAGE value="feat: add TruckFactory" />
@@ -518,7 +517,8 @@
     <MESSAGE value="feat: add task 9-10" />
     <MESSAGE value="commit" />
     <MESSAGE value="refactor: remove getters and setters" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove getters and setters" />
+    <MESSAGE value="fix: fix bugs and change style" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix bugs and change style" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
