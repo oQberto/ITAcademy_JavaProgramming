@@ -1,4 +1,4 @@
-package by.itacademy.homework5.calculator;
+package by.itacademy.homework5.task4;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -50,12 +50,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.by.itacademy.homework5.Main">
-    <configuration name="by.itacademy.homework5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.Main" />
       <module name="ITAcademy_JavaProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.homework5.*" />
+          <option name="PATTERN" value="by.itacademy.homework5.task1_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

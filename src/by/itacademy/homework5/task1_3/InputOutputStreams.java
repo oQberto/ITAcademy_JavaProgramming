@@ -1,4 +1,4 @@
-package by.itacademy.homework5;
+package by.itacademy.homework5.task1_3;
 
 import java.io.BufferedReader;
 import java.io.IOException;

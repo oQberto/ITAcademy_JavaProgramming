@@ -1,6 +1,6 @@
 package by.itacademy.homework5;
 
-import by.itacademy.homework5.calculator.Calculator;
+import by.itacademy.homework5.task4.Calculator;
 import java.io.IOException;
 
 public class Main {
