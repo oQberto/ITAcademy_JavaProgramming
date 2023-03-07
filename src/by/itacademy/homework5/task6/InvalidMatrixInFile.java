@@ -2,7 +2,7 @@ package by.itacademy.homework5.task6;
 
 import java.io.File;
 
-public class InvalidMatrixInFile extends Exception {
+public class InvalidMatrixInFile extends RuntimeException {
     public InvalidMatrixInFile(String errorMessage, File file) {
         message(errorMessage, file.getPath());
     }
