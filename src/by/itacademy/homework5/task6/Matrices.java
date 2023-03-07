@@ -73,6 +73,11 @@ public class Matrices {
         System.out.println(message);
     }
 
+    /**
+     * Returns InvalidMatrixInFile exception if one of two matrices
+     * has a wrong view.
+     * @throws InvalidMatrixInFile - matrices have a wrong view.
+     */
     private void validateFile() throws InvalidMatrixInFile {
         if (numbersFromFile.size() != (rowsCount * columnsCount) * 2 + 2) {
             throw new InvalidMatrixInFile(
