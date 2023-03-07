@@ -5,8 +5,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        InputOutputStreams inputOutputStreams = new InputOutputStreams();
         Calculator calculator = new Calculator();
-        calculator.calculate();
+        calculator.start();
     }
 }

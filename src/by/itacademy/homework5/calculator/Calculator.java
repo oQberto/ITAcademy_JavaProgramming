@@ -1,26 +1,40 @@
 package by.itacademy.homework5.calculator;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Calculator {
-    private static final BufferedReader BF = new BufferedReader(new InputStreamReader(System.in));
-    private static final String STOP = "stop";
-    private String operation;
+    private static final Scanner IN = new Scanner(System.in);
     private double firstNum;
     private double secondNum;
+    private String operation;
 
-    public void calculate() throws IOException {
+    public void start() {
         while (true) {
-            String userExpression = BF.readLine();
-            if (userExpression.equalsIgnoreCase(STOP)) {
+            printMessage(Message.SystemMessage.INSTRUCTION);
+            String stopMessage = IN.next();
+
+            if (stopMessage.equalsIgnoreCase(Message.SystemMessage.STOP)) {
                 break;
+            } else if (stopMessage.equalsIgnoreCase(Message.SystemMessage.CONTINUE)) {
+                try {
+                    printMessage(Message.SystemMessage.WRITE_NUMBER);
+                    firstNum = IN.nextDouble();
+
+                    printMessage(Message.SystemMessage.WRITE_OPERATION);
+                    operation = IN.next();
+
+                    printMessage(Message.SystemMessage.WRITE_NUMBER);
+                    secondNum = IN.nextDouble();
+
+                    printMessage(Message.SystemMessage.RESULT);
+                    calculate(operation);
+                } catch (InputMismatchException e) {
+                    System.err.println("Wrong input");
+                }
+            } else {
+                System.err.println(Message.ErrorMessage.INVALID_INPUT);
             }
-            getCharsFromUserExpression(userExpression);
-            calculate(operation);
         }
     }
 
@@ -43,19 +57,27 @@ public class Calculator {
                 result = firstNum * secondNum;
                 System.out.println(result);
             }
-            default -> System.out.println("Not support");
+            default -> printMessage(Message.SystemMessage.OPERATION_NOT_SUPPORT);
         }
     }
 
-    private void getCharsFromUserExpression(String userExpression) {
-        Pattern pattern = Pattern.compile("(\\d*.?\\d*)([*+/-])(\\d*.?\\d*)");
-        Matcher matcher = pattern.matcher(userExpression);
-        if (matcher.find()) {
-            firstNum = Double.parseDouble(matcher.group(1));
-            operation = matcher.group(2);
-            secondNum = Double.parseDouble(matcher.group(3));
-        } else {
-            throw new NullPointerException();
-        }
+    private void printMessage(String message) {
+        System.out.println(message);
+    }
+}
+
+interface Message {
+    interface SystemMessage {
+        String STOP = "stop";
+        String CONTINUE = "continue";
+        String WRITE_NUMBER = "Write a number: ";
+        String WRITE_OPERATION = "Write an operation: ";
+        String RESULT = "Result of your expression: ";
+        String OPERATION_NOT_SUPPORT = "Operation doesn't support.";
+        String INSTRUCTION = "If you want to stop enter \"stop\" or \"continue\" if you want to continue: ";
+    }
+
+    interface ErrorMessage {
+        String INVALID_INPUT = "What did you enter? Try again.";
     }
 }
