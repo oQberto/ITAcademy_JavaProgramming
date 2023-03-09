@@ -1,0 +1,18 @@
+package by.itacademy.homework4.service;
+
+import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.car.enums.CarWheelSize;
+
+public class WheelService implements Changeable<CarWheelSize> {
+    @Override
+    public void change(Car car, CarWheelSize carWheel) {
+        if (car != null && carWheel != null) {
+            for (CarWheelSize carWheelSize : CarWheelSize.values()) {
+                if (carWheelSize.getWheelDiameter() == carWheel.getWheelDiameter()) {
+                    car.setWheelSize(carWheel);
+                    break;
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: rename packages">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/additionalTasks/streamapi/StreamAPI.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add StreamAPI task">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarBrand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarWheelSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/Options.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/Changeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/ColorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/OptionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/WheelService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -32,15 +46,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java Projects/PatternTest&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Java Projects/ITAcademy_JavaProgramming/src/by/itacademy/homework4/service",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java Projects\ITAcademy_JavaProgramming\src\by\itacademy\homework4\service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java Projects\ITAcademy_JavaProgramming\src\by\itacademy\game1" />
     </key>
@@ -132,13 +149,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00133" summary="refactor: flower task test">
-      <created>1676796674971</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1676796674971</updated>
     </task>
     <task id="LOCAL-00134" summary="refactor: fix bugs">
       <created>1676816374120</created>
@@ -476,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678191354401</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="feat: add StreamAPI task">
+      <created>1678290475762</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1678290475762</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -491,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: change access modifier to &quot;integersStack&quot;" />
     <MESSAGE value="refactor: change output" />
     <MESSAGE value="refactor: change wrong addition in &quot;maxFromStackList&quot; list" />
     <MESSAGE value="feat: homework5 tasks 1-2" />
@@ -516,7 +532,8 @@
     <MESSAGE value="refactor: change a parent" />
     <MESSAGE value="refactor: refactor Calculator" />
     <MESSAGE value="refactor: rename packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename packages" />
+    <MESSAGE value="feat: add StreamAPI task" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add StreamAPI task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
