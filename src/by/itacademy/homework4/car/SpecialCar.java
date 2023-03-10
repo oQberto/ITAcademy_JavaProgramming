@@ -13,4 +13,16 @@ public class SpecialCar extends Car {
                       List<Options> options) {
         super(issueYear, carBrand, carEngine, carColor, carWheelSize, options);
     }
+
+    @Override
+    public String toString() {
+        return "SpecialCar{" +
+                "issueYear=" + issueYear +
+                ", carBrand=" + carBrand +
+                ", carEngine=" + carEngine +
+                ", carColor=" + carColor +
+                ", wheelSize=" + wheelSize +
+                ", options=" + options +
+                '}';
+    }
 }
