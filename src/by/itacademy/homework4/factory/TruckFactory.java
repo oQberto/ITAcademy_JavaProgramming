@@ -3,6 +3,7 @@ package by.itacademy.homework4.factory;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.Truck;
 import by.itacademy.homework4.car.enums.*;
+import by.itacademy.homework4.car.enums.truckenum.LoadCapacity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ public class TruckFactory extends CarFactory {
             return replaceInappropriateOptions(truckFactoryStock.getMoreSuitableCar(), issueYear,
                     carBrand, carEngine, carColor, carWheelSize, options);
         }
-        return new Truck(issueYear, carBrand, carEngine, carColor, carWheelSize, options);
+        return new Truck(issueYear, carBrand, carEngine, carColor, carWheelSize, options, null);
     }
 
     @Override
@@ -61,9 +62,9 @@ public class TruckFactory extends CarFactory {
     public void fillStock() {
         trucksInStock = new ArrayList<>();
         trucksInStock.add(new Truck(2023, CarBrand.VOLVO, CarEngine.COMMON_RAIL, CarColor.RED,
-                CarWheelSize.LARGE, null));
+                CarWheelSize.LARGE, null, LoadCapacity.SMALL));
         trucksInStock.add(new Truck(2023, CarBrand.VOLVO, CarEngine.COMMON_RAIL, CarColor.WHITE,
-                CarWheelSize.SMALL, null));
+                CarWheelSize.SMALL, null, LoadCapacity.BIG));
     }
 
     @Override

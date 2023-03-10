@@ -57,13 +57,13 @@ public class SpecialCarFactory extends CarFactory {
             return replaceInappropriateOptions(specialCarFactoryStock.getMoreSuitableCar(), issueYear,
                     carBrand, carEngine, carColor, carWheelSize, options);
         }
-        return new SpecialCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options);
+        return new SpecialCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options, null);
     }
 
     @Override
     public void fillStock() {
         carsInStock = new ArrayList<>();
         carsInStock.add(new SpecialCar(2023, CarBrand.FORD, CarEngine.COMMON_RAIL, CarColor.BLACK,
-                CarWheelSize.MIDDLE, null));
+                CarWheelSize.MIDDLE, null, null));
     }
 }
