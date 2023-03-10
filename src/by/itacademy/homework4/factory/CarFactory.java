@@ -1,10 +1,8 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.car.enums.CarBrand;
-import by.itacademy.homework4.car.enums.CarColor;
-import by.itacademy.homework4.car.enums.CarEngine;
-import by.itacademy.homework4.car.enums.CarWheelSize;
+import by.itacademy.homework4.car.SpecialCar;
+import by.itacademy.homework4.car.enums.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,9 +20,20 @@ public abstract class CarFactory {
         this.carColorList = new ArrayList<>(Arrays.asList(CarColor.values()));
         this.carWheelSizeList = new ArrayList<>(Arrays.asList(CarWheelSize.values()));
     }
-    public abstract Car createCar();
-    public abstract Car replaceInappropriateOptions();
-    public abstract List<Car> getCarsInStock();
+    public abstract Car createCar(int issueYear,
+                                  CarBrand carBrand,
+                                  CarEngine carEngine,
+                                  CarColor carColor,
+                                  CarWheelSize carWheelSize,
+                                  List<Options> options);
+    public abstract Car replaceInappropriateOptions(Car car, int issueYear,
+                                                            CarBrand carBrand,
+                                                            CarEngine carEngine,
+                                                            CarColor carColor,
+                                                            CarWheelSize carWheelSize,
+                                                            List<Options> options);
+    public abstract List<? extends Car> getCarsInStock();
+    public abstract void fillStock();
 
     public void showCarBrands() {
         carBrandList.forEach(System.out::println);
