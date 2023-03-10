@@ -63,4 +63,16 @@ public class FactoryStock<T extends Car> {
     public void showFactoryStock() {
         carsInStock.forEach(System.out::println);
     }
+
+    public List<T> getCarsInStock() {
+        return carsInStock;
+    }
+
+    public T getClientCar() {
+        return clientCar;
+    }
+
+    public T getMoreSuitableCar() {
+        return moreSuitableCar;
+    }
 }
