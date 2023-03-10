@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: create FactoryStock">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="style: change Truck's constructor order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,34 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00137" summary="fix: fix bugs">
-      <created>1676827433826</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1676827433826</updated>
-    </task>
-    <task id="LOCAL-00138" summary="fix: fix car searching">
-      <created>1676842656638</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1676842656638</updated>
-    </task>
-    <task id="LOCAL-00139" summary="refactor: add null check">
-      <created>1676842971193</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1676842971193</updated>
-    </task>
-    <task id="LOCAL-00140" summary="refactor: add List&lt;Car&gt; cars init &amp; fill in CarFactory constructor">
-      <created>1676844952404</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1676844952404</updated>
     </task>
     <task id="LOCAL-00141" summary="commit">
       <created>1677233311860</created>
@@ -485,7 +452,35 @@
       <option name="project" value="LOCAL" />
       <updated>1678435521809</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="feat: create SpecialCarFactory">
+      <created>1678454505146</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454505146</updated>
+    </task>
+    <task id="LOCAL-00187" summary="refactor: add getters for class fields">
+      <created>1678454552919</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454552919</updated>
+    </task>
+    <task id="LOCAL-00188" summary="refactor: override toString() method">
+      <created>1678454589705</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454589705</updated>
+    </task>
+    <task id="LOCAL-00189" summary="style: change Truck's constructor order">
+      <created>1678454702494</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454702494</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,10 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add task3" />
-    <MESSAGE value="feat: add task4" />
-    <MESSAGE value="feat: add guess game" />
-    <MESSAGE value="feat: add Messages for the game. &quot;Game instructions&quot;." />
     <MESSAGE value="feat: add User class. Add comparator for compare users by score" />
     <MESSAGE value="feat: move messages to &quot;Messages&quot; interface" />
     <MESSAGE value="refactor: change name of method" />
@@ -525,7 +516,11 @@
     <MESSAGE value="build: init homework4" />
     <MESSAGE value="feat: create CarFactory" />
     <MESSAGE value="feat: create FactoryStock" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create FactoryStock" />
+    <MESSAGE value="feat: create SpecialCarFactory" />
+    <MESSAGE value="refactor: add getters for class fields" />
+    <MESSAGE value="refactor: override toString() method" />
+    <MESSAGE value="style: change Truck's constructor order" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: change Truck's constructor order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
