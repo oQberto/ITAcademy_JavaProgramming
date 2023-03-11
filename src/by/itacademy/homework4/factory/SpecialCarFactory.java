@@ -17,12 +17,13 @@ public class SpecialCarFactory extends CarFactory {
     }
 
     @Override
-    public Car replaceInappropriateOptions(Car specialCar, int issueYear,
-                                                                    CarBrand carBrand,
-                                                                    CarEngine carEngine,
-                                                                    CarColor carColor,
-                                                                    CarWheelSize carWheelSize,
-                                                                    List<Options> options) {
+    public Car replaceInappropriateOptions(Car specialCar,
+                                           int issueYear,
+                                           CarBrand carBrand,
+                                           CarEngine carEngine,
+                                           CarColor carColor,
+                                           CarWheelSize carWheelSize,
+                                           List<Options> options) {
         if (!(specialCar.getCarColor().equals(carColor))) {
             specialCar.setCarColor(carColor);
         }

@@ -37,12 +37,13 @@ public class TruckFactory extends CarFactory {
     }
 
     @Override
-    public Car replaceInappropriateOptions(Car truck, int issueYear,
-                                                        CarBrand carBrand,
-                                                        CarEngine carEngine,
-                                                        CarColor carColor,
-                                                        CarWheelSize carWheelSize,
-                                                        List<Options> options) {
+    public Car replaceInappropriateOptions(Car truck,
+                                           int issueYear,
+                                           CarBrand carBrand,
+                                           CarEngine carEngine,
+                                           CarColor carColor,
+                                           CarWheelSize carWheelSize,
+                                           List<Options> options) {
         if (truck == null) return null;
         if (!(truck.getCarColor().equals(carColor))) {
             truck.setCarColor(carColor);

@@ -7,6 +7,7 @@ import java.util.List;
 
 public class SpecialCar extends Car {
     private SpecialCarType specialCarType;
+
     public SpecialCar(int issueYear,
                       CarBrand carBrand,
                       CarEngine carEngine,
@@ -29,5 +30,9 @@ public class SpecialCar extends Car {
                 ", options=" + options +
                 ", carType=" + specialCarType +
                 '}';
+    }
+
+    public SpecialCarType getSpecialCarType() {
+        return specialCarType;
     }
 }
