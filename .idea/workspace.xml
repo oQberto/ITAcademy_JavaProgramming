@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change Truck's enums names" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change package name (trukenum -&gt; truckenums)">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/SpecialCarOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00149" summary="fix: fix bugs">
-      <created>1677427996195</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1677427996196</updated>
     </task>
     <task id="LOCAL-00150" summary="feat: add Truck class and its enums">
       <created>1677431448983</created>
@@ -478,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678627957443</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="refactor: change package name (trukenum -&gt; truckenums)">
+      <created>1678628242987</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1678628242987</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
     <MESSAGE value="refactor: remove getters and setters" />
     <MESSAGE value="fix: fix bugs and change style" />
     <MESSAGE value="feat: add task 5" />
@@ -518,7 +522,8 @@
     <MESSAGE value="refactor: change comparing in ColorService &amp; WheelService" />
     <MESSAGE value="refactor: change interface name (IOptions -&gt; Options)" />
     <MESSAGE value="refactor: change Truck's enums names" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change Truck's enums names" />
+    <MESSAGE value="refactor: change package name (trukenum -&gt; truckenums)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change package name (trukenum -&gt; truckenums)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
