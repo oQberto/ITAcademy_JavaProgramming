@@ -33,8 +33,8 @@ public class Main {
         if (input.equals("truck")) {
             carFactory = new TruckFactory();
             System.out.println(carFactory.getCarsInStock());
-            truck = (Truck) carFactory.createCar(2023, TruckCarBrand.NISSAN, TruckCarEngine.COMMON_RAIL, TruckCarColor.RED,
-                    TruckCarWheelSize.SMALL, list);
+            truck = (Truck) carFactory.createCar(2023, TruckBrand.NISSAN, TruckEngine.COMMON_RAIL, TruckColor.RED,
+                    TruckWheelSize.SMALL, list);
             System.out.println(truck);
             System.out.println(carFactory.getCarsInStock());
         } else if (input.equals("sp")) {
@@ -44,8 +44,8 @@ public class Main {
                     SpecialCarWheelSize.SMALL, new ArrayList<>()));
             System.out.println(carFactory.getCarsInStock());
         }
-        colorService.change(truck, TruckCarColor.BLACK);
-        wheelService.change(truck, TruckCarWheelSize.MIDDLE);
+        colorService.change(truck, TruckColor.BLACK);
+        wheelService.change(truck, TruckWheelSize.MIDDLE);
         System.out.println(truck);
         optionService.change(truck, list1);
         System.out.println(truck);

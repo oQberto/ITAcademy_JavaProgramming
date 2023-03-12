@@ -6,10 +6,10 @@ import by.itacademy.homework4.car.enums.truckenum.*;
 import java.util.List;
 
 public class Truck extends Car {
-    private final TruckCarBrand carBrand;
-    private final TruckCarEngine carEngine;
-    private TruckCarColor carColor;
-    private TruckCarWheelSize wheelSize;
+    private final TruckBrand carBrand;
+    private final TruckEngine carEngine;
+    private TruckColor carColor;
+    private TruckWheelSize wheelSize;
     private List<Options> options;
     private LoadCapacity loadCapacity;
 
@@ -21,10 +21,10 @@ public class Truck extends Car {
                  List<Options> options,
                  LoadCapacity loadCapacity) {
         super(issueYear);
-        this.carBrand = (TruckCarBrand) carBrand;
-        this.carEngine = (TruckCarEngine) carEngine;
-        this.carColor = (TruckCarColor) carColor;
-        this.wheelSize = (TruckCarWheelSize) wheelSize;
+        this.carBrand = (TruckBrand) carBrand;
+        this.carEngine = (TruckEngine) carEngine;
+        this.carColor = (TruckColor) carColor;
+        this.wheelSize = (TruckWheelSize) wheelSize;
         this.options = options;
         this.loadCapacity = loadCapacity;
     }
@@ -69,22 +69,22 @@ public class Truck extends Car {
 
     @Override
     public Color[] getColors() {
-        return TruckCarColor.values();
+        return TruckColor.values();
     }
 
     @Override
     public WheelSize[] getWheelSizes() {
-        return TruckCarWheelSize.values();
+        return TruckWheelSize.values();
     }
 
     @Override
     public void setCarColor(Color color) {
-        this.carColor = (TruckCarColor) color;
+        this.carColor = (TruckColor) color;
     }
 
     @Override
     public void setWheelSize(WheelSize wheelSize) {
-        this.wheelSize = (TruckCarWheelSize) wheelSize;
+        this.wheelSize = (TruckWheelSize) wheelSize;
     }
 
     @Override

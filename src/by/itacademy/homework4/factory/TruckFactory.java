@@ -14,10 +14,10 @@ public class TruckFactory extends CarFactory {
     private final FactoryStock<Truck> truckFactoryStock;
 
     public TruckFactory() {
-        super.carBrandList = Arrays.asList(TruckCarBrand.values());
-        super.carEngineList = Arrays.asList(TruckCarEngine.values());
-        super.carColorList = Arrays.asList(TruckCarColor.values());
-        super.carWheelSizeList = Arrays.asList(TruckCarWheelSize.values());
+        super.carBrandList = Arrays.asList(TruckBrand.values());
+        super.carEngineList = Arrays.asList(TruckEngine.values());
+        super.carColorList = Arrays.asList(TruckColor.values());
+        super.carWheelSizeList = Arrays.asList(TruckWheelSize.values());
         fillStock();
         this.truckFactoryStock = new FactoryStock<>(trucksInStock);
     }
@@ -67,10 +67,10 @@ public class TruckFactory extends CarFactory {
     @Override
     public void fillStock() {
         trucksInStock = new ArrayList<>();
-        trucksInStock.add(new Truck(2023, TruckCarBrand.VOLVO, TruckCarEngine.COMMON_RAIL, TruckCarColor.RED,
-                TruckCarWheelSize.LARGE, null, LoadCapacity.SMALL));
-        trucksInStock.add(new Truck(2023, TruckCarBrand.VOLVO, TruckCarEngine.COMMON_RAIL, TruckCarColor.WHITE,
-                TruckCarWheelSize.SMALL, null, LoadCapacity.BIG));
+        trucksInStock.add(new Truck(2023, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.RED,
+                TruckWheelSize.LARGE, null, LoadCapacity.SMALL));
+        trucksInStock.add(new Truck(2023, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.WHITE,
+                TruckWheelSize.SMALL, null, LoadCapacity.BIG));
     }
 
     @Override

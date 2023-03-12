@@ -2,7 +2,7 @@ package by.itacademy.homework4.car.enums.truckenum;
 
 import by.itacademy.homework4.car.enums.Color;
 
-public enum TruckCarColor implements Color {
+public enum TruckColor implements Color {
     BLACK("Black"),
     BLUE("Blue"),
     GREEN("Green"),
@@ -11,7 +11,7 @@ public enum TruckCarColor implements Color {
     YELLOW("Yellow");
     private final String colorName;
 
-    TruckCarColor(String colorName) {
+    TruckColor(String colorName) {
         this.colorName = colorName;
     }
 
