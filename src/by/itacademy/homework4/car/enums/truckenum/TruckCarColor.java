@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.truckenum;
 
-public enum TruckCarColor {
+import by.itacademy.homework4.car.enums.Color;
+
+public enum TruckCarColor implements Color {
     BLACK("Black"),
     BLUE("Blue"),
     GREEN("Green"),

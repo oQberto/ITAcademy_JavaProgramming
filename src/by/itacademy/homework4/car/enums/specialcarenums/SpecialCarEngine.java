@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.specialcarenums;
 
-public enum SpecialCarEngine {
+import by.itacademy.homework4.car.enums.Engine;
+
+public enum SpecialCarEngine implements Engine {
     COMMON_RAIL(2.9),
     ;
     private final double volume;

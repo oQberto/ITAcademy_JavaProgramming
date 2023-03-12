@@ -14,8 +14,8 @@ public class FactoryStock<T extends Car> {
         this.carsInStock = carsInStock;
     }
 
-    public T checkCar(int issueYear, CarBrand carBrand, CarEngine carEngine,
-                      CarColor carColor, CarWheelSize carWheelSize, List<Options> optionsList) {
+    public T checkCar(int issueYear, Brand carBrand, Engine carEngine,
+                      Color carColor, WheelSize carWheelSize, List<IOptions> optionsList) {
         carsInStock.forEach(carFromStock -> {
             if (carFromStock.getIssueYear() == issueYear &&
                     carFromStock.getCarBrand() == carBrand &&
@@ -30,8 +30,8 @@ public class FactoryStock<T extends Car> {
         return clientCar;
     }
 
-    public T chooseMoreSuitableCar(int issueYear, CarBrand carBrand, CarEngine carEngine,
-                                   CarColor carColor, CarWheelSize carWheelSize, List<Options> optionsList) {
+    public T chooseMoreSuitableCar(int issueYear, Brand carBrand, Engine carEngine,
+                                   Color carColor, WheelSize carWheelSize, List<IOptions> optionsList) {
         carsInStock.forEach(car -> {
             if (checkImmutableParams(car, issueYear, carBrand, carEngine)) {
                 moreSuitableCar = car;
@@ -45,13 +45,13 @@ public class FactoryStock<T extends Car> {
         return moreSuitableCar;
     }
 
-    private boolean checkImmutableParams(T car, int issueYear, CarBrand carBrand, CarEngine carEngine) {
+    private boolean checkImmutableParams(T car, int issueYear, Brand carBrand, Engine carEngine) {
         return car.getIssueYear() == issueYear &&
                 car.getCarBrand() == carBrand &&
                 car.getCarEngine() == carEngine;
     }
 
-    private boolean checkChangeableParams(T car, CarColor carColor, CarWheelSize carWheelSize) {
+    private boolean checkChangeableParams(T car, Color carColor, WheelSize carWheelSize) {
         if (car.getCarColor() == carColor && car.getWheelSize() == carWheelSize) {
             return true;
         } else if (car.getWheelSize() == carWheelSize) {

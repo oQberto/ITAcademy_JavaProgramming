@@ -1,33 +1,45 @@
 package by.itacademy.homework4;
 
-import by.itacademy.homework4.car.enums.CarBrand;
-import by.itacademy.homework4.car.enums.CarColor;
-import by.itacademy.homework4.car.enums.CarEngine;
-import by.itacademy.homework4.car.enums.CarWheelSize;
+import by.itacademy.homework4.car.Truck;
+import by.itacademy.homework4.car.enums.IOptions;
+import by.itacademy.homework4.car.enums.specialcarenums.*;
+import by.itacademy.homework4.car.enums.truckenum.*;
 import by.itacademy.homework4.factory.CarFactory;
 import by.itacademy.homework4.factory.SpecialCarFactory;
 import by.itacademy.homework4.factory.TruckFactory;
+import by.itacademy.homework4.service.ColorService;
+import by.itacademy.homework4.service.OptionService;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         CarFactory carFactory;
+        Truck truck = null;
+        ColorService colorService = new ColorService();
+        OptionService optionService = new OptionService();
+        List<IOptions> list = new ArrayList<>();
+        list.add(TruckOptions.CRUISE_CONTROL);
+        List<IOptions> list1 = new ArrayList<>();
+        list1.add(TruckOptions.DOOR_CLOSER);
+        list1.add(TruckOptions.SETTINGS_MEMORY);
         Scanner IN = new Scanner(System.in);
         String input = IN.nextLine();
 
         if (input.equals("truck")) {
             carFactory = new TruckFactory();
             System.out.println(carFactory.getCarsInStock());
-            System.out.println(carFactory.createCar(2023, CarBrand.VOLVO, CarEngine.COMMON_RAIL, CarColor.RED,
-                    CarWheelSize.SMALL, new ArrayList<>()));
+            truck = (Truck) carFactory.createCar(2023, TruckCarBrand.NISSAN, TruckCarEngine.COMMON_RAIL, TruckCarColor.RED,
+                    TruckCarWheelSize.SMALL, list);
+            System.out.println(truck);
             System.out.println(carFactory.getCarsInStock());
         } else if (input.equals("sp")) {
             carFactory = new SpecialCarFactory();
             System.out.println(carFactory.getCarsInStock());
-            System.out.println(carFactory.createCar(2023, CarBrand.FORD, CarEngine.COMMON_RAIL, CarColor.WHITE,
-                    CarWheelSize.SMALL, new ArrayList<>()));
+            System.out.println(carFactory.createCar(2023, SpecialCarBrand.FORD, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.WHITE,
+                    SpecialCarWheelSize.SMALL, new ArrayList<>()));
             System.out.println(carFactory.getCarsInStock());
         }
     }

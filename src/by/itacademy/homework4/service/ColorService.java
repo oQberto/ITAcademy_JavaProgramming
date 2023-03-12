@@ -1,13 +1,13 @@
 package by.itacademy.homework4.service;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.car.enums.CarColor;
+import by.itacademy.homework4.car.enums.Color;
 
-public class ColorService implements Changeable<CarColor> {
+public class ColorService implements Changeable<Color> {
     @Override
-    public void change(Car car, CarColor carColor) {
+    public void change(Car car, Color carColor) {
         if (car != null && carColor != null) {
-            for (CarColor color : CarColor.values()) {
+            for (Color color : car.getColors()) {
                 if (color.getColorName().equals(carColor.getColorName())) {
                     car.setCarColor(carColor);
                     break;

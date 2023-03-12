@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.specialcarenums;
 
-public enum SpecialCarBrand {
+import by.itacademy.homework4.car.enums.Brand;
+
+public enum SpecialCarBrand implements Brand {
     VOLVO("Volvo"),
     FORD("Ford"),
     NISSAN("Nissan"),

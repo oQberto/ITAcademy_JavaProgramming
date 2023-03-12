@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.specialcarenums;
 
-public enum SpecialCarWheelSize {
+import by.itacademy.homework4.car.enums.WheelSize;
+
+public enum SpecialCarWheelSize implements WheelSize {
     SMALL(19),
     MIDDLE(20),
     LARGE(21);

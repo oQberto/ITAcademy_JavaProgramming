@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.specialcarenums;
 
-public enum SpecialCarOptions {
+import by.itacademy.homework4.car.enums.IOptions;
+
+public enum SpecialCarOptions implements IOptions {
     CRUISE_CONTROL("Cruise control"),
     DOOR_CLOSER("Door closer"),
     SETTINGS_MEMORY("Memory settings for seats and mirrors"),
