@@ -16,13 +16,13 @@ public abstract class CarFactory {
                                   Engine carEngine,
                                   Color carColor,
                                   WheelSize carWheelSize,
-                                  List<IOptions> options);
+                                  List<Options> options);
     public abstract Car replaceInappropriateOptions(Car car, int issueYear,
                                                             Brand carBrand,
                                                             Engine carEngine,
                                                             Color carColor,
                                                             WheelSize carWheelSize,
-                                                            List<IOptions> options);
+                                                            List<Options> options);
     public abstract List<? extends Car> getCarsInStock();
     public abstract void fillStock();
 

@@ -28,7 +28,7 @@ public class TruckFactory extends CarFactory {
                          Engine carEngine,
                          Color carColor,
                          WheelSize carWheelSize,
-                         List<IOptions> options) {
+                         List<Options> options) {
         if (truckFactoryStock.checkCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options) != null) {
             return truckFactoryStock.getClientCar();
         } else if (replaceInappropriateOptions(
@@ -48,7 +48,7 @@ public class TruckFactory extends CarFactory {
                                            Engine carEngine,
                                            Color carColor,
                                            WheelSize carWheelSize,
-                                           List<IOptions> options) {
+                                           List<Options> options) {
         if (truck == null) return null;
         if (!(truck.getCarColor().equals(carColor))) {
             truck.setCarColor(carColor);

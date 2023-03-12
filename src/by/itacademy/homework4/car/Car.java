@@ -19,10 +19,10 @@ public abstract class Car {
     public abstract Engine getCarEngine();
     public abstract Color getCarColor();
     public abstract WheelSize getWheelSize();
-    public abstract List<IOptions> getOptions();
+    public abstract List<Options> getOptions();
     public abstract Color[] getColors();
     public abstract WheelSize[] getWheelSizes();
     public abstract void setCarColor(Color color);
     public abstract void setWheelSize(WheelSize wheelSize);
-    public abstract void setOptions(List<IOptions> options);
+    public abstract void setOptions(List<Options> options);
 }

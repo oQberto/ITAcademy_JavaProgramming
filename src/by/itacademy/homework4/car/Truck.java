@@ -10,7 +10,7 @@ public class Truck extends Car {
     private final TruckCarEngine carEngine;
     private TruckCarColor carColor;
     private TruckCarWheelSize wheelSize;
-    private List<IOptions> options;
+    private List<Options> options;
     private LoadCapacity loadCapacity;
 
     public Truck(int issueYear,
@@ -18,7 +18,7 @@ public class Truck extends Car {
                  Engine carEngine,
                  Color carColor,
                  WheelSize wheelSize,
-                 List<IOptions> options,
+                 List<Options> options,
                  LoadCapacity loadCapacity) {
         super(issueYear);
         this.carBrand = (TruckCarBrand) carBrand;
@@ -63,7 +63,7 @@ public class Truck extends Car {
     }
 
     @Override
-    public List<IOptions> getOptions() {
+    public List<Options> getOptions() {
         return options;
     }
 
@@ -88,7 +88,7 @@ public class Truck extends Car {
     }
 
     @Override
-    public void setOptions(List<IOptions> options) {
+    public void setOptions(List<Options> options) {
         this.options = options;
     }
 

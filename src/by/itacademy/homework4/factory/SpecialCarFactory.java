@@ -29,7 +29,7 @@ public class SpecialCarFactory extends CarFactory {
                                            Engine carEngine,
                                            Color carColor,
                                            WheelSize carWheelSize,
-                                           List<IOptions> options) {
+                                           List<Options> options) {
         if (!(specialCar.getCarColor().equals(carColor))) {
             specialCar.setCarColor(carColor);
         }
@@ -54,7 +54,7 @@ public class SpecialCarFactory extends CarFactory {
                          Engine carEngine,
                          Color carColor,
                          WheelSize carWheelSize,
-                         List<IOptions> options) {
+                         List<Options> options) {
         if (specialCarFactoryStock.checkCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options) != null) {
             return specialCarFactoryStock.getClientCar();
         } else if (replaceInappropriateOptions(

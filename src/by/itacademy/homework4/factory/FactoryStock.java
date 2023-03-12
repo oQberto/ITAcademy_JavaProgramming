@@ -15,7 +15,7 @@ public class FactoryStock<T extends Car> {
     }
 
     public T checkCar(int issueYear, Brand carBrand, Engine carEngine,
-                      Color carColor, WheelSize carWheelSize, List<IOptions> optionsList) {
+                      Color carColor, WheelSize carWheelSize, List<Options> optionsList) {
         carsInStock.forEach(carFromStock -> {
             if (carFromStock.getIssueYear() == issueYear &&
                     carFromStock.getCarBrand() == carBrand &&
@@ -31,7 +31,7 @@ public class FactoryStock<T extends Car> {
     }
 
     public T chooseMoreSuitableCar(int issueYear, Brand carBrand, Engine carEngine,
-                                   Color carColor, WheelSize carWheelSize, List<IOptions> optionsList) {
+                                   Color carColor, WheelSize carWheelSize, List<Options> optionsList) {
         carsInStock.forEach(car -> {
             if (checkImmutableParams(car, issueYear, carBrand, carEngine)) {
                 moreSuitableCar = car;

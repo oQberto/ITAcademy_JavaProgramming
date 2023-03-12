@@ -1,7 +1,7 @@
 package by.itacademy.homework4;
 
 import by.itacademy.homework4.car.Truck;
-import by.itacademy.homework4.car.enums.IOptions;
+import by.itacademy.homework4.car.enums.Options;
 import by.itacademy.homework4.car.enums.specialcarenums.*;
 import by.itacademy.homework4.car.enums.truckenum.*;
 import by.itacademy.homework4.factory.CarFactory;
@@ -22,9 +22,9 @@ public class Main {
         ColorService colorService = new ColorService();
         OptionService optionService = new OptionService();
         WheelService wheelService = new WheelService();
-        List<IOptions> list = new ArrayList<>();
+        List<Options> list = new ArrayList<>();
         list.add(TruckOptions.CRUISE_CONTROL);
-        List<IOptions> list1 = new ArrayList<>();
+        List<Options> list1 = new ArrayList<>();
         list1.add(TruckOptions.DOOR_CLOSER);
         list1.add(TruckOptions.SETTINGS_MEMORY);
         Scanner IN = new Scanner(System.in);
