@@ -1,7 +1,7 @@
 package by.itacademy.homework4.car;
 
 import by.itacademy.homework4.car.enums.*;
-import by.itacademy.homework4.car.enums.truckenum.*;
+import by.itacademy.homework4.car.enums.truckenums.*;
 
 import java.util.List;
 

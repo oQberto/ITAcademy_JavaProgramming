@@ -3,7 +3,7 @@ package by.itacademy.homework4.factory;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.Truck;
 import by.itacademy.homework4.car.enums.*;
-import by.itacademy.homework4.car.enums.truckenum.*;
+import by.itacademy.homework4.car.enums.truckenums.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

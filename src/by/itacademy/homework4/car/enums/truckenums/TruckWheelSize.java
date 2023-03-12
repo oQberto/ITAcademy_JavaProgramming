@@ -1,4 +1,4 @@
-package by.itacademy.homework4.car.enums.truckenum;
+package by.itacademy.homework4.car.enums.truckenums;
 
 import by.itacademy.homework4.car.enums.WheelSize;
 
