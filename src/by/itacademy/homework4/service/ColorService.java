@@ -8,7 +8,7 @@ public class ColorService implements Changeable<Color> {
     public void change(Car car, Color carColor) {
         if (car != null && carColor != null) {
             for (Color color : car.getColors()) {
-                if (color.getColorName().equals(carColor.getColorName())) {
+                if (color == carColor) {
                     car.setCarColor(carColor);
                     break;
                 }

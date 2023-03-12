@@ -9,6 +9,7 @@ import by.itacademy.homework4.factory.SpecialCarFactory;
 import by.itacademy.homework4.factory.TruckFactory;
 import by.itacademy.homework4.service.ColorService;
 import by.itacademy.homework4.service.OptionService;
+import by.itacademy.homework4.service.WheelService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,7 @@ public class Main {
         Truck truck = null;
         ColorService colorService = new ColorService();
         OptionService optionService = new OptionService();
+        WheelService wheelService = new WheelService();
         List<IOptions> list = new ArrayList<>();
         list.add(TruckOptions.CRUISE_CONTROL);
         List<IOptions> list1 = new ArrayList<>();
@@ -42,5 +44,14 @@ public class Main {
                     SpecialCarWheelSize.SMALL, new ArrayList<>()));
             System.out.println(carFactory.getCarsInStock());
         }
+        colorService.change(truck, TruckCarColor.BLACK);
+        wheelService.change(truck, TruckCarWheelSize.MIDDLE);
+        System.out.println(truck);
+        optionService.change(truck, list1);
+        System.out.println(truck);
+        optionService.removeOption(truck, TruckOptions.DOOR_CLOSER);
+        System.out.println(truck);
+        optionService.addOption(truck, TruckOptions.HEATED_WINDSHIELD);
+        System.out.println(truck);
     }
 }

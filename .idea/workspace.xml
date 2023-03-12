@@ -1,39 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add enums for each car">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/IOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/WheelSize.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: change project's structure.&#10;Add polymorphism for cars' enums">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarBrand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarColor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/CarWheelSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/Options.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarWheelSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarWheelSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarWheelSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckCarWheelSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenum/TruckOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/ColorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/ColorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/OptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/OptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/WheelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/WheelService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00145" summary="feat: create SpecialCarsFactory &#10;refactor: change SpecialCarType enum name to CarType">
-      <created>1677400634024</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1677400634024</updated>
     </task>
     <task id="LOCAL-00146" summary="refactor: change arguments order in constructor">
       <created>1677404586695</created>
@@ -511,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678552203039</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="feat: change project's structure.&#10;Add polymorphism for cars' enums">
+      <created>1678616893461</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1678616893461</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add task7" />
     <MESSAGE value="feat: add task8-homework5" />
     <MESSAGE value="feat: change method name" />
     <MESSAGE value="feat: add task 9-10" />
@@ -551,7 +521,8 @@
     <MESSAGE value="feat: add unique params for each car" />
     <MESSAGE value="style: add spaces" />
     <MESSAGE value="feat: add enums for each car" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add enums for each car" />
+    <MESSAGE value="feat: change project's structure.&#10;Add polymorphism for cars' enums" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change project's structure.&#10;Add polymorphism for cars' enums" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

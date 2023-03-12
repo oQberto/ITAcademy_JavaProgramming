@@ -7,8 +7,8 @@ public class WheelService implements Changeable<WheelSize> {
     @Override
     public void change(Car car, WheelSize carWheel) {
         if (car != null && carWheel != null) {
-            for (WheelSize carWheelSize : car.getWheelSizes()) {
-                if (carWheelSize.getWheelDiameter() == carWheel.getWheelDiameter()) {
+            for (WheelSize wheelSize : car.getWheelSizes()) {
+                if (wheelSize == carWheel) {
                     car.setWheelSize(carWheel);
                     break;
                 }
