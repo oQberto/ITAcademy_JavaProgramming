@@ -17,19 +17,17 @@ public abstract class CarFactory<car extends Car, order extends Order> {
     public abstract List<? extends Car> getCarsInStock();
     public abstract void fillStock();
 
-    public void showCarBrands() {
+    public void showFactoryCatalogue() {
+        System.out.println("Brands: ");
         carBrandList.forEach(System.out::println);
-    }
 
-    public void showCarEngines() {
+        System.out.println("Engines: ");
         carEngineList.forEach(System.out::println);
-    }
 
-    public void showCarColors() {
+        System.out.println("Coors: ");
         carColorList.forEach(System.out::println);
-    }
 
-    public void showCarWheelSizes() {
+        System.out.println("Wheel sizes: ");
         carWheelSizeList.forEach(System.out::println);
     }
 }
