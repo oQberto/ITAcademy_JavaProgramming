@@ -81,7 +81,7 @@ public class FactoryStock<car extends Car, order extends Order> {
         if (car.getCarColor() == order.getColor() && car.getWheelSize() == order.getWheelSize()) {
             return true;
         }
-        else return car.getWheelSize() == order.getWheelSize();
+        return car.getWheelSize() == order.getWheelSize();
     }
 
     public void showFactoryStock() {
