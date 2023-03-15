@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: create order functional">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/SpecialCarOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/SpecialCarOrder.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: implement Order functionality in other classes">
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
