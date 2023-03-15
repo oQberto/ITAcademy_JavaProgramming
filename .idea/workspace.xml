@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: improve FactoryStock class">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change show methods in CarFactory">
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00153" summary="fix: fix bug in Stack">
-      <created>1677666256593</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1677666256593</updated>
     </task>
     <task id="LOCAL-00154" summary="style: add &quot;enter&quot;">
       <created>1677666340191</created>
@@ -480,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678910800263</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="refactor: change show methods in CarFactory">
+      <created>1678910964535</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1678910964535</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add task 6" />
     <MESSAGE value="docs: add doc description to the validateFile() method." />
     <MESSAGE value="refactor: change a parent" />
     <MESSAGE value="refactor: refactor Calculator" />
@@ -520,7 +521,8 @@
     <MESSAGE value="refactor: fix TruckOrder" />
     <MESSAGE value="style: change return construction in checkGeneralChangeableParams() method" />
     <MESSAGE value="refactor: improve FactoryStock class" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: improve FactoryStock class" />
+    <MESSAGE value="refactor: change show methods in CarFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change show methods in CarFactory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

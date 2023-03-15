@@ -13,9 +13,9 @@ public abstract class CarFactory<car extends Car, order extends Order> {
     protected List<WheelSize> carWheelSizeList;
 
     public abstract Car createCar(order order);
-    public abstract Car replaceInappropriateOptions(car car, order order);
     public abstract List<? extends Car> getCarsInStock();
-    public abstract void fillStock();
+    abstract Car replaceInappropriateOptions(car car, order order);
+    abstract void fillStock();
 
     public void showFactoryCatalogue() {
         System.out.println("Brands: ");

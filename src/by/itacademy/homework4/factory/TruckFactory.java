@@ -42,7 +42,7 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
     }
 
     @Override
-    public Truck replaceInappropriateOptions(Truck truck, TruckOrder order) {
+    protected Truck replaceInappropriateOptions(Truck truck, TruckOrder order) {
         if (truck == null) return null;
         if (!(truck.getCarColor()
                 .equals(order.getColor()))) {
@@ -63,9 +63,8 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
         return truck;
     }
 
-
     @Override
-    public void fillStock() {
+    protected void fillStock() {
         trucksInStock = new ArrayList<>();
         trucksInStock.add(new Truck(2023, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.RED,
                 TruckWheelSize.LARGE, null, LoadCapacity.SMALL));

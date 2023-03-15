@@ -42,7 +42,7 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     }
 
     @Override
-    public Car replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
+    protected Car replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
         if (!(specialCar.getCarColor()
                 .equals(order.getColor()))) {
             specialCar.setCarColor(order.getColor());
@@ -63,14 +63,14 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     }
 
     @Override
-    public List<SpecialCar> getCarsInStock() {
-        return carsInStock;
-    }
-
-    @Override
-    public void fillStock() {
+    protected void fillStock() {
         carsInStock = new ArrayList<>();
         carsInStock.add(new SpecialCar(2023, SpecialCarBrand.FORD, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.BLACK,
                 SpecialCarWheelSize.MIDDLE, null, null));
+    }
+
+    @Override
+    public List<SpecialCar> getCarsInStock() {
+        return carsInStock;
     }
 }
