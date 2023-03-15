@@ -9,16 +9,16 @@ import by.itacademy.homework4.order.TruckOrder;
 
 import java.util.List;
 
-public class FactoryStock<car extends Car, order extends Order> {
-    private final List<car> carsInStock;
-    private car clientCar = null;
-    private car moreSuitableCar = null;
+public class FactoryStock<CAR extends Car, ORDER extends Order> {
+    private final List<CAR> carsInStock;
+    private CAR clientCar = null;
+    private CAR moreSuitableCar = null;
 
-    public FactoryStock(List<car> carsInStock) {
+    public FactoryStock(List<CAR> carsInStock) {
         this.carsInStock = carsInStock;
     }
 
-    public car checkCar(order order) {
+    public CAR checkCar(ORDER order) {
         carsInStock.forEach(carFromStock -> {
             if (order.compare(carFromStock)) {
                 clientCar = carFromStock;
@@ -28,7 +28,7 @@ public class FactoryStock<car extends Car, order extends Order> {
         return clientCar;
     }
 
-    public car chooseMoreSuitableCar(order order) {
+    public CAR chooseMoreSuitableCar(ORDER order) {
         carsInStock.forEach(car -> {
             if (checkImmutableParams(car, order)) {
                 moreSuitableCar = car;
@@ -42,20 +42,20 @@ public class FactoryStock<car extends Car, order extends Order> {
         return moreSuitableCar;
     }
 
-    private boolean checkImmutableParams(car car, order order) {
+    private boolean checkImmutableParams(CAR car, ORDER order) {
         return car.getIssueYear() == order.getIssueYear() &&
                 car.getCarBrand() == order.getBrand() &&
                 car.getCarEngine() == order.getEngine();
     }
 
-    private boolean checkChangeableParams(car car, order order) {
+    private boolean checkChangeableParams(CAR car, ORDER order) {
         return checkIfSpecialCar(car, order)
                 || checkIfTruck(car, order);
     }
 
-    private boolean checkIfTruck(car car, order order) {
+    private boolean checkIfTruck(CAR car, ORDER order) {
         if (moreSuitableCar instanceof Truck) {
-            if (car.getCarColor() == order.getColor() && car.getWheelSize() == order.getWheelSize()
+            if (checkGeneralChangeableParams(car, order)
                     && ((Truck) car).getLoadCapacity() == ((TruckOrder) order).getLoadCapacity()) {
                 return true;
             } else {
@@ -65,9 +65,9 @@ public class FactoryStock<car extends Car, order extends Order> {
         return false;
     }
 
-    private boolean checkIfSpecialCar(car car, order order) {
+    private boolean checkIfSpecialCar(CAR car, ORDER order) {
         if (moreSuitableCar instanceof SpecialCar) {
-            if (car.getCarColor() == order.getColor() && car.getWheelSize() == order.getWheelSize()
+            if (checkGeneralChangeableParams(car, order)
                     && ((SpecialCar) car).getSpecialCarType() == ((SpecialCarOrder) order).getSpecialCarType()) {
                 return true;
             } else {
@@ -77,8 +77,10 @@ public class FactoryStock<car extends Car, order extends Order> {
         return false;
     }
 
-    private boolean checkGeneralChangeableParams(car car, order order) {
+    private boolean checkGeneralChangeableParams(CAR car, ORDER order) {
         if (car.getCarColor() == order.getColor() && car.getWheelSize() == order.getWheelSize()) {
+            return true;
+        } else if (car.getCarColor() == order.getColor()) {
             return true;
         }
         return car.getWheelSize() == order.getWheelSize();
@@ -88,15 +90,15 @@ public class FactoryStock<car extends Car, order extends Order> {
         carsInStock.forEach(System.out::println);
     }
 
-    public List<car> getCarsInStock() {
+    public List<CAR> getCarsInStock() {
         return carsInStock;
     }
 
-    public car getClientCar() {
+    public CAR getClientCar() {
         return clientCar;
     }
 
-    public car getMoreSuitableCar() {
+    public CAR getMoreSuitableCar() {
         return moreSuitableCar;
     }
 }

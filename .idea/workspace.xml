@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: fix TruckOrder">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="style: change return construction in checkGeneralChangeableParams() method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
     </list>
@@ -137,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00151" summary="feat: add TruckFactory">
-      <created>1677434922251</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1677434922251</updated>
     </task>
     <task id="LOCAL-00152" summary="feat: add Stack task">
       <created>1677661697499</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678879540705</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="style: change return construction in checkGeneralChangeableParams() method">
+      <created>1678885916952</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1678885916952</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: fix bugs and change style" />
     <MESSAGE value="feat: add task 5" />
     <MESSAGE value="feat: add task 6" />
     <MESSAGE value="docs: add doc description to the validateFile() method." />
@@ -521,7 +520,8 @@
     <MESSAGE value="refactor: change Truck's enums names" />
     <MESSAGE value="feat: create order functional" />
     <MESSAGE value="refactor: fix TruckOrder" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix TruckOrder" />
+    <MESSAGE value="style: change return construction in checkGeneralChangeableParams() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: change return construction in checkGeneralChangeableParams() method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
