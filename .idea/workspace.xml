@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change show methods in CarFactory">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change modifier accesses">
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00154" summary="style: add &quot;enter&quot;">
-      <created>1677666340191</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1677666340191</updated>
     </task>
     <task id="LOCAL-00155" summary="refactor: change access modifier to &quot;integersStack&quot;">
       <created>1677666427068</created>
@@ -482,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678910964535</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="refactor: change modifier accesses">
+      <created>1678911308072</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1678911308073</updated>
+    </task>
+    <option name="localTasksCounter" value="204" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docs: add doc description to the validateFile() method." />
     <MESSAGE value="refactor: change a parent" />
     <MESSAGE value="refactor: refactor Calculator" />
     <MESSAGE value="refactor: rename packages" />
@@ -522,7 +519,8 @@
     <MESSAGE value="style: change return construction in checkGeneralChangeableParams() method" />
     <MESSAGE value="refactor: improve FactoryStock class" />
     <MESSAGE value="refactor: change show methods in CarFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change show methods in CarFactory" />
+    <MESSAGE value="refactor: change modifier accesses" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change modifier accesses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
