@@ -1,17 +1,16 @@
 package by.itacademy.homework4.factory;
 
-import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.Truck;
-import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.truckenums.*;
+import by.itacademy.homework4.order.TruckOrder;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TruckFactory extends CarFactory {
+public class TruckFactory extends CarFactory<Truck, TruckOrder> {
     private List<Truck> trucksInStock;
-    private final FactoryStock<Truck> truckFactoryStock;
+    private final FactoryStock<Truck, TruckOrder> truckFactoryStock;
 
     public TruckFactory() {
         super.carBrandList = Arrays.asList(TruckBrand.values());
@@ -23,44 +22,45 @@ public class TruckFactory extends CarFactory {
     }
 
     @Override
-    public Truck createCar(int issueYear,
-                         Brand carBrand,
-                         Engine carEngine,
-                         Color carColor,
-                         WheelSize carWheelSize,
-                         List<Options> options) {
-        if (truckFactoryStock.checkCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options) != null) {
+    public Truck createCar(TruckOrder order) {
+        if (truckFactoryStock.
+                checkCar(order) != null) {
             return truckFactoryStock.getClientCar();
-        } else if (replaceInappropriateOptions(
-                truckFactoryStock.chooseMoreSuitableCar(
-                        issueYear, carBrand, carEngine, carColor, carWheelSize, options),
-                issueYear, carBrand, carEngine, carColor, carWheelSize, options) != null) {
-            return replaceInappropriateOptions(truckFactoryStock.getMoreSuitableCar(), issueYear,
-                    carBrand, carEngine, carColor, carWheelSize, options);
+        } else if (replaceInappropriateOptions(truckFactoryStock
+                        .chooseMoreSuitableCar(order), order) != null) {
+            return replaceInappropriateOptions(truckFactoryStock.getMoreSuitableCar(), order);
         }
-        return new Truck(issueYear, carBrand, carEngine, carColor, carWheelSize, options, null);
+        return new Truck(
+                order.getIssueYear(),
+                order.getBrand(),
+                order.getEngine(),
+                order.getColor(),
+                order.getWheelSize(),
+                order.getOptions(),
+                order.getLoadCapacity()
+        );
     }
 
     @Override
-    public Truck replaceInappropriateOptions(Car truck,
-                                           int issueYear,
-                                           Brand carBrand,
-                                           Engine carEngine,
-                                           Color carColor,
-                                           WheelSize carWheelSize,
-                                           List<Options> options) {
+    public Truck replaceInappropriateOptions(Truck truck, TruckOrder order) {
         if (truck == null) return null;
-        if (!(truck.getCarColor().equals(carColor))) {
-            truck.setCarColor(carColor);
+        if (!(truck.getCarColor()
+                .equals(order.getColor()))) {
+            truck.setCarColor(order.getColor());
         }
-        if (!(truck.getWheelSize().equals(carWheelSize))) {
-            truck.setWheelSize(carWheelSize);
+        if (!(truck.getWheelSize()
+                .equals(order.getWheelSize()))) {
+            truck.setWheelSize(order.getWheelSize());
         }
         if (truck.getOptions() == null
-                || truck.getOptions().equals(options)) {
-            truck.setOptions(options);
+                || truck.getOptions().equals(order.getOptions())) {
+            truck.setOptions(order.getOptions());
         }
-        return (Truck) truck;
+        if (!(truck.getLoadCapacity()
+                .equals(order.getLoadCapacity()))) {
+            truck.setLoadCapacity(order.getLoadCapacity());
+        }
+        return truck;
     }
 
 
@@ -69,7 +69,9 @@ public class TruckFactory extends CarFactory {
         trucksInStock = new ArrayList<>();
         trucksInStock.add(new Truck(2023, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.RED,
                 TruckWheelSize.LARGE, null, LoadCapacity.SMALL));
-        trucksInStock.add(new Truck(2023, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.WHITE,
+        trucksInStock.add(new Truck(2022, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.RED,
+                TruckWheelSize.LARGE, null, LoadCapacity.SMALL));
+        trucksInStock.add(new Truck(2023, TruckBrand.NISSAN, TruckEngine.COMMON_RAIL, TruckColor.WHITE,
                 TruckWheelSize.SMALL, null, LoadCapacity.BIG));
     }
 

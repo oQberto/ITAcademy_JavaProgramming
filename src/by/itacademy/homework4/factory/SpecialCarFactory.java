@@ -2,16 +2,16 @@ package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.SpecialCar;
-import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.specialcarenums.*;
+import by.itacademy.homework4.order.SpecialCarOrder;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SpecialCarFactory extends CarFactory {
+public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     private List<SpecialCar> carsInStock;
-    private final FactoryStock<SpecialCar> specialCarFactoryStock;
+    private final FactoryStock<SpecialCar, SpecialCarOrder> specialCarFactoryStock;
 
     public SpecialCarFactory() {
         super.carBrandList = Arrays.asList(SpecialCarBrand.values());
@@ -23,22 +23,41 @@ public class SpecialCarFactory extends CarFactory {
     }
 
     @Override
-    public Car replaceInappropriateOptions(Car specialCar,
-                                           int issueYear,
-                                           Brand carBrand,
-                                           Engine carEngine,
-                                           Color carColor,
-                                           WheelSize carWheelSize,
-                                           List<Options> options) {
-        if (!(specialCar.getCarColor().equals(carColor))) {
-            specialCar.setCarColor(carColor);
+    public Car createCar(SpecialCarOrder order) {
+        if (specialCarFactoryStock
+                .checkCar(order) != null) {
+            return specialCarFactoryStock.getClientCar();
+        } else if (replaceInappropriateOptions(specialCarFactoryStock
+                .chooseMoreSuitableCar(order), order) != null) {
+            return replaceInappropriateOptions(specialCarFactoryStock.getMoreSuitableCar(), order);
         }
-        if (!(specialCar.getWheelSize().equals(carWheelSize))) {
-            specialCar.setWheelSize(carWheelSize);
+        return new SpecialCar(
+                order.getIssueYear(),
+                order.getBrand(),
+                order.getEngine(),
+                order.getColor(),
+                order.getWheelSize(),
+                order.getOptions(),
+                order.getSpecialCarType());
+    }
+
+    @Override
+    public Car replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
+        if (!(specialCar.getCarColor()
+                .equals(order.getColor()))) {
+            specialCar.setCarColor(order.getColor());
+        }
+        if (!(specialCar.getWheelSize()
+                .equals(order.getWheelSize()))) {
+            specialCar.setWheelSize(order.getWheelSize());
         }
         if (specialCar.getOptions() == null
-                || specialCar.getOptions().equals(options)) {
-            specialCar.setOptions(options);
+                || specialCar.getOptions().equals(order.getOptions())) {
+            specialCar.setOptions(order.getOptions());
+        }
+        if (!(specialCar.getSpecialCarType()
+                .equals(order.getSpecialCarType()))) {
+            specialCar.setSpecialCarType(order.getSpecialCarType());
         }
         return specialCar;
     }
@@ -46,25 +65,6 @@ public class SpecialCarFactory extends CarFactory {
     @Override
     public List<SpecialCar> getCarsInStock() {
         return carsInStock;
-    }
-
-    @Override
-    public Car createCar(int issueYear,
-                         Brand carBrand,
-                         Engine carEngine,
-                         Color carColor,
-                         WheelSize carWheelSize,
-                         List<Options> options) {
-        if (specialCarFactoryStock.checkCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options) != null) {
-            return specialCarFactoryStock.getClientCar();
-        } else if (replaceInappropriateOptions(
-                specialCarFactoryStock.chooseMoreSuitableCar(
-                        issueYear, carBrand, carEngine, carColor, carWheelSize, options),
-                issueYear, carBrand, carEngine, carColor, carWheelSize, options) != null) {
-            return replaceInappropriateOptions(specialCarFactoryStock.getMoreSuitableCar(), issueYear,
-                    carBrand, carEngine, carColor, carWheelSize, options);
-        }
-        return new SpecialCar(issueYear, carBrand, carEngine, carColor, carWheelSize, options, null);
     }
 
     @Override

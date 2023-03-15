@@ -1,5 +1,7 @@
 package by.itacademy.homework4.order;
 
+import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.car.SpecialCar;
 import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.specialcarenums.SpecialCarType;
 
@@ -21,17 +23,15 @@ public class SpecialCarOrder extends Order {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        SpecialCarOrder that = (SpecialCarOrder) o;
-        return specialCarType == that.specialCarType;
+    public boolean compare(Car specialCar) {
+        if (!super.compare(specialCar)) return false;
+        return this.specialCarType == ((SpecialCar) specialCar).getSpecialCarType();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), specialCarType);
+        return Objects
+                .hash(super.hashCode(), specialCarType);
     }
 
     public SpecialCarType getSpecialCarType() {

@@ -2,27 +2,18 @@ package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.enums.*;
+import by.itacademy.homework4.order.Order;
 
 import java.util.List;
 
-public abstract class CarFactory {
+public abstract class CarFactory<car extends Car, order extends Order> {
     protected List<Brand> carBrandList;
     protected List<Engine> carEngineList;
     protected List<Color> carColorList;
     protected List<WheelSize> carWheelSizeList;
 
-    public abstract Car createCar(int issueYear,
-                                  Brand carBrand,
-                                  Engine carEngine,
-                                  Color carColor,
-                                  WheelSize carWheelSize,
-                                  List<Options> options);
-    public abstract Car replaceInappropriateOptions(Car car, int issueYear,
-                                                            Brand carBrand,
-                                                            Engine carEngine,
-                                                            Color carColor,
-                                                            WheelSize carWheelSize,
-                                                            List<Options> options);
+    public abstract Car createCar(order order);
+    public abstract Car replaceInappropriateOptions(car car, order order);
     public abstract List<? extends Car> getCarsInStock();
     public abstract void fillStock();
 

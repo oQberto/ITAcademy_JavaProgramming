@@ -1,5 +1,6 @@
 package by.itacademy.homework4.order;
 
+import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.enums.*;
 
 import java.util.List;
@@ -27,17 +28,13 @@ public abstract class Order {
         this.options = options;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Order order = (Order) o;
-        return this.issueYear == order.issueYear
-                && this.brand == order.brand
-                && this.engine == order.engine
-                && this.color == order.color
-                && this.wheelSize == order.wheelSize
-                && this.options == order.options;
+    public boolean compare(Car car) {
+        return this.issueYear == car.getIssueYear()
+                && this.brand == car.getCarBrand()
+                && this.engine == car.getCarEngine()
+                && this.color == car.getCarColor()
+                && this.wheelSize == car.getWheelSize()
+                && this.options == car.getOptions();
     }
 
     @Override

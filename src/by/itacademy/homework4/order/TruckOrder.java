@@ -1,5 +1,7 @@
 package by.itacademy.homework4.order;
 
+import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.car.Truck;
 import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.truckenums.LoadCapacity;
 
@@ -21,17 +23,15 @@ public class TruckOrder extends Order {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        TruckOrder that = (TruckOrder) o;
-        return loadCapacity == that.loadCapacity;
+    public boolean compare(Car truck) {
+        if (!super.compare(truck)) return false;
+        return this.loadCapacity == ((Truck) truck).getLoadCapacity();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), loadCapacity);
+        return Objects
+                .hash(super.hashCode(), loadCapacity);
     }
 
     public LoadCapacity getLoadCapacity() {
