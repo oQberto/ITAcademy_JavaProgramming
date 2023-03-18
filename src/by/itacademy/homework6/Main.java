@@ -7,25 +7,25 @@ import by.itacademy.homework6.factory.FactoryStock;
 public class Main {
     private static final FactoryStock factoryStock = new FactoryStock();
     private static final Factory FACTORY = new Factory(factoryStock);
-    private static final Country country1 = new Country(factoryStock, FACTORY, "USA");
-    private static final Country country2 = new Country(factoryStock, FACTORY, "China");
-    private static final Country country3 = new Country(factoryStock, FACTORY, "Russia");
+    private static final Country USA = new Country(factoryStock, FACTORY, "USA");
+    private static final Country CHINA = new Country(factoryStock, FACTORY, "China");
+    private static final Country RUSSIA = new Country(factoryStock, FACTORY, "Russia");
 
     public static void main(String[] args) throws InterruptedException {
         Thread factory = new Thread(FACTORY);
-        Thread country_1 = new Thread(country1);
-        Thread country_2 = new Thread(country2);
-        Thread country_3 = new Thread(country3);
+        Thread usaThread = new Thread(USA);
+        Thread chinaThread = new Thread(CHINA);
+        Thread russiaThread = new Thread(RUSSIA);
 
         factory.start();
-        country_1.start();
-        country_2.start();
-        country_3.start();
+        usaThread.start();
+        chinaThread.start();
+        russiaThread.start();
 
         factory.join();
-        country_1.join();
-        country_2.join();
-        country_3.join();
+        usaThread.join();
+        chinaThread.join();
+        russiaThread.join();
 
     }
 }
