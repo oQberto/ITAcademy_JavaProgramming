@@ -16,21 +16,22 @@ public class Factory implements Runnable {
 
     @Override
     public void run() {
-        createPart();
+        while (gameIsActive) {
+            createPart();
+        }
     }
 
     private void createPart() {
         try {
-            while (gameIsActive) {
-                synchronized (factoryStock) {
-                    while (factoryStock.getRobotParts().size() > 100) {
-                        factoryStock.wait();
-                    }
-                    Thread.sleep(PRODUCTION_SPEED);
-                    factoryStock.addPart(
-                            RobotPart.values()
-                                    [RANDOM.nextInt(RobotPart.values().length)]);
+            synchronized (factoryStock) {
+                while (factoryStock.getRobotParts().size() > 100) {
+                    factoryStock.wait();
+                    factoryStock.notify();
                 }
+                Thread.sleep(PRODUCTION_SPEED);
+                factoryStock.addPart(
+                        RobotPart.values()
+                                [RANDOM.nextInt(RobotPart.values().length)]);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

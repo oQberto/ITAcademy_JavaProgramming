@@ -24,36 +24,36 @@ public class Country implements Runnable {
 
     @Override
     public void run() {
-        createRobot();
+        while (!isWinner) {
+            if (!factory.isGameActive()) {
+                break;
+            }
+            createRobot();
+        }
     }
 
     private void createRobot() {
         try {
-            while (!isWinner) {
-                if (!factory.isGameActive()) {
-                    break;
+            synchronized (factoryStock) {
+                while (factoryStock.getRobotParts().isEmpty()) {
+                    factoryStock.wait();
                 }
-                synchronized (factoryStock) {
-                    while (factoryStock.getRobotParts().size() == 0) {
-                        factoryStock.wait();
-                    }
 
-                    RobotPart partFromStock = factoryStock.getPart();
+                RobotPart partFromStock = factoryStock.getPart();
 
-                    if (partNotExist(partFromStock)) {
-                        ROBOT.add(partFromStock);
-                    } else {
-                        factoryStock.addPart(partFromStock);
-                    }
-
-                    if (ROBOT.size() == RobotPart.values().length) {
-                        armyCount++;
-                        createdMessage();
-                        ROBOT.clear();
-                    }
-                    checkWinner();
-                    factoryStock.notify();
+                if (partNotExist(partFromStock)) {
+                    ROBOT.add(partFromStock);
+                } else {
+                    factoryStock.addPart(partFromStock);
                 }
+
+                if (ROBOT.size() == RobotPart.values().length) {
+                    armyCount++;
+                    createdMessage();
+                    ROBOT.clear();
+                }
+                checkWinner();
+                factoryStock.notify();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -80,8 +80,8 @@ public class Country implements Runnable {
 
     private void createdMessage() {
         System.out.println(countryName +
-                        " created a robot, army count -> "
-                        + armyCount
+                " created a robot, army count -> "
+                + armyCount
         );
     }
 }
