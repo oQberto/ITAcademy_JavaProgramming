@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change modifier accesses">
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change generics types">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/countries/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/FactoryStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/robotparts/RobotPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,7 +58,14 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.by.itacademy.homework6.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ITAcademy_JavaProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.itacademy.homework4.Main" />
       <module name="ITAcademy_JavaProgramming" />
@@ -92,25 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="by.itacademy.homework5.task5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task5.Main" />
+    <configuration name="by.itacademy.homework6.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework6.Main" />
       <module name="ITAcademy_JavaProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itacademy.homework5.task5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="by.itacademy.homework5.task6.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.homework5.task6.Main" />
-      <module name="ITAcademy_JavaProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itacademy.homework5.task6.*" />
+          <option name="PATTERN" value="by.itacademy.homework6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.by.itacademy.homework6.Main" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.StreamAPI" />
         <item itemvalue="Application.by.itacademy.homework5.Main" />
-        <item itemvalue="Application.by.itacademy.homework5.task6.Main" />
-        <item itemvalue="Application.by.itacademy.homework5.task5.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -136,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00155" summary="refactor: change access modifier to &quot;integersStack&quot;">
-      <created>1677666427068</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1677666427068</updated>
     </task>
     <task id="LOCAL-00156" summary="refactor: change output">
       <created>1677666955715</created>
@@ -480,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678911308073</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="refactor: change generics types">
+      <created>1678913377864</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1678913377864</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: change a parent" />
     <MESSAGE value="refactor: refactor Calculator" />
     <MESSAGE value="refactor: rename packages" />
     <MESSAGE value="feat: add StreamAPI task" />
@@ -520,7 +519,8 @@
     <MESSAGE value="refactor: improve FactoryStock class" />
     <MESSAGE value="refactor: change show methods in CarFactory" />
     <MESSAGE value="refactor: change modifier accesses" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change modifier accesses" />
+    <MESSAGE value="refactor: change generics types" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change generics types" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
