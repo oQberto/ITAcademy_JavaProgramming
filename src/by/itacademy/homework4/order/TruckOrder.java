@@ -23,6 +23,16 @@ public class TruckOrder extends Order {
     }
 
     @Override
+    public UniqueParam getUniqueParam() {
+        return loadCapacity;
+    }
+
+    @Override
+    public void setUniqueParam(UniqueParam loadCapacity) {
+        this.loadCapacity = (LoadCapacity) loadCapacity;
+    }
+
+    @Override
     public boolean compare(Car truck) {
         if (!super.compare(truck)) return false;
         return this.loadCapacity == ((Truck) truck).getLoadCapacity();
@@ -32,13 +42,5 @@ public class TruckOrder extends Order {
     public int hashCode() {
         return Objects
                 .hash(super.hashCode(), loadCapacity);
-    }
-
-    public LoadCapacity getLoadCapacity() {
-        return loadCapacity;
-    }
-
-    public void setLoadCapacity(LoadCapacity loadCapacity) {
-        this.loadCapacity = loadCapacity;
     }
 }

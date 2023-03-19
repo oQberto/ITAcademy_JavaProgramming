@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change Car structure">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: remove code duplicate">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/UniqueParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/specialcarenums/SpecialCarType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenums/LoadCapacity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenums/LoadCapacity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/SpecialCarOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/SpecialCarOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00160" summary="feat: add task3">
-      <created>1677751609819</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1677751609819</updated>
     </task>
     <task id="LOCAL-00161" summary="feat: add task4">
       <created>1677759522842</created>
@@ -479,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679208872510</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="refactor: remove code duplicate">
+      <created>1679224167583</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1679224167583</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create CarFactory" />
     <MESSAGE value="feat: create FactoryStock" />
     <MESSAGE value="feat: create SpecialCarFactory" />
     <MESSAGE value="refactor: add getters for class fields" />
@@ -519,7 +523,8 @@
     <MESSAGE value="refactor: replace while in run() method" />
     <MESSAGE value="refactor: change names" />
     <MESSAGE value="refactor: change Car structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change Car structure" />
+    <MESSAGE value="refactor: remove code duplicate" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove code duplicate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

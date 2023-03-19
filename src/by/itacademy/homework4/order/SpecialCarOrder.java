@@ -23,6 +23,16 @@ public class SpecialCarOrder extends Order {
     }
 
     @Override
+    public UniqueParam getUniqueParam() {
+        return specialCarType;
+    }
+
+    @Override
+    public void setUniqueParam(UniqueParam specialCarType) {
+        this.specialCarType = (SpecialCarType) specialCarType;
+    }
+
+    @Override
     public boolean compare(Car specialCar) {
         if (!super.compare(specialCar)) return false;
         return this.specialCarType == ((SpecialCar) specialCar).getSpecialCarType();

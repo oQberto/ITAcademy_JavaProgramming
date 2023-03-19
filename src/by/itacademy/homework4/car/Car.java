@@ -62,6 +62,8 @@ public abstract class Car {
         this.options = options;
     }
 
+    public abstract UniqueParam getUniqueParam();
+
     public abstract Color[] getColors();
     public abstract WheelSize[] getWheelSizes();
 

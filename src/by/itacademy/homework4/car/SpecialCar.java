@@ -33,6 +33,11 @@ public class SpecialCar extends Car {
     }
 
     @Override
+    public UniqueParam getUniqueParam() {
+        return specialCarType;
+    }
+
+    @Override
     public Color[] getColors() {
         return SpecialCarColor.values();
     }

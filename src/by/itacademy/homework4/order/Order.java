@@ -95,4 +95,7 @@ public abstract class Order {
     public void setOptions(List<Options> options) {
         this.options = options;
     }
+
+    public abstract UniqueParam getUniqueParam();
+    public abstract void setUniqueParam(UniqueParam uniqueParam);
 }

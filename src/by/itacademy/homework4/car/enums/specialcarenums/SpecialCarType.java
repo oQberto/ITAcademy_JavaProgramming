@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.specialcarenums;
 
-public enum SpecialCarType {
+import by.itacademy.homework4.car.enums.UniqueParam;
+
+public enum SpecialCarType implements UniqueParam {
     AMBULANCE,
     POLICE,
     ;

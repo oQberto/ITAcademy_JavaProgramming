@@ -1,11 +1,7 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.car.SpecialCar;
-import by.itacademy.homework4.car.Truck;
 import by.itacademy.homework4.order.Order;
-import by.itacademy.homework4.order.SpecialCarOrder;
-import by.itacademy.homework4.order.TruckOrder;
 
 import java.util.List;
 
@@ -49,33 +45,11 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
     }
 
     private boolean checkChangeableParams(CAR car, ORDER order) {
-        return checkIfSpecialCar(car, order)
-                || checkIfTruck(car, order);
+        return (checkGeneralChangeableParams(car, order)
+                && car.getUniqueParam() == order.getUniqueParam()) ||
+                checkGeneralChangeableParams(car, order);
     }
 
-    private boolean checkIfTruck(CAR car, ORDER order) {
-        if (moreSuitableCar instanceof Truck) {
-            if (checkGeneralChangeableParams(car, order)
-                    && ((Truck) car).getLoadCapacity() == ((TruckOrder) order).getLoadCapacity()) {
-                return true;
-            } else {
-                return checkGeneralChangeableParams(car, order);
-            }
-        }
-        return false;
-    }
-
-    private boolean checkIfSpecialCar(CAR car, ORDER order) {
-        if (moreSuitableCar instanceof SpecialCar) {
-            if (checkGeneralChangeableParams(car, order)
-                    && ((SpecialCar) car).getSpecialCarType() == ((SpecialCarOrder) order).getSpecialCarType()) {
-                return true;
-            } else {
-                return checkGeneralChangeableParams(car, order);
-            }
-        }
-        return false;
-    }
 
     private boolean checkGeneralChangeableParams(CAR car, ORDER order) {
         if (car.getCarColor() == order.getColor() && car.getWheelSize() == order.getWheelSize()) {

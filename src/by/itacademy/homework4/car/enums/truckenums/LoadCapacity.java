@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car.enums.truckenums;
 
-public enum LoadCapacity {
+import by.itacademy.homework4.car.enums.UniqueParam;
+
+public enum LoadCapacity implements UniqueParam {
     SMALL,
     MIDDLE,
     BIG,

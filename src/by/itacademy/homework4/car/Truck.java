@@ -33,6 +33,11 @@ public class Truck extends Car {
     }
 
     @Override
+    public UniqueParam getUniqueParam() {
+        return loadCapacity;
+    }
+
+    @Override
     public Color[] getColors() {
         return TruckColor.values();
     }
