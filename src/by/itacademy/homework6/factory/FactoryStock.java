@@ -20,7 +20,7 @@ public class FactoryStock {
         robotParts.add(part);
     }
 
-    public List<RobotPart> getRobotParts() {
+    public synchronized List<RobotPart> getRobotParts() {
         return robotParts;
     }
 }
