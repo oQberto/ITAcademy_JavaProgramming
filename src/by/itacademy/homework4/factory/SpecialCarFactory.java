@@ -1,6 +1,5 @@
 package by.itacademy.homework4.factory;
 
-import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.SpecialCar;
 import by.itacademy.homework4.car.enums.specialcarenums.*;
 import by.itacademy.homework4.order.SpecialCarOrder;
@@ -10,27 +9,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
-    private List<SpecialCar> carsInStock;
-    private final FactoryStock<SpecialCar, SpecialCarOrder> specialCarFactoryStock;
+    private final List<SpecialCarType> specialCarTypeList;
 
     public SpecialCarFactory() {
         super.carBrandList = Arrays.asList(SpecialCarBrand.values());
         super.carEngineList = Arrays.asList(SpecialCarEngine.values());
         super.carColorList = Arrays.asList(SpecialCarColor.values());
         super.carWheelSizeList = Arrays.asList(SpecialCarWheelSize.values());
+        this.specialCarTypeList = Arrays.asList(SpecialCarType.values());
         fillStock();
-        this.specialCarFactoryStock = new FactoryStock<>(carsInStock);
+        this.factoryStock = new FactoryStock<>(carsInStock);
     }
 
     @Override
-    public Car createCar(SpecialCarOrder order) {
-        if (specialCarFactoryStock
-                .checkCar(order) != null) {
-            return specialCarFactoryStock.getClientCar();
-        } else if (replaceInappropriateOptions(specialCarFactoryStock
-                .chooseMoreSuitableCar(order), order) != null) {
-            return replaceInappropriateOptions(specialCarFactoryStock.getMoreSuitableCar(), order);
-        }
+    public SpecialCar createCar(SpecialCarOrder order) {
+        super.createCar(order);
         return new SpecialCar(
                 order.getIssueYear(),
                 order.getBrand(),
@@ -41,20 +34,11 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
                 order.getSpecialCarType());
     }
 
+
+
     @Override
-    protected Car replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
-        if (!(specialCar.getCarColor()
-                .equals(order.getColor()))) {
-            specialCar.setCarColor(order.getColor());
-        }
-        if (!(specialCar.getWheelSize()
-                .equals(order.getWheelSize()))) {
-            specialCar.setWheelSize(order.getWheelSize());
-        }
-        if (specialCar.getOptions() == null
-                || specialCar.getOptions().equals(order.getOptions())) {
-            specialCar.setOptions(order.getOptions());
-        }
+    protected SpecialCar replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
+        specialCar = (SpecialCar) super.replaceInappropriateOptions(specialCar, order);
         if (!(specialCar.getSpecialCarType()
                 .equals(order.getSpecialCarType()))) {
             specialCar.setSpecialCarType(order.getSpecialCarType());
@@ -66,7 +50,19 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     protected void fillStock() {
         carsInStock = new ArrayList<>();
         carsInStock.add(new SpecialCar(2023, SpecialCarBrand.FORD, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.BLACK,
-                SpecialCarWheelSize.MIDDLE, null, null));
+                SpecialCarWheelSize.LARGE, null, SpecialCarType.AMBULANCE));
+        carsInStock.add(new SpecialCar(2022, SpecialCarBrand.VOLVO, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.RED,
+                SpecialCarWheelSize.MIDDLE, null, SpecialCarType.POLICE));
+        carsInStock.add(new SpecialCar(2023, SpecialCarBrand.FORD, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.GREEN,
+                SpecialCarWheelSize.SMALL, null, SpecialCarType.POLICE));
+    }
+
+    @Override
+    public void showFactoryCatalogue() {
+        super.showFactoryCatalogue();
+
+        System.out.println("Special car types: ");
+        specialCarTypeList.forEach(System.out::println);
     }
 
     @Override

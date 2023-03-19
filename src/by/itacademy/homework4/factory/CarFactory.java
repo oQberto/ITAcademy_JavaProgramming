@@ -7,14 +7,39 @@ import by.itacademy.homework4.order.Order;
 import java.util.List;
 
 public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
+    protected List<CAR> carsInStock;
+    protected FactoryStock<CAR, ORDER> factoryStock;
     protected List<Brand> carBrandList;
     protected List<Engine> carEngineList;
     protected List<Color> carColorList;
     protected List<WheelSize> carWheelSizeList;
 
-    public abstract Car createCar(ORDER order);
+    public Car createCar(ORDER order) {
+        if (factoryStock.
+                checkCar(order) != null) {
+            return factoryStock.getClientCar();
+        } else if (replaceInappropriateOptions(factoryStock
+                .chooseMoreSuitableCar(order), order) != null) {
+            return replaceInappropriateOptions(factoryStock.getMoreSuitableCar(), order);
+        }
+        return null;
+    }
     public abstract List<? extends Car> getCarsInStock();
-    abstract Car replaceInappropriateOptions(CAR car, ORDER order);
+    protected Car replaceInappropriateOptions(CAR car, ORDER order) {
+        if (!(car.getCarColor()
+                .equals(order.getColor()))) {
+            car.setCarColor(order.getColor());
+        }
+        if (!(car.getWheelSize()
+                .equals(order.getWheelSize()))) {
+            car.setWheelSize(order.getWheelSize());
+        }
+        if (car.getOptions() == null
+                || car.getOptions().equals(order.getOptions())) {
+            car.setOptions(order.getOptions());
+        }
+        return car;
+    }
     abstract void fillStock();
 
     public void showFactoryCatalogue() {
