@@ -6,11 +6,6 @@ import by.itacademy.homework4.car.enums.specialcarenums.*;
 import java.util.List;
 
 public class SpecialCar extends Car {
-    private final SpecialCarBrand carBrand;
-    private final SpecialCarEngine carEngine;
-    private SpecialCarColor carColor;
-    private SpecialCarWheelSize wheelSize;
-    private List<Options> options;
     private SpecialCarType specialCarType;
 
     public SpecialCar(int issueYear,
@@ -20,12 +15,7 @@ public class SpecialCar extends Car {
                       WheelSize wheelSize,
                       List<Options> options,
                       SpecialCarType specialCarType) {
-        super(issueYear);
-        this.carBrand = (SpecialCarBrand) carBrand;
-        this.carEngine = (SpecialCarEngine) carEngine;
-        this.carColor = (SpecialCarColor) carColor;
-        this.wheelSize = (SpecialCarWheelSize) wheelSize;
-        this.options = options;
+        super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
         this.specialCarType = specialCarType;
     }
 
@@ -43,31 +33,6 @@ public class SpecialCar extends Car {
     }
 
     @Override
-    public Brand getCarBrand() {
-        return carBrand;
-    }
-
-    @Override
-    public Engine getCarEngine() {
-        return carEngine;
-    }
-
-    @Override
-    public Color getCarColor() {
-        return carColor;
-    }
-
-    @Override
-    public WheelSize getWheelSize() {
-        return wheelSize;
-    }
-
-    @Override
-    public List<Options> getOptions() {
-        return options;
-    }
-
-    @Override
     public Color[] getColors() {
         return SpecialCarColor.values();
     }
@@ -75,21 +40,6 @@ public class SpecialCar extends Car {
     @Override
     public WheelSize[] getWheelSizes() {
         return SpecialCarWheelSize.values();
-    }
-
-    @Override
-    public void setCarColor(Color color) {
-        this.carColor = (SpecialCarColor) color;
-    }
-
-    @Override
-    public void setWheelSize(WheelSize wheelSize) {
-        this.wheelSize = (SpecialCarWheelSize) wheelSize;
-    }
-
-    @Override
-    public void setOptions(List<Options> options) {
-        this.options = options;
     }
 
     public SpecialCarType getSpecialCarType() {

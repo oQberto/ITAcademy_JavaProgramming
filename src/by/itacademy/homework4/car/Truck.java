@@ -6,11 +6,6 @@ import by.itacademy.homework4.car.enums.truckenums.*;
 import java.util.List;
 
 public class Truck extends Car {
-    private final TruckBrand carBrand;
-    private final TruckEngine carEngine;
-    private TruckColor carColor;
-    private TruckWheelSize wheelSize;
-    private List<Options> options;
     private LoadCapacity loadCapacity;
 
     public Truck(int issueYear,
@@ -20,12 +15,7 @@ public class Truck extends Car {
                  WheelSize wheelSize,
                  List<Options> options,
                  LoadCapacity loadCapacity) {
-        super(issueYear);
-        this.carBrand = (TruckBrand) carBrand;
-        this.carEngine = (TruckEngine) carEngine;
-        this.carColor = (TruckColor) carColor;
-        this.wheelSize = (TruckWheelSize) wheelSize;
-        this.options = options;
+        super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
         this.loadCapacity = loadCapacity;
     }
 
@@ -43,31 +33,6 @@ public class Truck extends Car {
     }
 
     @Override
-    public Brand getCarBrand() {
-        return carBrand;
-    }
-
-    @Override
-    public Engine getCarEngine() {
-        return carEngine;
-    }
-
-    @Override
-    public Color getCarColor() {
-        return carColor;
-    }
-
-    @Override
-    public WheelSize getWheelSize() {
-        return wheelSize;
-    }
-
-    @Override
-    public List<Options> getOptions() {
-        return options;
-    }
-
-    @Override
     public Color[] getColors() {
         return TruckColor.values();
     }
@@ -75,21 +40,6 @@ public class Truck extends Car {
     @Override
     public WheelSize[] getWheelSizes() {
         return TruckWheelSize.values();
-    }
-
-    @Override
-    public void setCarColor(Color color) {
-        this.carColor = (TruckColor) color;
-    }
-
-    @Override
-    public void setWheelSize(WheelSize wheelSize) {
-        this.wheelSize = (TruckWheelSize) wheelSize;
-    }
-
-    @Override
-    public void setOptions(List<Options> options) {
-        this.options = options;
     }
 
     public LoadCapacity getLoadCapacity() {

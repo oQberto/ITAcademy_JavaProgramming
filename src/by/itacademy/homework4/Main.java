@@ -2,7 +2,6 @@ package by.itacademy.homework4;
 
 import by.itacademy.homework4.car.Truck;
 import by.itacademy.homework4.car.enums.Options;
-import by.itacademy.homework4.car.enums.specialcarenums.*;
 import by.itacademy.homework4.car.enums.truckenums.*;
 import by.itacademy.homework4.factory.CarFactory;
 import by.itacademy.homework4.factory.SpecialCarFactory;
