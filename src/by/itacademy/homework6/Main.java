@@ -5,13 +5,14 @@ import by.itacademy.homework6.factory.Factory;
 import by.itacademy.homework6.factory.FactoryStock;
 
 public class Main {
-    private static final FactoryStock factoryStock = new FactoryStock();
-    private static final Factory FACTORY = new Factory(factoryStock);
-    private static final Country USA = new Country(factoryStock, FACTORY, "USA");
-    private static final Country CHINA = new Country(factoryStock, FACTORY, "China");
-    private static final Country RUSSIA = new Country(factoryStock, FACTORY, "Russia");
 
     public static void main(String[] args) throws InterruptedException {
+        FactoryStock factoryStock = new FactoryStock();
+        Factory FACTORY = new Factory(factoryStock);
+        Country USA = new Country(FACTORY, "USA");
+        Country CHINA = new Country(FACTORY, "China");
+        Country RUSSIA = new Country(FACTORY, "Russia");
+
         Thread factory = new Thread(FACTORY);
         Thread usaThread = new Thread(USA);
         Thread chinaThread = new Thread(CHINA);
@@ -26,6 +27,5 @@ public class Main {
         usaThread.join();
         chinaThread.join();
         russiaThread.join();
-
     }
 }

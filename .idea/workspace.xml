@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: fix FactoryStock">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: create getRobotParts() synchronized">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/exceptions/InvalidOrderException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/countries/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/countries/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/FactoryStock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00162" summary="feat: add guess game">
-      <created>1677860805362</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1677860805363</updated>
     </task>
     <task id="LOCAL-00163" summary="feat: add Messages for the game. &quot;Game instructions&quot;.">
       <created>1677861836585</created>
@@ -477,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679250459263</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="refactor: create getRobotParts() synchronized">
+      <created>1679255003592</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1679255003592</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -492,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create SpecialCarFactory" />
     <MESSAGE value="refactor: add getters for class fields" />
     <MESSAGE value="refactor: override toString() method" />
     <MESSAGE value="style: change Truck's constructor order" />
@@ -517,7 +519,8 @@
     <MESSAGE value="refactor: change Car structure" />
     <MESSAGE value="refactor: remove code duplicate" />
     <MESSAGE value="refactor: fix FactoryStock" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix FactoryStock" />
+    <MESSAGE value="refactor: create getRobotParts() synchronized" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: create getRobotParts() synchronized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

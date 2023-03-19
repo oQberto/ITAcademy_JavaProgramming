@@ -24,10 +24,6 @@ public class Factory implements Runnable {
     private void createPart() {
         try {
             synchronized (factoryStock) {
-                while (factoryStock.getRobotParts().size() > 100) {
-                    factoryStock.wait();
-                    factoryStock.notify();
-                }
                 Thread.sleep(PRODUCTION_SPEED);
                 factoryStock.addPart(
                         RobotPart.values()
@@ -36,6 +32,16 @@ public class Factory implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public synchronized RobotPart getPartFromStock() {
+        RobotPart part = factoryStock.getRobotParts().get(RANDOM.nextInt(factoryStock.getRobotParts().size()));
+        factoryStock.getRobotParts().remove(part);
+        return part;
+    }
+
+    public void returnPartToFactory(RobotPart part) {
+        factoryStock.addPart(part);
     }
 
     public boolean isGameActive() {

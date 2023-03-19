@@ -1,7 +1,6 @@
 package by.itacademy.homework6.countries;
 
 import by.itacademy.homework6.factory.Factory;
-import by.itacademy.homework6.factory.FactoryStock;
 import by.itacademy.homework6.robotparts.RobotPart;
 
 import java.util.ArrayList;
@@ -10,14 +9,12 @@ import java.util.List;
 public class Country implements Runnable {
     private static final List<RobotPart> ROBOT = new ArrayList<>();
     private static final Integer WINNING_ARMY_SIZE = 20;
-    private final FactoryStock factoryStock;
     private final Factory factory;
     private final String countryName;
     private boolean isWinner = false;
     private int armyCount = 0;
 
-    public Country(FactoryStock factoryStock, Factory factory, String countryName) {
-        this.factoryStock = factoryStock;
+    public Country(Factory factory, String countryName) {
         this.factory = factory;
         this.countryName = countryName;
     }
@@ -33,30 +30,21 @@ public class Country implements Runnable {
     }
 
     private void createRobot() {
-        try {
-            synchronized (factoryStock) {
-                while (factoryStock.getRobotParts().isEmpty()) {
-                    factoryStock.wait();
-                }
+        synchronized (factory) {
+            RobotPart partFromStock = factory.getPartFromStock();
 
-                RobotPart partFromStock = factoryStock.getPart();
-
-                if (partNotExist(partFromStock)) {
-                    ROBOT.add(partFromStock);
-                } else {
-                    factoryStock.addPart(partFromStock);
-                }
-
-                if (ROBOT.size() == RobotPart.values().length) {
-                    armyCount++;
-                    createdMessage();
-                    ROBOT.clear();
-                }
-                checkWinner();
-                factoryStock.notify();
+            if (partNotExist(partFromStock)) {
+                ROBOT.add(partFromStock);
+            } else {
+                factory.returnPartToFactory(partFromStock);
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+
+            if (ROBOT.size() == RobotPart.values().length) {
+                armyCount++;
+                createdMessage();
+                ROBOT.clear();
+            }
+            checkWinner();
         }
     }
 
