@@ -53,7 +53,6 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
 
     private boolean checkChangeableParams(CAR car, ORDER order) {
         isNullCar(car);
-        isNullOrder(order);
 
         return (checkGeneralChangeableParams(car, order)
                 && car.getUniqueParam() == order.getUniqueParam()) ||

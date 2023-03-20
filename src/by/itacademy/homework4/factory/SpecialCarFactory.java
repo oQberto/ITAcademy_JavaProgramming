@@ -24,6 +24,7 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     @Override
     public SpecialCar createCar(SpecialCarOrder order) {
         super.createCar(order);
+
         return new SpecialCar(
                 order.getIssueYear(),
                 order.getBrand(),
@@ -39,6 +40,7 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     @Override
     protected SpecialCar replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
         specialCar = (SpecialCar) super.replaceInappropriateOptions(specialCar, order);
+
         if (!(specialCar.getSpecialCarType()
                 .equals(order.getSpecialCarType()))) {
             specialCar.setSpecialCarType(order.getSpecialCarType());

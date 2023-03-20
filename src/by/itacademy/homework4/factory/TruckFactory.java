@@ -32,7 +32,7 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
                 order.getColor(),
                 order.getWheelSize(),
                 order.getOptions(),
-                order.getLoadCapacity()
+                (LoadCapacity) order.getUniqueParam()
         );
     }
 
@@ -41,8 +41,8 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
         truck = (Truck) super.replaceInappropriateOptions(truck, order);
 
         if (!(truck.getLoadCapacity()
-                .equals(order.getLoadCapacity()))) {
-            truck.setLoadCapacity(order.getLoadCapacity());
+                .equals(order.getUniqueParam()))) {
+            truck.setLoadCapacity((LoadCapacity) order.getUniqueParam());
         }
         return truck;
     }

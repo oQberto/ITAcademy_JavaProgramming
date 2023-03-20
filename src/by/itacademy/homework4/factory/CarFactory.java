@@ -27,7 +27,9 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
         }
         return null;
     }
+
     public abstract List<? extends Car> getCarsInStock();
+
     protected Car replaceInappropriateOptions(CAR car, ORDER order) {
         isNullCar(car);
         isNullOrder(order);
@@ -46,6 +48,7 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
         }
         return car;
     }
+
     abstract void fillStock();
 
     public void showFactoryCatalogue() {
