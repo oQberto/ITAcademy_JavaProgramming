@@ -54,12 +54,11 @@ public class Main {
             System.out.println(specialCar);
             System.out.println(carFactory.getCarsInStock());
         }
-        carFactory = new TruckFactory();
-        order = new TruckOrder(2023, TruckBrand.NISSAN, TruckEngine.COMMON_RAIL, TruckColor.WHITE,
-                TruckWheelSize.SMALL, null, LoadCapacity.SMALL);
-        truck = (Truck) carFactory.createCar(order);
-        System.out.println(truck);
-        optionService.change(truck, list);
-        System.out.println(truck);
+        carFactory = new SpecialCarFactory();
+        order = new SpecialCarOrder(2023, SpecialCarBrand.FORD, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.RED,
+                SpecialCarWheelSize.MIDDLE, list, SpecialCarType.POLICE);
+        specialCar = (SpecialCar) carFactory.createCar(order);
+        colorService.change(specialCar, TruckColor.WHITE);
+        System.out.println(specialCar);
     }
 }

@@ -11,11 +11,8 @@ public class ColorService implements Changeable<Color> {
         isNullCar(car);
         isNullColor(carColor);
 
-        for (Color color : car.getColors()) {
-            if (color == carColor) {
-                car.setCarColor(carColor);
-                break;
-            }
+        if (isExistingColor(car, carColor)) {
+            car.setCarColor(carColor);
         }
     }
 }

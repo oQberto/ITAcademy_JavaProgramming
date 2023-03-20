@@ -8,7 +8,8 @@ public enum TruckColor implements Color {
     GREEN("Green"),
     RED("Red"),
     WHITE("White"),
-    YELLOW("Yellow");
+    YELLOW("Yellow"),
+    ORANGE("Orange");
     private final String colorName;
 
     TruckColor(String colorName) {

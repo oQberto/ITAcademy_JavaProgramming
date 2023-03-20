@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: create null validation">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/exceptions/InvalidOrderException.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: cover the code with validations&#10;style: refactor code style;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITAcademy_JavaProgramming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ITAcademy_JavaProgramming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenums/TruckColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/truckenums/TruckColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/ColorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/ColorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/WheelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/WheelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00167" summary="refactor: change name of method">
-      <created>1677999704700</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1677999704701</updated>
     </task>
     <task id="LOCAL-00168" summary="feat: add UsersBase. Add GameUtils">
       <created>1677999964226</created>
@@ -482,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679306230865</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="refactor: cover the code with validations&#10;style: refactor code style;">
+      <created>1679307611009</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1679307611009</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create TruckFactory" />
     <MESSAGE value="feat: add unique params for each car" />
     <MESSAGE value="style: add spaces" />
     <MESSAGE value="feat: add enums for each car" />
@@ -522,7 +523,8 @@
     <MESSAGE value="refactor: fix homework6" />
     <MESSAGE value="refactor: change Options name -&gt; Option" />
     <MESSAGE value="feat: create null validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create null validation" />
+    <MESSAGE value="refactor: cover the code with validations&#10;style: refactor code style;" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: cover the code with validations&#10;style: refactor code style;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

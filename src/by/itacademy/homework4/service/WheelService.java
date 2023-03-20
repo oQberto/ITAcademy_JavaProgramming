@@ -11,11 +11,8 @@ public class WheelService implements Changeable<WheelSize> {
         isNullCar(car);
         isNullWheelSize(carWheel);
 
-        for (WheelSize wheelSize : car.getWheelSizes()) {
-            if (wheelSize == carWheel) {
-                car.setWheelSize(carWheel);
-                break;
-            }
+        if (isExistingWheelSize(car, carWheel)) {
+            car.setWheelSize(carWheel);
         }
     }
 }

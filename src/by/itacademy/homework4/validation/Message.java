@@ -10,4 +10,8 @@ public interface Message {
         String NULL_OPTION = "Option must not be null!";
         String NULL_WHEEL_SIZE = "Wheel size must not be null!";
     }
+    interface NotExistMessage {
+        String COLOR_NOT_EXIST = "Color doesn't exist for this car!";
+        String WHEEL_SIZE_NOT_EXIST = "Wheel size doesn't exist for this car!";
+    }
 }
