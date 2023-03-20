@@ -3,6 +3,7 @@ package by.itacademy.homework4.factory;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.order.Order;
+import static by.itacademy.homework4.validation.Validator.*;
 
 import java.util.List;
 
@@ -15,6 +16,8 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
     protected List<WheelSize> carWheelSizeList;
 
     public Car createCar(ORDER order) {
+        isNullOrder(order);
+
         if (factoryStock.
                 checkCar(order) != null) {
             return factoryStock.getClientCar();
@@ -26,6 +29,9 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
     }
     public abstract List<? extends Car> getCarsInStock();
     protected Car replaceInappropriateOptions(CAR car, ORDER order) {
+        isNullCar(car);
+        isNullOrder(order);
+
         if (!(car.getCarColor()
                 .equals(order.getColor()))) {
             car.setCarColor(order.getColor());

@@ -59,7 +59,7 @@ public class Main {
                 TruckWheelSize.SMALL, null, LoadCapacity.SMALL);
         truck = (Truck) carFactory.createCar(order);
         System.out.println(truck);
-        optionService.addOption(truck, TruckOptions.DOOR_CLOSER);
+        optionService.change(truck, list);
         System.out.println(truck);
     }
 }

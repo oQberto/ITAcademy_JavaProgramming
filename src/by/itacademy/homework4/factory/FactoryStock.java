@@ -2,6 +2,7 @@ package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.order.Order;
+import static by.itacademy.homework4.validation.Validator.*;
 
 import java.util.List;
 
@@ -15,6 +16,8 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
     }
 
     public CAR checkCar(ORDER order) {
+        isNullOrder(order);
+
         carsInStock.forEach(carFromStock -> {
             if (order.compare(carFromStock)) {
                 clientCar = carFromStock;
@@ -25,6 +28,8 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
     }
 
     public CAR chooseMoreSuitableCar(ORDER order) {
+        isNullOrder(order);
+
         carsInStock.forEach(car -> {
             if (checkImmutableParams(car, order)) {
                 moreSuitableCar = car;
@@ -39,12 +44,17 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
     }
 
     private boolean checkImmutableParams(CAR car, ORDER order) {
+        isNullCar(car);
+
         return car.getIssueYear() == order.getIssueYear() &&
                 car.getCarBrand() == order.getBrand() &&
                 car.getCarEngine() == order.getEngine();
     }
 
     private boolean checkChangeableParams(CAR car, ORDER order) {
+        isNullCar(car);
+        isNullOrder(order);
+
         return (checkGeneralChangeableParams(car, order)
                 && car.getUniqueParam() == order.getUniqueParam()) ||
                 checkGeneralChangeableParams(car, order);
