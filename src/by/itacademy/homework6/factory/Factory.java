@@ -23,9 +23,9 @@ public class Factory implements Runnable {
 
     private void createPart() {
         try {
-            synchronized (factoryStock) {
+            synchronized (this) {
                 Thread.sleep(PRODUCTION_SPEED);
-                factoryStock.addPart(
+                factoryStock.addPartToStock(
                         RobotPart.values()
                                 [RANDOM.nextInt(RobotPart.values().length)]);
             }
@@ -35,13 +35,13 @@ public class Factory implements Runnable {
     }
 
     public synchronized RobotPart getPartFromStock() {
-        RobotPart part = factoryStock.getRobotParts().get(RANDOM.nextInt(factoryStock.getRobotParts().size()));
-        factoryStock.getRobotParts().remove(part);
+        RobotPart part = factoryStock.robotParts.get(RANDOM.nextInt(factoryStock.getRobotParts().size()));
+        factoryStock.robotParts.remove(part);
         return part;
     }
 
     public void returnPartToFactory(RobotPart part) {
-        factoryStock.addPart(part);
+        factoryStock.addPartToStock(part);
     }
 
     public boolean isGameActive() {

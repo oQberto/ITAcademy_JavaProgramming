@@ -6,9 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class FactoryStock {
-    private final List<RobotPart> robotParts = new LinkedList<>();
+    List<RobotPart> robotParts = new LinkedList<>();
 
-    public synchronized  void addPart(RobotPart part) {
+    public synchronized  void addPartToStock(RobotPart part) {
         robotParts.add(part);
     }
 

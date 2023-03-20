@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: create getRobotParts() synchronized">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: fix homework6">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Validator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/exceptions/InvalidOrderException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ITAcademy_JavaProgramming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ITAcademy_JavaProgramming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/countries/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/countries/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/Changeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/Changeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/OptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/OptionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/factory/FactoryStock.java" afterDir="false" />
     </list>
@@ -37,14 +40,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java Projects/ITAcademy_JavaProgramming/src/by/itacademy/homework4/car/enums/truckenum&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Java Projects/ITAcademy_JavaProgramming/src/by/itacademy/homework4/car/enums/truckenum",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java Projects\ITAcademy_JavaProgramming\src\by\itacademy\homework4\car\enums\truckenum" />
@@ -58,7 +65,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.by.itacademy.homework6.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ITAcademy_JavaProgramming" />
@@ -120,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.by.itacademy.homework6.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.by.itacademy.homework6.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.StreamAPI" />
         <item itemvalue="Application.by.itacademy.homework5.Main" />
@@ -136,13 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00163" summary="feat: add Messages for the game. &quot;Game instructions&quot;.">
-      <created>1677861836585</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1677861836586</updated>
     </task>
     <task id="LOCAL-00164" summary="feat: add User class. Add comparator for compare users by score">
       <created>1677861913837</created>
@@ -480,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679255003592</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="refactor: fix homework6">
+      <created>1679257831541</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1679257831541</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: add getters for class fields" />
     <MESSAGE value="refactor: override toString() method" />
     <MESSAGE value="style: change Truck's constructor order" />
     <MESSAGE value="feat: create TruckFactory" />
@@ -520,7 +526,8 @@
     <MESSAGE value="refactor: remove code duplicate" />
     <MESSAGE value="refactor: fix FactoryStock" />
     <MESSAGE value="refactor: create getRobotParts() synchronized" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: create getRobotParts() synchronized" />
+    <MESSAGE value="refactor: fix homework6" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix homework6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
