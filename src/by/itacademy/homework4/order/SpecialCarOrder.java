@@ -16,7 +16,7 @@ public class SpecialCarOrder extends Order {
                            Engine engine,
                            Color color,
                            WheelSize wheelSize,
-                           List<Options> options,
+                           List<Option> options,
                            SpecialCarType specialCarType) {
         super(issueYear, brand, engine, color, wheelSize, options);
         this.specialCarType = specialCarType;

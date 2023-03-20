@@ -1,8 +1,8 @@
 package by.itacademy.homework4.car.enums.truckenums;
 
-import by.itacademy.homework4.car.enums.Options;
+import by.itacademy.homework4.car.enums.Option;
 
-public enum TruckOptions implements Options {
+public enum TruckOptions implements Option {
     CRUISE_CONTROL("Cruise control"),
     DOOR_CLOSER("Door closer"),
     SETTINGS_MEMORY("Memory settings for seats and mirrors"),

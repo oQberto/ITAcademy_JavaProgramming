@@ -12,14 +12,14 @@ public abstract class Order {
     protected Engine engine;
     protected Color color;
     protected WheelSize wheelSize;
-    protected List<Options> options;
+    protected List<Option> options;
 
     public Order(int issueYear,
                  Brand brand,
                  Engine engine,
                  Color color,
                  WheelSize wheelSize,
-                 List<Options> options) {
+                 List<Option> options) {
         this.issueYear = issueYear;
         this.brand = brand;
         this.engine = engine;
@@ -88,11 +88,11 @@ public abstract class Order {
         this.wheelSize = wheelSize;
     }
 
-    public List<Options> getOptions() {
+    public List<Option> getOptions() {
         return options;
     }
 
-    public void setOptions(List<Options> options) {
+    public void setOptions(List<Option> options) {
         this.options = options;
     }
 

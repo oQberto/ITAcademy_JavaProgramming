@@ -13,7 +13,7 @@ public class SpecialCar extends Car {
                       Engine carEngine,
                       Color carColor,
                       WheelSize wheelSize,
-                      List<Options> options,
+                      List<Option> options,
                       SpecialCarType specialCarType) {
         super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
         this.specialCarType = specialCarType;

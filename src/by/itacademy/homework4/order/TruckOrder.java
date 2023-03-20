@@ -16,7 +16,7 @@ public class TruckOrder extends Order {
                       Engine engine,
                       Color color,
                       WheelSize wheelSize,
-                      List<Options> options,
+                      List<Option> options,
                       LoadCapacity loadCapacity) {
         super(issueYear, brand, engine, color, wheelSize, options);
         this.loadCapacity = loadCapacity;

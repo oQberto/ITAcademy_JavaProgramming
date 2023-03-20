@@ -13,7 +13,7 @@ public class Truck extends Car {
                  Engine carEngine,
                  Color carColor,
                  WheelSize wheelSize,
-                 List<Options> options,
+                 List<Option> options,
                  LoadCapacity loadCapacity) {
         super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
         this.loadCapacity = loadCapacity;

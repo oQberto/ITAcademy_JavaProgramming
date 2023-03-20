@@ -2,7 +2,7 @@ package by.itacademy.homework4;
 
 import by.itacademy.homework4.car.SpecialCar;
 import by.itacademy.homework4.car.Truck;
-import by.itacademy.homework4.car.enums.Options;
+import by.itacademy.homework4.car.enums.Option;
 import by.itacademy.homework4.car.enums.specialcarenums.*;
 import by.itacademy.homework4.car.enums.truckenums.*;
 import by.itacademy.homework4.factory.CarFactory;
@@ -23,14 +23,15 @@ public class Main {
     public static void main(String[] args) {
         CarFactory carFactory;
         Truck truck = null;
+        Truck truck1 = null;
         SpecialCar specialCar;
         Order order = null;
         ColorService colorService = new ColorService();
         OptionService optionService = new OptionService();
         WheelService wheelService = new WheelService();
-        List<Options> list = new ArrayList<>();
+        List<Option> list = new ArrayList<>();
         list.add(TruckOptions.CRUISE_CONTROL);
-        List<Options> list1 = new ArrayList<>();
+        List<Option> list1 = new ArrayList<>();
         list1.add(TruckOptions.DOOR_CLOSER);
         list1.add(TruckOptions.SETTINGS_MEMORY);
         Scanner IN = new Scanner(System.in);
@@ -53,5 +54,12 @@ public class Main {
             System.out.println(specialCar);
             System.out.println(carFactory.getCarsInStock());
         }
+        carFactory = new TruckFactory();
+        order = new TruckOrder(2023, TruckBrand.NISSAN, TruckEngine.COMMON_RAIL, TruckColor.WHITE,
+                TruckWheelSize.SMALL, null, LoadCapacity.SMALL);
+        truck = (Truck) carFactory.createCar(order);
+        System.out.println(truck);
+        optionService.addOption(truck, TruckOptions.DOOR_CLOSER);
+        System.out.println(truck);
     }
 }
