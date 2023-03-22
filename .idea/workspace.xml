@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: make homework 6 using semaphore">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: change modifier access for &quot;robotParts&quot; list">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Factory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00170" summary="feat: add task8-homework5">
-      <created>1678087137508</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1678087137509</updated>
     </task>
     <task id="LOCAL-00171" summary="feat: change method name">
       <created>1678087419484</created>
@@ -480,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679482043553</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="refactor: change modifier access for &quot;robotParts&quot; list">
+      <created>1679482351449</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1679482351449</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add enums for each car" />
     <MESSAGE value="feat: change project's structure.&#10;Add polymorphism for cars' enums" />
     <MESSAGE value="refactor: change comparing in ColorService &amp; WheelService" />
     <MESSAGE value="refactor: change interface name (IOptions -&gt; Options)" />
@@ -520,7 +522,8 @@
     <MESSAGE value="refactor: cover the code with validations&#10;style: refactor code style;" />
     <MESSAGE value="feat: create validation by not existing params" />
     <MESSAGE value="feat: make homework 6 using semaphore" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: make homework 6 using semaphore" />
+    <MESSAGE value="refactor: change modifier access for &quot;robotParts&quot; list" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change modifier access for &quot;robotParts&quot; list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

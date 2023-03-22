@@ -33,24 +33,24 @@ public class Country implements Runnable {
 
     private void createRobot() {
         try {
-                semaphore.acquire();
-                if (factory.getStockSize() > 0) {
-                    RobotPart partFromStock = factory.getPartFromStock();
+            semaphore.acquire();
+            if (factory.getStockSize() > 0) {
+                RobotPart partFromStock = factory.getPartFromStock();
 
-                    if (partNotExist(partFromStock)) {
-                        ROBOT.add(partFromStock);
-                    } else {
-                        factory.returnPartToFactory(partFromStock);
-                    }
-                    ifRobotCreate();
-                    checkWinner();
+                if (partNotExist(partFromStock)) {
+                    ROBOT.add(partFromStock);
+                } else {
+                    factory.returnPartToFactory(partFromStock);
                 }
-                semaphore.release();
+                ifRobotCreate();
+                checkWinner();
+            }
 
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            semaphore.release();
         }
-
     }
 
     private void ifRobotCreate() {

@@ -31,9 +31,10 @@ public class Factory implements Runnable {
             stock.addPartToStock(
                     RobotPart.values()
                             [RANDOM.nextInt(RobotPart.values().length)]);
-            semaphore.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            semaphore.release();
         }
     }
 
