@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Stock {
-    List<RobotPart> robotParts = new LinkedList<>();
+    private final List<RobotPart> robotParts = new LinkedList<>();
 
     public void addPartToStock(RobotPart part) {
         robotParts.add(part);
@@ -14,5 +14,9 @@ public class Stock {
 
     public int getStockSize() {
         return robotParts.size();
+    }
+
+    public List<RobotPart> getRobotParts() {
+        return robotParts;
     }
 }

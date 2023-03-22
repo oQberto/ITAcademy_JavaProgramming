@@ -38,8 +38,8 @@ public class Factory implements Runnable {
     }
 
     public RobotPart getPartFromStock() {
-        RobotPart part = stock.robotParts.get(RANDOM.nextInt(stock.getStockSize()));
-        stock.robotParts.remove(part);
+        RobotPart part = stock.getRobotParts().get(RANDOM.nextInt(stock.getStockSize()));
+        stock.getRobotParts().remove(part);
         return part;
     }
 

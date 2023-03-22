@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: create validation by not existing params">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: make homework 6 using semaphore">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework6/usingsemaphore/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" afterDir="false" />
     </list>
@@ -141,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00169" summary="feat: add task7">
-      <created>1678036294854</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1678036294854</updated>
     </task>
     <task id="LOCAL-00170" summary="feat: add task8-homework5">
       <created>1678087137508</created>
@@ -485,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679317608471</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="feat: make homework 6 using semaphore">
+      <created>1679482043552</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1679482043553</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -500,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style: add spaces" />
     <MESSAGE value="feat: add enums for each car" />
     <MESSAGE value="feat: change project's structure.&#10;Add polymorphism for cars' enums" />
     <MESSAGE value="refactor: change comparing in ColorService &amp; WheelService" />
@@ -525,7 +519,8 @@
     <MESSAGE value="feat: create null validation" />
     <MESSAGE value="refactor: cover the code with validations&#10;style: refactor code style;" />
     <MESSAGE value="feat: create validation by not existing params" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create validation by not existing params" />
+    <MESSAGE value="feat: make homework 6 using semaphore" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: make homework 6 using semaphore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
