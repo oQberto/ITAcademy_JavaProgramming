@@ -6,7 +6,6 @@ import by.itacademy.homework4.car.markerinterfaces.*;
 import java.util.Objects;
 
 import static by.itacademy.homework4.validation.Message.NotExistMessage.*;
-import static java.util.Objects.*;
 
 public class Validator {
     private Validator() {
