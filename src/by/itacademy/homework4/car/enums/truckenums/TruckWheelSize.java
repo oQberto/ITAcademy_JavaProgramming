@@ -1,6 +1,6 @@
 package by.itacademy.homework4.car.enums.truckenums;
 
-import by.itacademy.homework4.car.enums.WheelSize;
+import by.itacademy.homework4.car.markerinterfaces.WheelSize;
 
 public enum TruckWheelSize implements WheelSize {
     SMALL(19),

@@ -1,7 +1,7 @@
 package by.itacademy.homework4.car;
 
-import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.specialcarenums.*;
+import by.itacademy.homework4.car.markerinterfaces.*;
 
 import java.util.List;
 

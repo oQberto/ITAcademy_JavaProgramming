@@ -1,7 +1,7 @@
 package by.itacademy.homework4.service;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.car.enums.Option;
+import by.itacademy.homework4.car.markerinterfaces.Option;
 
 import static by.itacademy.homework4.validation.Message.NullMessages.*;
 

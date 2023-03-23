@@ -1,7 +1,7 @@
 package by.itacademy.homework4.validation;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.car.enums.*;
+import by.itacademy.homework4.car.markerinterfaces.*;
 import by.itacademy.homework4.order.Order;
 
 import java.util.Objects;

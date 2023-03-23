@@ -2,8 +2,8 @@ package by.itacademy.homework4.order;
 
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.SpecialCar;
-import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.specialcarenums.SpecialCarType;
+import by.itacademy.homework4.car.markerinterfaces.*;
 
 import java.util.List;
 import java.util.Objects;

@@ -1,6 +1,6 @@
 package by.itacademy.homework4.car.enums.truckenums;
 
-import by.itacademy.homework4.car.enums.Option;
+import by.itacademy.homework4.car.markerinterfaces.Option;
 
 public enum TruckOptions implements Option {
     CRUISE_CONTROL("Cruise control"),

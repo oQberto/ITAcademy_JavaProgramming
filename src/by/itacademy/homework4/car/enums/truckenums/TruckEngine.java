@@ -1,6 +1,6 @@
 package by.itacademy.homework4.car.enums.truckenums;
 
-import by.itacademy.homework4.car.enums.Engine;
+import by.itacademy.homework4.car.markerinterfaces.Engine;
 
 public enum TruckEngine implements Engine {
     COMMON_RAIL(2.9),

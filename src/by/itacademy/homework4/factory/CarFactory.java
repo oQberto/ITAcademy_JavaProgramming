@@ -1,7 +1,10 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.car.enums.*;
+import by.itacademy.homework4.car.markerinterfaces.Brand;
+import by.itacademy.homework4.car.markerinterfaces.Color;
+import by.itacademy.homework4.car.markerinterfaces.Engine;
+import by.itacademy.homework4.car.markerinterfaces.WheelSize;
 import by.itacademy.homework4.order.Order;
 
 import static by.itacademy.homework4.validation.Message.NullMessages.*;

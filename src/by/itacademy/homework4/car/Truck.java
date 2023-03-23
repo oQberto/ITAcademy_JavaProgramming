@@ -1,7 +1,7 @@
 package by.itacademy.homework4.car;
 
-import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.truckenums.*;
+import by.itacademy.homework4.car.markerinterfaces.*;
 
 import static by.itacademy.homework4.validation.Message.NullMessages.*;
 import static java.util.Objects.*;
