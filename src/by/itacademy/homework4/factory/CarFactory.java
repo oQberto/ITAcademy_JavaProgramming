@@ -3,9 +3,13 @@ package by.itacademy.homework4.factory;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.order.Order;
-import static by.itacademy.homework4.validation.Validator.*;
+
+import static by.itacademy.homework4.validation.Message.NullMessages.*;
+
+import static java.util.Objects.*;
 
 import java.util.List;
+import java.util.Objects;
 
 public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
     protected List<CAR> carsInStock;
@@ -16,14 +20,18 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
     protected List<WheelSize> carWheelSizeList;
 
     public Car createCar(ORDER order) {
-        isNullOrder(order);
+        requireNonNull(order, NULL_ORDER);
 
-        if (factoryStock.
-                checkCar(order) != null) {
+        if (nonNull(factoryStock.checkCar(order))) {
             return factoryStock.getClientCar();
-        } else if (replaceInappropriateOptions(factoryStock
-                .chooseMoreSuitableCar(order), order) != null) {
-            return replaceInappropriateOptions(factoryStock.getMoreSuitableCar(), order);
+        } else if (nonNull(
+                replaceInappropriateOptions(
+                        factoryStock.chooseMoreSuitableCar(order),
+                        order))
+        ) {
+            return replaceInappropriateOptions(
+                    factoryStock.getMoreSuitableCar(),
+                    order);
         }
         return null;
     }
@@ -31,19 +39,26 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
     public abstract List<? extends Car> getCarsInStock();
 
     protected Car replaceInappropriateOptions(CAR car, ORDER order) {
-        isNullCar(car);
-        isNullOrder(order);
+        requireNonNull(car, NULL_CAR);
+        requireNonNull(order, NULL_ORDER);
 
-        if (!(car.getCarColor()
-                .equals(order.getColor()))) {
+        if (!Objects.equals(
+                        car.getCarColor(),
+                        order.getColor()
+        )) {
             car.setCarColor(order.getColor());
         }
-        if (!(car.getWheelSize()
-                .equals(order.getWheelSize()))) {
+        if (!Objects.equals(
+                        car.getWheelSize(),
+                        order.getWheelSize()
+        )) {
             car.setWheelSize(order.getWheelSize());
         }
-        if (car.getOptions() == null
-                || car.getOptions().equals(order.getOptions())) {
+        if (isNull(car.getOptions()) ||
+                Objects.equals(
+                                car.getOptions(),
+                                order.getOptions()
+                )) {
             car.setOptions(order.getOptions());
         }
         return car;

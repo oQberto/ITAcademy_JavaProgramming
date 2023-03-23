@@ -3,8 +3,13 @@ package by.itacademy.homework4.order;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.enums.*;
 
+import static by.itacademy.homework4.validation.Message.NullMessages.*;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import static java.util.Objects.*;
 
 public abstract class Order {
     protected int issueYear;
@@ -21,14 +26,24 @@ public abstract class Order {
                  WheelSize wheelSize,
                  List<Option> options) {
         this.issueYear = issueYear;
+
+        requireNonNull(brand, NULL_BRAND);
         this.brand = brand;
+
+        requireNonNull(engine, NULL_ENGINE);
         this.engine = engine;
+
+        requireNonNull(color, NULL_COLOR);
         this.color = color;
+
+        requireNonNull(wheelSize, NULL_WHEEL_SIZE);
         this.wheelSize = wheelSize;
-        this.options = options;
+        this.options = options == null ? new ArrayList<>() : options;
     }
 
     public boolean compare(Car car) {
+        requireNonNull(car, NULL_CAR);
+
         return this.issueYear == car.getIssueYear()
                 && this.brand == car.getCarBrand()
                 && this.engine == car.getCarEngine()
@@ -61,6 +76,7 @@ public abstract class Order {
     }
 
     public void setBrand(Brand brand) {
+        requireNonNull(brand, NULL_BRAND);
         this.brand = brand;
     }
 
@@ -69,6 +85,7 @@ public abstract class Order {
     }
 
     public void setEngine(Engine engine) {
+        requireNonNull(engine, NULL_ENGINE);
         this.engine = engine;
     }
 
@@ -77,6 +94,7 @@ public abstract class Order {
     }
 
     public void setColor(Color color) {
+        requireNonNull(color, NULL_COLOR);
         this.color = color;
     }
 
@@ -85,6 +103,7 @@ public abstract class Order {
     }
 
     public void setWheelSize(WheelSize wheelSize) {
+        requireNonNull(wheelSize, NULL_WHEEL_SIZE);
         this.wheelSize = wheelSize;
     }
 
@@ -93,9 +112,13 @@ public abstract class Order {
     }
 
     public void setOptions(List<Option> options) {
-        this.options = options;
+        this.options =
+                options == null
+                ? new ArrayList<>()
+                : options;
     }
 
     public abstract UniqueParam getUniqueParam();
+
     public abstract void setUniqueParam(UniqueParam uniqueParam);
 }

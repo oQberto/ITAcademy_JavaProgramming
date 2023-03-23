@@ -58,7 +58,7 @@ public class Main {
         order = new SpecialCarOrder(2023, SpecialCarBrand.FORD, SpecialCarEngine.COMMON_RAIL, SpecialCarColor.RED,
                 SpecialCarWheelSize.MIDDLE, list, SpecialCarType.POLICE);
         specialCar = (SpecialCar) carFactory.createCar(order);
-        colorService.change(specialCar, TruckColor.WHITE);
+        colorService.change(specialCar, SpecialCarColor.WHITE);
         System.out.println(specialCar);
     }
 }
