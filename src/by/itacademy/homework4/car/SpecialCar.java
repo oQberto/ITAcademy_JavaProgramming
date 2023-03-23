@@ -5,6 +5,9 @@ import by.itacademy.homework4.car.enums.specialcarenums.*;
 
 import java.util.List;
 
+import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static java.util.Objects.*;
+
 public class SpecialCar extends Car {
     private SpecialCarType specialCarType;
 
@@ -16,6 +19,7 @@ public class SpecialCar extends Car {
                       List<Option> options,
                       SpecialCarType specialCarType) {
         super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
+        requireNonNull(specialCarType, NULL_SPECIAL_CAR_TYPE);
         this.specialCarType = specialCarType;
     }
 
@@ -52,6 +56,7 @@ public class SpecialCar extends Car {
     }
 
     public void setSpecialCarType(SpecialCarType specialCarType) {
+        requireNonNull(specialCarType, NULL_SPECIAL_CAR_TYPE);
         this.specialCarType = specialCarType;
     }
 }

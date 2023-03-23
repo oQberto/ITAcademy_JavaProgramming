@@ -1,9 +1,11 @@
 package by.itacademy.homework4.car;
 
 import by.itacademy.homework4.car.enums.*;
+import static by.itacademy.homework4.validation.Message.NullMessages.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import static java.util.Objects.*;
 
 public abstract class Car {
     protected final int issueYear;
@@ -20,9 +22,13 @@ public abstract class Car {
                WheelSize wheelSize,
                List<Option> options) {
         this.issueYear = issueYear;
+        requireNonNull(carBrand, NULL_BRAND);
         this.carBrand = carBrand;
+        requireNonNull(carEngine, NULL_ENGINE);
         this.carEngine = carEngine;
+        requireNonNull(carColor, NULL_COLOR);
         this.carColor = carColor;
+        requireNonNull(wheelSize, NULL_WHEEL_SIZE);
         this.wheelSize = wheelSize;
         this.options = options == null ? new ArrayList<>() : options;
     }

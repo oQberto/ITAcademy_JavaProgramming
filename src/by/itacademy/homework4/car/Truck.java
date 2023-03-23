@@ -3,6 +3,9 @@ package by.itacademy.homework4.car;
 import by.itacademy.homework4.car.enums.*;
 import by.itacademy.homework4.car.enums.truckenums.*;
 
+import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static java.util.Objects.*;
+
 import java.util.List;
 
 public class Truck extends Car {
@@ -16,6 +19,7 @@ public class Truck extends Car {
                  List<Option> options,
                  LoadCapacity loadCapacity) {
         super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
+        requireNonNull(loadCapacity, NULL_LOAD_CAPACITY);
         this.loadCapacity = loadCapacity;
     }
 
@@ -52,6 +56,7 @@ public class Truck extends Car {
     }
 
     public void setLoadCapacity(LoadCapacity loadCapacity) {
+        requireNonNull(loadCapacity, NULL_LOAD_CAPACITY);
         this.loadCapacity = loadCapacity;
     }
 }
