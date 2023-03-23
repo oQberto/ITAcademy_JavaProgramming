@@ -6,6 +6,7 @@ import static by.itacademy.homework4.validation.Message.NullMessages.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import static java.util.Objects.*;
 
 public abstract class Car {
@@ -73,6 +74,7 @@ public abstract class Car {
     public abstract UniqueParam getUniqueParam();
 
     public abstract Color[] getColors();
+
     public abstract WheelSize[] getWheelSizes();
 
 }

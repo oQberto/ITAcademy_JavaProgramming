@@ -12,6 +12,7 @@ public interface Message {
         String NULL_LOAD_CAPACITY = "Load capacity must not be null!";
         String NULL_SPECIAL_CAR_TYPE = "Car type must not be null!";
     }
+
     interface NotExistMessage {
         String COLOR_NOT_EXIST = "Color doesn't exist for this car!";
         String WHEEL_SIZE_NOT_EXIST = "Wheel size doesn't exist for this car!";

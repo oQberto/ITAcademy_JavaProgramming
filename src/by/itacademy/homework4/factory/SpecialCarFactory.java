@@ -36,7 +36,6 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     }
 
 
-
     @Override
     protected SpecialCar replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
         specialCar = (SpecialCar) super.replaceInappropriateOptions(specialCar, order);

@@ -42,7 +42,7 @@ public class Validator {
         isNullObject(wheelSize, NULL_WHEEL_SIZE);
     }
 
-    public static boolean isExistingColor(Car car,Color changeableColor) {
+    public static boolean isExistingColor(Car car, Color changeableColor) {
         for (Color color : car.getColors()) {
             if (Objects.equals(changeableColor, color)) return true;
         }

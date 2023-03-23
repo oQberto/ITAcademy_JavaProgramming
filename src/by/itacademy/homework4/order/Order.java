@@ -114,8 +114,8 @@ public abstract class Order {
     public void setOptions(List<Option> options) {
         this.options =
                 options == null
-                ? new ArrayList<>()
-                : options;
+                        ? new ArrayList<>()
+                        : options;
     }
 
     public abstract UniqueParam getUniqueParam();

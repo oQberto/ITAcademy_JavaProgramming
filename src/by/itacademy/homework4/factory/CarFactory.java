@@ -46,21 +46,21 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
         requireNonNull(order, NULL_ORDER);
 
         if (!Objects.equals(
-                        car.getCarColor(),
-                        order.getColor()
+                car.getCarColor(),
+                order.getColor()
         )) {
             car.setCarColor(order.getColor());
         }
         if (!Objects.equals(
-                        car.getWheelSize(),
-                        order.getWheelSize()
+                car.getWheelSize(),
+                order.getWheelSize()
         )) {
             car.setWheelSize(order.getWheelSize());
         }
         if (isNull(car.getOptions()) ||
                 Objects.equals(
-                                car.getOptions(),
-                                order.getOptions()
+                        car.getOptions(),
+                        order.getOptions()
                 )) {
             car.setOptions(order.getOptions());
         }
