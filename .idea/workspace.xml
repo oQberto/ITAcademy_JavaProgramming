@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: replace marker interfaces to &quot;markeronterfaces&quot; package">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: remove not used import">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/service/Changeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/service/Changeable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -127,8 +122,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.by.itacademy.homework6.usingsemaphore.Main" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.by.itacademy.homework6.usingsemaphore.Main" />
         <item itemvalue="Application.by.itacademy.homework6.Main" />
         <item itemvalue="Application.StreamAPI" />
       </list>
@@ -142,27 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00177" summary="feat: add task 6">
-      <created>1678186887597</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1678186887597</updated>
-    </task>
-    <task id="LOCAL-00178" summary="docs: add doc description to the validateFile() method.">
-      <created>1678187303988</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1678187303988</updated>
-    </task>
-    <task id="LOCAL-00179" summary="refactor: change a parent">
-      <created>1678187586833</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1678187586833</updated>
     </task>
     <task id="LOCAL-00180" summary="refactor: refactor Calculator">
       <created>1678191165915</created>
@@ -486,7 +460,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679571019925</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="style: correct code style">
+      <created>1679571193686</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1679571193686</updated>
+    </task>
+    <task id="LOCAL-00227" summary="refactor: remove unuseful methods">
+      <created>1679571258222</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1679571258223</updated>
+    </task>
+    <task id="LOCAL-00228" summary="refactor: remove not used import">
+      <created>1679571299345</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1679571299345</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,9 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style: change return construction in checkGeneralChangeableParams() method" />
-    <MESSAGE value="refactor: improve FactoryStock class" />
-    <MESSAGE value="refactor: change show methods in CarFactory" />
     <MESSAGE value="refactor: change modifier accesses" />
     <MESSAGE value="refactor: change generics types" />
     <MESSAGE value="feat: add homework6" />
@@ -526,7 +518,10 @@
     <MESSAGE value="refactor: cover ColorService, OptionService, WheelService with checks for null" />
     <MESSAGE value="refactor: cover Car, SpecialCar, Truck with checks for null" />
     <MESSAGE value="refactor: replace marker interfaces to &quot;markeronterfaces&quot; package" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: replace marker interfaces to &quot;markeronterfaces&quot; package" />
+    <MESSAGE value="style: correct code style" />
+    <MESSAGE value="refactor: remove unuseful methods" />
+    <MESSAGE value="refactor: remove not used import" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove not used import" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
