@@ -12,7 +12,7 @@ import java.util.List;
 import static java.util.Objects.*;
 
 public class PassengerCar extends Car {
-    private final PassengerCarFuelType passengerCarFuelType;
+    private PassengerCarFuelType passengerCarFuelType;
 
     public PassengerCar(int issueYear,
                         Brand carBrand,
@@ -20,10 +20,10 @@ public class PassengerCar extends Car {
                         Color carColor,
                         WheelSize wheelSize,
                         List<Option> options,
-                        PassengerCarFuelType passengerCarFuelType) {
+                        UniqueParam passengerCarFuelType) {
         super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
         requireNonNull(passengerCarFuelType, NULL_FUEL_TYPE);
-        this.passengerCarFuelType = passengerCarFuelType;
+        this.passengerCarFuelType = (PassengerCarFuelType) passengerCarFuelType;
     }
 
     @Override
@@ -56,5 +56,10 @@ public class PassengerCar extends Car {
 
     public PassengerCarFuelType getPassengerCarFuelType() {
         return passengerCarFuelType;
+    }
+
+    public void setPassengerCarFuelType(PassengerCarFuelType passengerCarFuelType) {
+        requireNonNull(passengerCarFuelType, NULL_FUEL_TYPE);
+        this.passengerCarFuelType = passengerCarFuelType;
     }
 }
