@@ -8,6 +8,7 @@ public interface Message {
         String NULL_COLOR = "Color must not be null!";
         String NULL_ENGINE = "Engine must not be null!";
         String NULL_OPTION = "Option must not be null!";
+        String NULL_FUEL_TYPE = "Fuel type must not be bull!";
         String NULL_WHEEL_SIZE = "Wheel size must not be null!";
         String NULL_LOAD_CAPACITY = "Load capacity must not be null!";
         String NULL_SPECIAL_CAR_TYPE = "Car type must not be null!";
