@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: create Showroom">
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/passengercarenums/PassengerCarBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/passengercarenums/PassengerCarColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/passengercarenums/PassengerCarEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/passengercarenums/PassengerCarFuelType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/passengercarenums/PassengerCarOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/enums/passengercarenums/PassengerCarWheelSize.java" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add PassengerCar">
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/PassengerCarOrder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/writer/OrderHistory" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/writer/OrderHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00181" summary="refactor: rename packages">
-      <created>1678191354401</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1678191354401</updated>
     </task>
     <task id="LOCAL-00182" summary="feat: add StreamAPI task">
       <created>1678290475762</created>
@@ -491,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679582553568</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="feat: add PassengerCar">
+      <created>1679667490858</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1679667490858</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: change generics types" />
     <MESSAGE value="feat: add homework6" />
     <MESSAGE value="refactor: replace while in run() method" />
     <MESSAGE value="refactor: change names" />
@@ -531,7 +523,8 @@
     <MESSAGE value="refactor: remove unuseful methods" />
     <MESSAGE value="refactor: remove not used import" />
     <MESSAGE value="feat: create Showroom" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create Showroom" />
+    <MESSAGE value="feat: add PassengerCar" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add PassengerCar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

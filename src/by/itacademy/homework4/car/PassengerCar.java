@@ -1,6 +1,8 @@
 package by.itacademy.homework4.car;
 
+import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarColor;
 import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarFuelType;
+import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarWheelSize;
 import by.itacademy.homework4.car.markerinterfaces.*;
 
 import static by.itacademy.homework4.validation.Message.NullMessages.*;
@@ -39,16 +41,20 @@ public class PassengerCar extends Car {
 
     @Override
     public UniqueParam getUniqueParam() {
-        return null;
+        return passengerCarFuelType;
     }
 
     @Override
     public Color[] getColors() {
-        return new Color[0];
+        return PassengerCarColor.values();
     }
 
     @Override
     public WheelSize[] getWheelSizes() {
-        return new WheelSize[0];
+        return PassengerCarWheelSize.values();
+    }
+
+    public PassengerCarFuelType getPassengerCarFuelType() {
+        return passengerCarFuelType;
     }
 }
