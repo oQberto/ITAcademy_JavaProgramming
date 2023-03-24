@@ -37,8 +37,14 @@ public class Truck extends Car {
     }
 
     @Override
-    public UniqueParam getUniqueParam() {
+    public LoadCapacity getUniqueParam() {
         return loadCapacity;
+    }
+
+    @Override
+    public void setUniqueParam(UniqueParam uniqueParam) {
+        requireNonNull(uniqueParam, NULL_LOAD_CAPACITY);
+        this.loadCapacity = (LoadCapacity) uniqueParam;
     }
 
     @Override
@@ -51,12 +57,4 @@ public class Truck extends Car {
         return TruckWheelSize.values();
     }
 
-    public LoadCapacity getLoadCapacity() {
-        return loadCapacity;
-    }
-
-    public void setLoadCapacity(LoadCapacity loadCapacity) {
-        requireNonNull(loadCapacity, NULL_LOAD_CAPACITY);
-        this.loadCapacity = loadCapacity;
-    }
 }

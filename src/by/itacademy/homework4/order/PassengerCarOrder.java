@@ -29,7 +29,7 @@ public class PassengerCarOrder extends Order {
     @Override
     public boolean compare(Car passengerCar) {
         if (!super.compare(passengerCar)) return false;
-        return this.passengerCarFuelType == ((PassengerCar) passengerCar).getPassengerCarFuelType();
+        return this.passengerCarFuelType == ((PassengerCar) passengerCar).getUniqueParam();
     }
 
     @Override

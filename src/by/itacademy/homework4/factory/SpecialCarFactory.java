@@ -40,9 +40,9 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     protected SpecialCar replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
         specialCar = (SpecialCar) super.replaceInappropriateOptions(specialCar, order);
 
-        if (!(specialCar.getSpecialCarType()
+        if (!(specialCar.getUniqueParam()
                 .equals(order.getSpecialCarType()))) {
-            specialCar.setSpecialCarType(order.getSpecialCarType());
+            specialCar.setUniqueParam(order.getSpecialCarType());
         }
         return specialCar;
     }

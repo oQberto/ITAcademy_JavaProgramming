@@ -41,9 +41,9 @@ public class PassengerCarFactory extends CarFactory<PassengerCar, PassengerCarOr
     protected Car replaceInappropriateOptions(PassengerCar passengerCar, PassengerCarOrder order) {
         passengerCar = (PassengerCar) super.replaceInappropriateOptions(passengerCar, order);
 
-        if (!(passengerCar.getPassengerCarFuelType()
+        if (!(passengerCar.getUniqueParam()
                 .equals(order.getUniqueParam()))) {
-            passengerCar.setPassengerCarFuelType((PassengerCarFuelType) order.getUniqueParam());
+            passengerCar.setUniqueParam(order.getUniqueParam());
         }
         return passengerCar;
     }

@@ -40,8 +40,14 @@ public class PassengerCar extends Car {
     }
 
     @Override
-    public UniqueParam getUniqueParam() {
+    public PassengerCarFuelType getUniqueParam() {
         return passengerCarFuelType;
+    }
+
+    @Override
+    public void setUniqueParam(UniqueParam uniqueParam) {
+        requireNonNull(uniqueParam, NULL_LOAD_CAPACITY);
+        this.passengerCarFuelType = (PassengerCarFuelType) uniqueParam;
     }
 
     @Override
@@ -54,12 +60,4 @@ public class PassengerCar extends Car {
         return PassengerCarWheelSize.values();
     }
 
-    public PassengerCarFuelType getPassengerCarFuelType() {
-        return passengerCarFuelType;
-    }
-
-    public void setPassengerCarFuelType(PassengerCarFuelType passengerCarFuelType) {
-        requireNonNull(passengerCarFuelType, NULL_FUEL_TYPE);
-        this.passengerCarFuelType = passengerCarFuelType;
-    }
 }

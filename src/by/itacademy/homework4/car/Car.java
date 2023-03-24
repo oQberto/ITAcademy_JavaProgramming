@@ -72,6 +72,7 @@ public abstract class Car {
     }
 
     public abstract UniqueParam getUniqueParam();
+    public abstract void setUniqueParam(UniqueParam uniqueParam);
 
     public abstract Color[] getColors();
 

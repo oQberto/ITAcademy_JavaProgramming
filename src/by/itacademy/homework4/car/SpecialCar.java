@@ -37,8 +37,14 @@ public class SpecialCar extends Car {
     }
 
     @Override
-    public UniqueParam getUniqueParam() {
+    public SpecialCarType getUniqueParam() {
         return specialCarType;
+    }
+
+    @Override
+    public void setUniqueParam(UniqueParam uniqueParam) {
+        requireNonNull(uniqueParam, NULL_LOAD_CAPACITY);
+        this.specialCarType = (SpecialCarType) uniqueParam;
     }
 
     @Override
@@ -51,12 +57,4 @@ public class SpecialCar extends Car {
         return SpecialCarWheelSize.values();
     }
 
-    public SpecialCarType getSpecialCarType() {
-        return specialCarType;
-    }
-
-    public void setSpecialCarType(SpecialCarType specialCarType) {
-        requireNonNull(specialCarType, NULL_SPECIAL_CAR_TYPE);
-        this.specialCarType = specialCarType;
-    }
 }

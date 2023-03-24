@@ -23,7 +23,7 @@ public class TruckOrder extends Order {
     }
 
     @Override
-    public UniqueParam getUniqueParam() {
+    public LoadCapacity getUniqueParam() {
         return loadCapacity;
     }
 
@@ -35,7 +35,7 @@ public class TruckOrder extends Order {
     @Override
     public boolean compare(Car truck) {
         if (!super.compare(truck)) return false;
-        return this.loadCapacity == ((Truck) truck).getLoadCapacity();
+        return this.loadCapacity == ((Truck) truck).getUniqueParam();
     }
 
     @Override
