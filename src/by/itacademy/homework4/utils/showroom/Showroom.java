@@ -1,4 +1,4 @@
-package by.itacademy.homework4.showroom;
+package by.itacademy.homework4.utils.showroom;
 
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.markerinterfaces.Option;
