@@ -5,7 +5,9 @@ import by.itacademy.homework4.car.markerinterfaces.Option;
 import by.itacademy.homework4.car.markerinterfaces.WheelSize;
 import by.itacademy.homework4.car.markerinterfaces.Color;
 
+import by.itacademy.homework4.factory.PassengerCarFactory;
 import by.itacademy.homework4.order.Order;
+import by.itacademy.homework4.order.PassengerCarOrder;
 import by.itacademy.homework4.order.SpecialCarOrder;
 import by.itacademy.homework4.order.TruckOrder;
 
@@ -22,6 +24,7 @@ public class Showroom {
     private static final ColorService COLOR_SERVICE = new ColorService();
     private static final WheelService WHEEL_SERVICE = new WheelService();
     private static final OptionService OPTION_SERVICE = new OptionService();
+    private static final PassengerCarFactory PASSENGER_CAR_FACTORY = new PassengerCarFactory();
     private static final SpecialCarFactory SPECIAL_CAR_FACTORY = new SpecialCarFactory();
     private static final TruckFactory TRUCK_FACTORY = new TruckFactory();
 
@@ -34,6 +37,9 @@ public class Showroom {
         }
         if (order instanceof TruckOrder) {
             return TRUCK_FACTORY.createCar((TruckOrder) order);
+        }
+        if (order instanceof PassengerCarOrder) {
+            return PASSENGER_CAR_FACTORY.createCar((PassengerCarOrder) order);
         }
         return null;
     }
