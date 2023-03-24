@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add utils package, add OrderHistory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: replace Message to &quot;messages&quot; package">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00186" summary="feat: create SpecialCarFactory">
-      <created>1678454505146</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1678454505146</updated>
     </task>
     <task id="LOCAL-00187" summary="refactor: add getters for class fields">
       <created>1678454552919</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679669751615</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="refactor: replace Message to &quot;messages&quot; package">
+      <created>1679675234502</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1679675234502</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: remove code duplicate" />
     <MESSAGE value="refactor: fix FactoryStock" />
     <MESSAGE value="refactor: create getRobotParts() synchronized" />
     <MESSAGE value="refactor: fix homework6" />
@@ -521,7 +520,8 @@
     <MESSAGE value="feat: add PassengerCarFactory" />
     <MESSAGE value="feat: add PassengerCarFactory to Showroom" />
     <MESSAGE value="feat: add utils package, add OrderHistory" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add utils package, add OrderHistory" />
+    <MESSAGE value="refactor: replace Message to &quot;messages&quot; package" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: replace Message to &quot;messages&quot; package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
