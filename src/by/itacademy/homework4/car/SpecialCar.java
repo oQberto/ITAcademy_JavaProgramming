@@ -5,7 +5,7 @@ import by.itacademy.homework4.car.markerinterfaces.*;
 
 import java.util.List;
 
-import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static by.itacademy.homework4.messages.Message.NullMessages.*;
 import static java.util.Objects.*;
 
 public class SpecialCar extends Car {

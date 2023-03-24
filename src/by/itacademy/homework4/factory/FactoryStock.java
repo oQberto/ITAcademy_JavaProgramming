@@ -3,7 +3,7 @@ package by.itacademy.homework4.factory;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.order.Order;
 
-import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
 import static java.util.Objects.*;
 

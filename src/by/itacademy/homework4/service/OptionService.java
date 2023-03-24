@@ -3,7 +3,7 @@ package by.itacademy.homework4.service;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.markerinterfaces.Option;
 
-import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
 import java.util.List;
 

@@ -5,7 +5,7 @@ import by.itacademy.homework4.car.markerinterfaces.*;
 
 import java.util.Objects;
 
-import static by.itacademy.homework4.validation.Message.NotExistMessage.*;
+import static by.itacademy.homework4.messages.Message.NotExistMessage.*;
 
 public class Validator {
     private Validator() {

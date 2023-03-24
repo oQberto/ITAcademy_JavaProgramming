@@ -7,7 +7,7 @@ import by.itacademy.homework4.car.markerinterfaces.Engine;
 import by.itacademy.homework4.car.markerinterfaces.WheelSize;
 import by.itacademy.homework4.order.Order;
 
-import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
 import static java.util.Objects.*;
 

@@ -4,7 +4,7 @@ import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.markerinterfaces.WheelSize;
 
 import static by.itacademy.homework4.validation.Validator.*;
-import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
 import static java.util.Objects.*;
 

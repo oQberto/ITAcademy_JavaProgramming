@@ -1,4 +1,4 @@
-package by.itacademy.homework4.validation;
+package by.itacademy.homework4.messages;
 
 public interface Message {
     interface NullMessages {

@@ -2,7 +2,7 @@ package by.itacademy.homework4.car;
 
 import by.itacademy.homework4.car.markerinterfaces.*;
 
-import static by.itacademy.homework4.validation.Message.NullMessages.*;
+import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
 import java.util.ArrayList;
 import java.util.List;
