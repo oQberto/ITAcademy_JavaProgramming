@@ -4,6 +4,8 @@ import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.Truck;
 import by.itacademy.homework4.car.markerinterfaces.*;
 
+import static by.itacademy.homework4.validation.Validator.*;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -18,6 +20,7 @@ public class TruckOrder extends Order {
                       List<Option> options,
                       int loadCapacity) {
         super(issueYear, brand, engine, color, wheelSize, options);
+        isCorrectLoadCapacity(loadCapacity);
         this.loadCapacity = loadCapacity;
     }
 
@@ -38,6 +41,7 @@ public class TruckOrder extends Order {
     }
 
     public void setLoadCapacity(int loadCapacity) {
+        isCorrectLoadCapacity(loadCapacity);
         this.loadCapacity = loadCapacity;
     }
 }
