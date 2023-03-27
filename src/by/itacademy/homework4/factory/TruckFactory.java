@@ -9,14 +9,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TruckFactory extends CarFactory<Truck, TruckOrder> {
-    private final List<LoadCapacity> loadCapacityList;
 
     public TruckFactory() {
         super.carBrandList = Arrays.asList(TruckBrand.values());
         super.carEngineList = Arrays.asList(TruckEngine.values());
         super.carColorList = Arrays.asList(TruckColor.values());
         super.carWheelSizeList = Arrays.asList(TruckWheelSize.values());
-        this.loadCapacityList = Arrays.asList(LoadCapacity.values());
         fillStock();
         this.factoryStock = new FactoryStock<>(carsInStock);
     }
@@ -66,9 +64,6 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
     @Override
     public void showFactoryCatalogue() {
         super.showFactoryCatalogue();
-
-        System.out.println("Load capacity: ");
-        loadCapacityList.forEach(System.out::println);
     }
 
     @Override
