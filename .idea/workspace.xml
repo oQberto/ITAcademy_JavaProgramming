@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix exceptions in services">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="refactor: remove LoadCapacity">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/cars" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/AppUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/start/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/showroom/Showroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/validation/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,20 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00194" summary="feat: change project's structure.&#10;Add polymorphism for cars' enums">
-      <created>1678616893461</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1678616893461</updated>
-    </task>
-    <task id="LOCAL-00195" summary="refactor: change comparing in ColorService &amp; WheelService">
-      <created>1678627129961</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1678627129961</updated>
     </task>
     <task id="LOCAL-00196" summary="refactor: change interface name (IOptions -&gt; Options)">
       <created>1678627399347</created>
@@ -486,7 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679913967737</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="fix: fix Showroom">
+      <created>1679914696863</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1679914696863</updated>
+    </task>
+    <task id="LOCAL-00244" summary="refactor: remove LoadCapacity">
+      <created>1679914972787</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1679914972787</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,8 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create validation by not existing params" />
-    <MESSAGE value="feat: make homework 6 using semaphore" />
     <MESSAGE value="refactor: change modifier access for &quot;robotParts&quot; list" />
     <MESSAGE value="refactor: add finally section" />
     <MESSAGE value="refactor: cover CarFactory, Order with checks for null" />
@@ -526,7 +525,9 @@
     <MESSAGE value="fix: fix incorrect parameter comparison" />
     <MESSAGE value="fix: fix toString() method" />
     <MESSAGE value="fix: fix exceptions in services" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix exceptions in services" />
+    <MESSAGE value="fix: fix Showroom" />
+    <MESSAGE value="refactor: remove LoadCapacity" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove LoadCapacity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

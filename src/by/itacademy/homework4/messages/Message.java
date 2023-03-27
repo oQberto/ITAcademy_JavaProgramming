@@ -15,10 +15,11 @@ public interface Message {
     }
 
     interface ErrorMessage {
+        String OPTION_NOT_EXIST = "Removable option not exist!";
         String COLOR_ALREADY_SET = "You try to set the existing color!";
         String OPTION_ALREADY_SET = "You try to set the existing option!";
+        String INVALID_LOAD_CAPACITY = "Invalid load capacity!";
         String WHEEL_SIZE_ALREADY_SET = "You try to set the existing wheel size!";
-        String OPTION_NOT_EXIST = "Removable option not exist!";
     }
 
     interface NotExistMessage {

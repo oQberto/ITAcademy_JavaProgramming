@@ -13,6 +13,12 @@ public class Validator {
     private Validator() {
     }
 
+    public static void isCorrectLoadCapacity(int loadCapacity) {
+        if (loadCapacity < 0 || loadCapacity > 100) {
+            throw new IllegalArgumentException(INVALID_LOAD_CAPACITY);
+        }
+    }
+
     public static boolean isExistOption(Car car, Option option) throws OptionRemoveException {
         for (Option carOption : car.getOptions()) {
             if (carOption == option) {
