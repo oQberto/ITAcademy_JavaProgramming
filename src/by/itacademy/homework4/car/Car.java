@@ -64,6 +64,18 @@ public abstract class Car {
                 carEngine == order.getEngine();
     }
 
+    @Override
+    public String toString() {
+        return "Car -> " +
+                "issueYear=" + issueYear +
+                ", carBrand=" + carBrand +
+                ", carEngine=" + carEngine +
+                ", carColor=" + carColor +
+                ", wheelSize=" + wheelSize +
+                ", options=" + options +
+                ", ";
+    }
+
     public int getIssueYear() {
         return issueYear;
     }

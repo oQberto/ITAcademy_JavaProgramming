@@ -23,15 +23,9 @@ public class Truck extends Car {
 
     @Override
     public String toString() {
-        return "Truck{" +
-                "issueYear=" + issueYear +
-                ", carBrand=" + carBrand +
-                ", carEngine=" + carEngine +
-                ", carColor=" + carColor +
-                ", wheelSize=" + wheelSize +
-                ", options=" + options +
-                ", loadCapacity=" + loadCapacity +
-                '}';
+        return super.toString() +
+                "loadCapacity=" + loadCapacity +
+                '.';
     }
 
     @Override

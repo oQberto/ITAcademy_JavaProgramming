@@ -27,15 +27,9 @@ public class SpecialCar extends Car {
 
     @Override
     public String toString() {
-        return "SpecialCar{" +
-                "issueYear=" + issueYear +
-                ", carBrand=" + carBrand +
-                ", carEngine=" + carEngine +
-                ", carColor=" + carColor +
-                ", wheelSize=" + wheelSize +
-                ", options=" + options +
-                ", carType=" + specialCarType +
-                '}';
+        return super.toString() +
+                "specialCarType=" + specialCarType +
+                '.';
     }
 
     @Override
