@@ -17,6 +17,8 @@ import by.itacademy.homework4.factory.TruckFactory;
 import by.itacademy.homework4.service.ColorService;
 import by.itacademy.homework4.service.OptionService;
 import by.itacademy.homework4.service.WheelService;
+import by.itacademy.homework4.validation.exception.OptionRemoveException;
+import by.itacademy.homework4.validation.exception.SetArgumentException;
 
 import java.util.List;
 
@@ -52,11 +54,15 @@ public class Showroom {
         TRUCK_FACTORY.showFactoryCatalogue();
     }
 
-    public static void changeColor(Car car, Color color) {
+    public static void showPassengerCarFactoryCatalogue() {
+        PASSENGER_CAR_FACTORY.showFactoryCatalogue();
+    }
+
+    public static void changeColor(Car car, Color color) throws SetArgumentException {
         COLOR_SERVICE.change(car, color);
     }
 
-    public static void changeWheelSize(Car car, WheelSize wheelSize) {
+    public static void changeWheelSize(Car car, WheelSize wheelSize) throws SetArgumentException {
         WHEEL_SERVICE.change(car, wheelSize);
     }
 
@@ -64,11 +70,11 @@ public class Showroom {
         OPTION_SERVICE.change(car, options);
     }
 
-    public static void removeOption(Car car, Option option) {
+    public static void removeOption(Car car, Option option) throws OptionRemoveException {
         OPTION_SERVICE.removeOption(car, option);
     }
 
-    public static void addOption(Car car, Option option) {
+    public static void addOption(Car car, Option option) throws SetArgumentException {
         OPTION_SERVICE.addOption(car, option);
     }
 }
