@@ -14,14 +14,26 @@ public interface Message {
         String NULL_SPECIAL_CAR_TYPE = "Car type must not be null!";
     }
 
+    interface ErrorMessage {
+        String COLOR_ALREADY_SET = "You try to set the existing color!";
+        String OPTION_ALREADY_SET = "You try to set the existing option!";
+        String WHEEL_SIZE_ALREADY_SET = "You try to set the existing wheel size!";
+        String OPTION_NOT_EXIST = "Removable option not exist!";
+    }
+
     interface NotExistMessage {
         String COLOR_NOT_EXIST = "Color doesn't exist for this car!";
         String WHEEL_SIZE_NOT_EXIST = "Wheel size doesn't exist for this car!";
     }
 
+    interface SystemMessage {
+        String INTRODUCTION = "Hi, welcome to the showroom!";
+    }
+
     interface ConsoleCommands {
         String HELP = "/help";
         String TRUCK = "/tr";
+        String ORDER = "/order";
         String SPECIAL_CAR = "/sp";
         String SHOW_HISTORY = "/history";
         String EXIT_FROM_APP = "/exit";
