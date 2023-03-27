@@ -4,6 +4,8 @@ import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarColor;
 import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarFuelType;
 import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarWheelSize;
 import by.itacademy.homework4.car.markerinterfaces.*;
+import by.itacademy.homework4.order.Order;
+import by.itacademy.homework4.order.PassengerCarOrder;
 
 import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
@@ -40,14 +42,21 @@ public class PassengerCar extends Car {
     }
 
     @Override
-    public PassengerCarFuelType getUniqueParam() {
+    public boolean compareWithOrder(Order order) {
+        if (super.compareWithOrder(order) &&
+                passengerCarFuelType == ((PassengerCarOrder) order).getPassengerCarFuelType()) {
+            return true;
+        }
+        return super.compareWithOrder(order);
+    }
+
+    public PassengerCarFuelType getPassengerCarFuelType() {
         return passengerCarFuelType;
     }
 
-    @Override
-    public void setUniqueParam(UniqueParam uniqueParam) {
-        requireNonNull(uniqueParam, NULL_LOAD_CAPACITY);
-        this.passengerCarFuelType = (PassengerCarFuelType) uniqueParam;
+    public void setPassengerCarFuelType(PassengerCarFuelType passengerCarFuelType) {
+        requireNonNull(passengerCarFuelType, NULL_LOAD_CAPACITY);
+        this.passengerCarFuelType = passengerCarFuelType;
     }
 
     @Override

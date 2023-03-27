@@ -9,7 +9,6 @@ import static java.util.Objects.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class FactoryStock<CAR extends Car, ORDER extends Order> {
     private final List<CAR> carsInStock;
@@ -41,53 +40,12 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
 
         carsInStock
                 .forEach(car -> {
-                    if (checkImmutableParams(car, order)) {
-                        moreSuitableCar = car;
-                    }
-                    if (checkImmutableParams(car, order) &&
-                            checkChangeableParams(car, order)) {
+                    if (car.compareWithOrder(order)) {
                         moreSuitableCar = car;
                     }
                 });
         carsInStock.remove(moreSuitableCar);
         return moreSuitableCar;
-    }
-
-    private boolean checkImmutableParams(CAR car, ORDER order) {
-        requireNonNull(car, NULL_CAR);
-
-        return car.getIssueYear() == order.getIssueYear() &&
-                car.getCarBrand() == order.getBrand() &&
-                car.getCarEngine() == order.getEngine();
-    }
-
-    private boolean checkChangeableParams(CAR car, ORDER order) {
-        requireNonNull(car, NULL_CAR);
-
-        return (checkGeneralChangeableParams(car, order) &&
-                Objects.equals(
-                        car.getUniqueParam(),
-                        order.getUniqueParam())) ||
-                checkGeneralChangeableParams(car, order);
-    }
-
-
-    private boolean checkGeneralChangeableParams(CAR car, ORDER order) {
-        if (Objects.equals(car.getCarColor(), order.getColor()) &&
-                Objects.equals(car.getWheelSize(), order.getWheelSize())
-        ) {
-            return true;
-        } else if (Objects.equals(
-                car.getCarColor(),
-                order.getColor()
-        )) {
-            return true;
-        }
-        return Objects
-                .equals(
-                        car.getWheelSize(),
-                        order.getWheelSize()
-                );
     }
 
     public void showFactoryStock() {

@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.util.Objects.*;
+
 public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     private final List<SpecialCarType> specialCarTypeList;
 
@@ -23,16 +25,22 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
 
     @Override
     public SpecialCar createCar(SpecialCarOrder order) {
-        super.createCar(order);
+        SpecialCar clientCar = (SpecialCar) super.createCar(order);
 
-        return new SpecialCar(
-                order.getIssueYear(),
-                order.getBrand(),
-                order.getEngine(),
-                order.getColor(),
-                order.getWheelSize(),
-                order.getOptions(),
-                order.getSpecialCarType());
+        if (nonNull(clientCar)) {
+            return clientCar;
+        } else {
+            clientCar = new SpecialCar(
+                    order.getIssueYear(),
+                    order.getBrand(),
+                    order.getEngine(),
+                    order.getColor(),
+                    order.getWheelSize(),
+                    order.getOptions(),
+                    order.getSpecialCarType()
+            );
+        }
+        return clientCar;
     }
 
 
@@ -40,9 +48,9 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
     protected SpecialCar replaceInappropriateOptions(SpecialCar specialCar, SpecialCarOrder order) {
         specialCar = (SpecialCar) super.replaceInappropriateOptions(specialCar, order);
 
-        if (!(specialCar.getUniqueParam()
+        if (!(specialCar.getSpecialCarType()
                 .equals(order.getSpecialCarType()))) {
-            specialCar.setUniqueParam(order.getSpecialCarType());
+            specialCar.setSpecialCarType(order.getSpecialCarType());
         }
         return specialCar;
     }

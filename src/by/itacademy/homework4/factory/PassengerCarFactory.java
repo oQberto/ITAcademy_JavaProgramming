@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.util.Objects.*;
+
 public class PassengerCarFactory extends CarFactory<PassengerCar, PassengerCarOrder> {
     private final List<PassengerCarFuelType> passengerCarFuelTypeList;
 
@@ -25,25 +27,31 @@ public class PassengerCarFactory extends CarFactory<PassengerCar, PassengerCarOr
 
     @Override
     public PassengerCar createCar(PassengerCarOrder order) {
-        super.createCar(order);
+        PassengerCar clientCar = (PassengerCar) super.createCar(order);
 
-        return new PassengerCar(
-                order.getIssueYear(),
-                order.getBrand(),
-                order.getEngine(),
-                order.getColor(),
-                order.getWheelSize(),
-                order.getOptions(),
-                order.getUniqueParam());
+        if (nonNull(clientCar)) {
+            return clientCar;
+        } else {
+            clientCar = new PassengerCar(
+                    order.getIssueYear(),
+                    order.getBrand(),
+                    order.getEngine(),
+                    order.getColor(),
+                    order.getWheelSize(),
+                    order.getOptions(),
+                    order.getPassengerCarFuelType()
+            );
+        }
+        return clientCar;
     }
 
     @Override
     protected Car replaceInappropriateOptions(PassengerCar passengerCar, PassengerCarOrder order) {
         passengerCar = (PassengerCar) super.replaceInappropriateOptions(passengerCar, order);
 
-        if (!(passengerCar.getUniqueParam()
-                .equals(order.getUniqueParam()))) {
-            passengerCar.setUniqueParam(order.getUniqueParam());
+        if (!(passengerCar.getPassengerCarFuelType()
+                .equals(order.getPassengerCarFuelType()))) {
+            passengerCar.setPassengerCarFuelType(order.getPassengerCarFuelType());
         }
         return passengerCar;
     }

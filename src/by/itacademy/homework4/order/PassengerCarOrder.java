@@ -29,7 +29,7 @@ public class PassengerCarOrder extends Order {
     @Override
     public boolean compare(Car passengerCar) {
         if (!super.compare(passengerCar)) return false;
-        return this.passengerCarFuelType == ((PassengerCar) passengerCar).getUniqueParam();
+        return this.passengerCarFuelType == ((PassengerCar) passengerCar).getPassengerCarFuelType();
     }
 
     @Override
@@ -37,14 +37,11 @@ public class PassengerCarOrder extends Order {
         return hash(super.hashCode(), passengerCarFuelType);
     }
 
-    @Override
-    public UniqueParam getUniqueParam() {
+    public PassengerCarFuelType getPassengerCarFuelType() {
         return passengerCarFuelType;
     }
 
-    @Override
-    public void setUniqueParam(UniqueParam fuelType) {
-        requireNonNull(fuelType, NULL_FUEL_TYPE);
-        this.passengerCarFuelType = (PassengerCarFuelType) fuelType;
+    public void setPassengerCarFuelType(PassengerCarFuelType passengerCarFuelType) {
+        this.passengerCarFuelType = passengerCarFuelType;
     }
 }

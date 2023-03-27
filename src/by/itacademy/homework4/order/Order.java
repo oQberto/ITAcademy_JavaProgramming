@@ -117,8 +117,4 @@ public abstract class Order {
                         ? new ArrayList<>()
                         : options;
     }
-
-    public abstract UniqueParam getUniqueParam();
-
-    public abstract void setUniqueParam(UniqueParam uniqueParam);
 }

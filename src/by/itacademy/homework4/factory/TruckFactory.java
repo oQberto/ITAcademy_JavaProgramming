@@ -23,26 +23,31 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
 
     @Override
     public Truck createCar(TruckOrder order) {
-        super.createCar(order);
+        Truck clientTruck = (Truck) super.createCar(order);
 
-        return new Truck(
-                order.getIssueYear(),
-                order.getBrand(),
-                order.getEngine(),
-                order.getColor(),
-                order.getWheelSize(),
-                order.getOptions(),
-                order.getUniqueParam()
-        );
+        if (clientTruck != null) {
+            return clientTruck;
+        } else {
+            clientTruck = new Truck(
+                    order.getIssueYear(),
+                    order.getBrand(),
+                    order.getEngine(),
+                    order.getColor(),
+                    order.getWheelSize(),
+                    order.getOptions(),
+                    order.getLoadCapacity()
+            );
+        }
+        return clientTruck;
     }
 
     @Override
     protected Truck replaceInappropriateOptions(Truck truck, TruckOrder order) {
         truck = (Truck) super.replaceInappropriateOptions(truck, order);
 
-        if (!(truck.getUniqueParam()
-                .equals(order.getUniqueParam()))) {
-            truck.setUniqueParam(order.getUniqueParam());
+        if (!(truck.getLoadCapacity()
+                == (order.getLoadCapacity()))) {
+            truck.setLoadCapacity(order.getLoadCapacity());
         }
         return truck;
     }
@@ -50,12 +55,12 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
     @Override
     protected void fillStock() {
         carsInStock = new ArrayList<>();
-        carsInStock.add(new Truck(2023, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.RED,
-                TruckWheelSize.LARGE, null, LoadCapacity.SMALL));
+        carsInStock.add(new Truck(2023, TruckBrand.NISSAN, TruckEngine.COMMON_RAIL, TruckColor.RED,
+                TruckWheelSize.LARGE, null, 15));
         carsInStock.add(new Truck(2022, TruckBrand.VOLVO, TruckEngine.COMMON_RAIL, TruckColor.RED,
-                TruckWheelSize.LARGE, null, LoadCapacity.SMALL));
+                TruckWheelSize.LARGE, null, 14));
         carsInStock.add(new Truck(2023, TruckBrand.NISSAN, TruckEngine.COMMON_RAIL, TruckColor.WHITE,
-                TruckWheelSize.SMALL, null, LoadCapacity.BIG));
+                TruckWheelSize.SMALL, null, 13));
     }
 
     @Override

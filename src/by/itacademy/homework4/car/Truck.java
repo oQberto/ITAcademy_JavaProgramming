@@ -2,14 +2,13 @@ package by.itacademy.homework4.car;
 
 import by.itacademy.homework4.car.enums.truckenums.*;
 import by.itacademy.homework4.car.markerinterfaces.*;
-
-import static by.itacademy.homework4.messages.Message.NullMessages.*;
-import static java.util.Objects.*;
+import by.itacademy.homework4.order.Order;
+import by.itacademy.homework4.order.TruckOrder;
 
 import java.util.List;
 
 public class Truck extends Car {
-    private LoadCapacity loadCapacity;
+    private int loadCapacity;
 
     public Truck(int issueYear,
                  Brand carBrand,
@@ -17,9 +16,8 @@ public class Truck extends Car {
                  Color carColor,
                  WheelSize wheelSize,
                  List<Option> options,
-                 LoadCapacity loadCapacity) {
+                 int loadCapacity) {
         super(issueYear, carBrand, carEngine, carColor, wheelSize, options);
-        requireNonNull(loadCapacity, NULL_LOAD_CAPACITY);
         this.loadCapacity = loadCapacity;
     }
 
@@ -37,14 +35,20 @@ public class Truck extends Car {
     }
 
     @Override
-    public LoadCapacity getUniqueParam() {
+    public boolean compareWithOrder(Order order) {
+        if (super.compareWithOrder(order) &&
+                loadCapacity == ((TruckOrder) order).getLoadCapacity()) {
+            return true;
+        }
+        return super.compareWithOrder(order);
+    }
+
+    public int getLoadCapacity() {
         return loadCapacity;
     }
 
-    @Override
-    public void setUniqueParam(UniqueParam uniqueParam) {
-        requireNonNull(uniqueParam, NULL_LOAD_CAPACITY);
-        this.loadCapacity = (LoadCapacity) uniqueParam;
+    public void setLoadCapacity(int loadCapacity) {
+        this.loadCapacity = loadCapacity;
     }
 
     @Override
