@@ -2,8 +2,6 @@ package by.itacademy.homework4.car;
 
 import by.itacademy.homework4.car.enums.truckenums.*;
 import by.itacademy.homework4.car.markerinterfaces.*;
-import by.itacademy.homework4.order.Order;
-import by.itacademy.homework4.order.TruckOrder;
 
 import static by.itacademy.homework4.validation.Validator.*;
 
@@ -29,15 +27,6 @@ public class Truck extends Car {
         return super.toString() +
                 "loadCapacity=" + loadCapacity +
                 '.';
-    }
-
-    @Override
-    public boolean compareWithOrder(Order order) {
-        if (super.compareWithOrder(order) &&
-                loadCapacity == ((TruckOrder) order).getLoadCapacity()) {
-            return true;
-        }
-        return super.compareWithOrder(order);
     }
 
     public int getLoadCapacity() {

@@ -3,9 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add loadCapacity verification">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/cars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/PassengerCarComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/SpecialCarComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/TruckComparator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/AppUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/order/TruckOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/PassengerCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/PassengerCarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/start/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" afterDir="false" />
     </list>
@@ -141,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00197" summary="refactor: change Truck's enums names">
-      <created>1678627957443</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1678627957443</updated>
     </task>
     <task id="LOCAL-00198" summary="feat: create order functional">
       <created>1678871384433</created>
@@ -485,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679915445254</updated>
     </task>
-    <option name="localTasksCounter" value="246" />
+    <task id="LOCAL-00246" summary="feat: add loadCapacity verification">
+      <created>1679915759703</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1679915759703</updated>
+    </task>
+    <option name="localTasksCounter" value="247" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

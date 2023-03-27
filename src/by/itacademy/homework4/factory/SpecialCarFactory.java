@@ -1,6 +1,7 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.SpecialCar;
+import by.itacademy.homework4.car.comparators.SpecialCarComparator;
 import by.itacademy.homework4.car.enums.specialcarenums.*;
 import by.itacademy.homework4.order.SpecialCarOrder;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 import static java.util.Objects.*;
 
-public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
+public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder, SpecialCarComparator> {
     private final List<SpecialCarType> specialCarTypeList;
 
     public SpecialCarFactory() {
@@ -20,7 +21,7 @@ public class SpecialCarFactory extends CarFactory<SpecialCar, SpecialCarOrder> {
         super.carWheelSizeList = Arrays.asList(SpecialCarWheelSize.values());
         this.specialCarTypeList = Arrays.asList(SpecialCarType.values());
         fillStock();
-        this.factoryStock = new FactoryStock<>(carsInStock);
+        this.factoryStock = new FactoryStock<>(carsInStock, new SpecialCarComparator());
     }
 
     @Override

@@ -1,6 +1,7 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Truck;
+import by.itacademy.homework4.car.comparators.TruckComparator;
 import by.itacademy.homework4.car.enums.truckenums.*;
 import by.itacademy.homework4.order.TruckOrder;
 
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TruckFactory extends CarFactory<Truck, TruckOrder> {
+public class TruckFactory extends CarFactory<Truck, TruckOrder, TruckComparator> {
 
     public TruckFactory() {
         super.carBrandList = Arrays.asList(TruckBrand.values());
@@ -16,7 +17,7 @@ public class TruckFactory extends CarFactory<Truck, TruckOrder> {
         super.carColorList = Arrays.asList(TruckColor.values());
         super.carWheelSizeList = Arrays.asList(TruckWheelSize.values());
         fillStock();
-        this.factoryStock = new FactoryStock<>(carsInStock);
+        this.factoryStock = new FactoryStock<>(carsInStock, new TruckComparator());
     }
 
     @Override

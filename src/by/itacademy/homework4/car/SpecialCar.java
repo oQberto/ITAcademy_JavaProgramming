@@ -2,8 +2,6 @@ package by.itacademy.homework4.car;
 
 import by.itacademy.homework4.car.enums.specialcarenums.*;
 import by.itacademy.homework4.car.markerinterfaces.*;
-import by.itacademy.homework4.order.Order;
-import by.itacademy.homework4.order.SpecialCarOrder;
 
 import java.util.List;
 
@@ -30,15 +28,6 @@ public class SpecialCar extends Car {
         return super.toString() +
                 "specialCarType=" + specialCarType +
                 '.';
-    }
-
-    @Override
-    public boolean compareWithOrder(Order order) {
-        if (super.compareWithOrder(order) &&
-                specialCarType == ((SpecialCarOrder) order).getSpecialCarType()) {
-            return true;
-        }
-        return super.compareWithOrder(order);
     }
 
     public SpecialCarType getSpecialCarType() {

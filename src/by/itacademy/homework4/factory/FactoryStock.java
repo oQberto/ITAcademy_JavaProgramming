@@ -1,6 +1,7 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.car.comparators.Comparator;
 import by.itacademy.homework4.order.Order;
 
 import static by.itacademy.homework4.messages.Message.NullMessages.*;
@@ -10,16 +11,18 @@ import static java.util.Objects.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FactoryStock<CAR extends Car, ORDER extends Order> {
+public class FactoryStock<CAR extends Car, ORDER extends Order, COMPARATOR extends Comparator> {
     private final List<CAR> carsInStock;
     private CAR clientCar = null;
     private CAR moreSuitableCar = null;
+    private final COMPARATOR comparator;
 
-    public FactoryStock(List<CAR> carsInStock) {
+    public FactoryStock(List<CAR> carsInStock, COMPARATOR comparator) {
         this.carsInStock =
                 carsInStock == null
                         ? new ArrayList<>()
                         : carsInStock;
+        this.comparator = comparator;
     }
 
     public CAR checkCar(ORDER order) {
@@ -40,7 +43,7 @@ public class FactoryStock<CAR extends Car, ORDER extends Order> {
 
         carsInStock
                 .forEach(car -> {
-                    if (car.compareWithOrder(order)) {
+                    if (comparator.compare(car, order)) {
                         moreSuitableCar = car;
                     }
                 });

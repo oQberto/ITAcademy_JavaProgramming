@@ -4,8 +4,6 @@ import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarColor;
 import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarFuelType;
 import by.itacademy.homework4.car.enums.passengercarenums.PassengerCarWheelSize;
 import by.itacademy.homework4.car.markerinterfaces.*;
-import by.itacademy.homework4.order.Order;
-import by.itacademy.homework4.order.PassengerCarOrder;
 
 import static by.itacademy.homework4.messages.Message.NullMessages.*;
 
@@ -33,15 +31,6 @@ public class PassengerCar extends Car {
         return super.toString() +
                 "passengerCarFuelType=" + passengerCarFuelType +
                 '.';
-    }
-
-    @Override
-    public boolean compareWithOrder(Order order) {
-        if (super.compareWithOrder(order) &&
-                passengerCarFuelType == ((PassengerCarOrder) order).getPassengerCarFuelType()) {
-            return true;
-        }
-        return super.compareWithOrder(order);
     }
 
     public PassengerCarFuelType getPassengerCarFuelType() {

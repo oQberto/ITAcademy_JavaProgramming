@@ -1,6 +1,7 @@
 package by.itacademy.homework4.factory;
 
 
+import by.itacademy.homework4.car.comparators.PassengerCarComparator;
 import by.itacademy.homework4.car.Car;
 import by.itacademy.homework4.car.PassengerCar;
 import by.itacademy.homework4.car.enums.passengercarenums.*;
@@ -12,7 +13,7 @@ import java.util.List;
 
 import static java.util.Objects.*;
 
-public class PassengerCarFactory extends CarFactory<PassengerCar, PassengerCarOrder> {
+public class PassengerCarFactory extends CarFactory<PassengerCar, PassengerCarOrder, PassengerCarComparator> {
     private final List<PassengerCarFuelType> passengerCarFuelTypeList;
 
     public PassengerCarFactory() {
@@ -22,7 +23,7 @@ public class PassengerCarFactory extends CarFactory<PassengerCar, PassengerCarOr
         super.carWheelSizeList = Arrays.asList(PassengerCarWheelSize.values());
         this.passengerCarFuelTypeList = Arrays.asList(PassengerCarFuelType.values());
         fillStock();
-        this.factoryStock = new FactoryStock<>(carsInStock);
+        this.factoryStock = new FactoryStock<>(carsInStock, new PassengerCarComparator());
     }
 
     @Override

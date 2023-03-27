@@ -1,6 +1,7 @@
 package by.itacademy.homework4.factory;
 
 import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.car.comparators.Comparator;
 import by.itacademy.homework4.car.markerinterfaces.Brand;
 import by.itacademy.homework4.car.markerinterfaces.Color;
 import by.itacademy.homework4.car.markerinterfaces.Engine;
@@ -14,9 +15,9 @@ import static java.util.Objects.*;
 import java.util.List;
 import java.util.Objects;
 
-public abstract class CarFactory<CAR extends Car, ORDER extends Order> {
+public abstract class CarFactory<CAR extends Car, ORDER extends Order, COMPARATOR extends Comparator> {
     protected List<CAR> carsInStock;
-    protected FactoryStock<CAR, ORDER> factoryStock;
+    protected FactoryStock<CAR, ORDER, COMPARATOR> factoryStock;
     protected List<Brand> carBrandList;
     protected List<Engine> carEngineList;
     protected List<Color> carColorList;
