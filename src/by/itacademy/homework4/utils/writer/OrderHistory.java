@@ -1,6 +1,7 @@
 package by.itacademy.homework4.utils.writer;
 
 import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.car.markerinterfaces.Brand;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,9 +24,9 @@ public class OrderHistory {
         printWriter.printf("%s ordered %s \n", localDateTime, car);
     }
 
-    public static void findCarsInHistoryByBrand(String brand) {
+    public static void findCarsInHistoryByBrand(Brand brand) {
         try (Stream<String> lines = Files.lines(Paths.get(ORDER_HISTORY_PATH))) {
-            lines.filter(line -> line.contains(brand)).forEach(System.out::println);
+            lines.filter(line -> line.contains(brand.toString())).forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();
         }

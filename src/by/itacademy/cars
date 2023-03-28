@@ -1,0 +1,12 @@
+2023-03-24T20:00:47.171654300: ordered Truck{issueYear=2023, carBrand=NISSAN, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:00:47.171654300: ordered Truck{issueYear=2023, carBrand=VOLVO, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:00:47.171654300: ordered Truck{issueYear=2023, carBrand=NISSAN, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:00:47.171654300: ordered Truck{issueYear=2023, carBrand=FORD, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:03:14.645843200 ordered: Truck{issueYear=2023, carBrand=NISSAN, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:03:14.645843200 ordered: Truck{issueYear=2023, carBrand=VOLVO, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:03:14.645843200 ordered: Truck{issueYear=2023, carBrand=NISSAN, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:03:14.645843200 ordered: Truck{issueYear=2023, carBrand=FORD, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:17:09 ordered: Truck{issueYear=2023, carBrand=NISSAN, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:17:09 ordered: Truck{issueYear=2023, carBrand=VOLVO, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:17:09 ordered: Truck{issueYear=2023, carBrand=NISSAN, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 
+2023-03-24T20:17:09 ordered: Truck{issueYear=2023, carBrand=FORD, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=SMALL, options=[], loadCapacity=SMALL} 

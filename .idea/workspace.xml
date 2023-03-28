@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add loadCapacity verification">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add Comparator classes">
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/cars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/Comparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/PassengerCarComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/SpecialCarComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/comparators/TruckComparator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/AppUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/PassengerCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/SpecialCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/car/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/CarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/FactoryStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/PassengerCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/PassengerCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/SpecialCarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/factory/TruckFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/showroom/Showroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/start/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" afterDir="false" />
     </list>
@@ -77,7 +64,7 @@
       <recent name="by.itacademy.homework2.task10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ITAcademy_JavaProgramming" />
@@ -139,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.by.itacademy.homework6.usingsemaphore.Main" />
         <item itemvalue="Application.by.itacademy.homework6.Main" />
         <item itemvalue="Application.StreamAPI" />
@@ -155,13 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00198" summary="feat: create order functional">
-      <created>1678871384433</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1678871384434</updated>
     </task>
     <task id="LOCAL-00199" summary="refactor: fix TruckOrder">
       <created>1678879540705</created>
@@ -499,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679915759703</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="feat: add Comparator classes">
+      <created>1679926015360</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1679926015360</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -514,7 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: add finally section" />
     <MESSAGE value="refactor: cover CarFactory, Order with checks for null" />
     <MESSAGE value="refactor: cover FactoryStock with checks for null" />
     <MESSAGE value="refactor: cover ColorService, OptionService, WheelService with checks for null" />
@@ -539,7 +525,8 @@
     <MESSAGE value="fix: fix Showroom" />
     <MESSAGE value="refactor: remove LoadCapacity" />
     <MESSAGE value="feat: add loadCapacity verification" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add loadCapacity verification" />
+    <MESSAGE value="feat: add Comparator classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Comparator classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
