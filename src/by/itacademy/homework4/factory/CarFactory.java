@@ -25,16 +25,13 @@ public abstract class CarFactory<CAR extends Car, ORDER extends Order, COMPARATO
 
     public Car createCar(ORDER order) {
         requireNonNull(order, NULL_ORDER);
+        CAR moreSuitableCar = factoryStock.chooseMoreSuitableCar(order);
 
         if (nonNull(factoryStock.checkCar(order))) {
             return factoryStock.getClientCar();
-        } else if (nonNull(
-                replaceInappropriateOptions(
-                        factoryStock.chooseMoreSuitableCar(order),
-                        order))
-        ) {
+        } else if (nonNull(moreSuitableCar)) {
             return replaceInappropriateOptions(
-                    factoryStock.getMoreSuitableCar(),
+                    moreSuitableCar,
                     order);
         }
         return null;
