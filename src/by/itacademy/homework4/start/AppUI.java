@@ -1,30 +1,42 @@
 package by.itacademy.homework4.start;
 
 
-import by.itacademy.homework4.car.markerinterfaces.Brand;
+import by.itacademy.homework4.order.Order;
+import by.itacademy.homework4.order.TruckOrder;
+import by.itacademy.homework4.showroom.Showroom;
+import by.itacademy.homework4.factory.TruckFactory;
+import by.itacademy.homework4.utils.AppUI.AppUIUtils;
 import by.itacademy.homework4.utils.writer.OrderHistory;
+import by.itacademy.homework4.car.markerinterfaces.Brand;
+import by.itacademy.homework4.car.markerinterfaces.Color;
+import by.itacademy.homework4.car.markerinterfaces.Engine;
+import by.itacademy.homework4.car.markerinterfaces.WheelSize;
+import by.itacademy.homework4.car.enums.truckenums.TruckColor;
+import by.itacademy.homework4.car.enums.truckenums.TruckBrand;
+import by.itacademy.homework4.car.enums.truckenums.TruckEngine;
+import by.itacademy.homework4.car.enums.truckenums.TruckWheelSize;
 
-import static by.itacademy.homework4.messages.Message.ConsoleCommandsDescription.*;
-import static by.itacademy.homework4.messages.Message.ConsoleCommands.*;
-import static by.itacademy.homework4.messages.Message.SystemMessage.*;
+import static by.itacademy.homework4.utils.AppUI.AppUIUtils.*;
 import static by.itacademy.homework4.messages.Message.ErrorMessage.*;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import static by.itacademy.homework4.messages.Message.SystemMessage.*;
+import static by.itacademy.homework4.messages.Message.ConsoleCommands.*;
+import static by.itacademy.homework4.messages.Message.ConsoleCommandsDescription.*;
 
 public class AppUI {
+    private final Showroom showroom = new Showroom();
+    private final TruckFactory truckFactory = new TruckFactory();
+    private String userInput;
 
     public void start() {
         introduce();
-        String userInput = userInput();
+        userInput = userInput();
         while (!userInput.equals(EXIT_FROM_APP)) {
             manage(userInput);
+            System.out.println("create order!");
+            System.out.println(truckFactory.createCar(createTruckOrder()));
             userInput = userInput();
         }
     }
-
-
 
     private void manage(String userInput) {
         switch (userInput) {
@@ -38,19 +50,26 @@ public class AppUI {
 
     }
 
+    private <ORDER extends Order> ORDER createOrder() {
+        userInput = AppUIUtils.userInput();
+        return null;
+    }
+
+    private TruckOrder createTruckOrder() {
+        return new TruckOrder(
+                2023,
+                (Brand) chooseConfig(TruckBrand.values()),
+                (Engine) chooseConfig(TruckEngine.values()),
+                (Color) chooseConfig(TruckColor.values()),
+                (WheelSize) chooseConfig(TruckWheelSize.values()),
+                null,
+                chooseLoadCapacity());
+    }
+
     private void findOrderedCarsByBrand(Brand brand) {
         OrderHistory.findCarsInHistoryByBrand(brand);
     }
 
-    private String userInput() {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        try {
-            return bufferedReader.readLine();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     private void introduce() {
         System.out.println(INTRODUCTION);
