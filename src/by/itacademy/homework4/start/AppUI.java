@@ -1,15 +1,18 @@
 package by.itacademy.homework4.start;
 
-
 import by.itacademy.homework4.order.Order;
 import by.itacademy.homework4.order.TruckOrder;
 import by.itacademy.homework4.showroom.Showroom;
 import by.itacademy.homework4.factory.TruckFactory;
+import by.itacademy.homework4.order.SpecialCarOrder;
 import by.itacademy.homework4.utils.AppUI.AppUIUtils;
+import by.itacademy.homework4.order.PassengerCarOrder;
 import by.itacademy.homework4.utils.writer.OrderHistory;
 import by.itacademy.homework4.car.markerinterfaces.Brand;
 import by.itacademy.homework4.car.markerinterfaces.Color;
 import by.itacademy.homework4.car.markerinterfaces.Engine;
+import by.itacademy.homework4.car.enums.specialcarenums.*;
+import by.itacademy.homework4.car.enums.passengercarenums.*;
 import by.itacademy.homework4.car.markerinterfaces.WheelSize;
 import by.itacademy.homework4.car.enums.truckenums.TruckColor;
 import by.itacademy.homework4.car.enums.truckenums.TruckBrand;
@@ -25,6 +28,7 @@ import static by.itacademy.homework4.messages.Message.ConsoleCommandsDescription
 public class AppUI {
     private final Showroom showroom = new Showroom();
     private final TruckFactory truckFactory = new TruckFactory();
+    private Order order = null;
     private String userInput;
 
     public void start() {
@@ -32,8 +36,8 @@ public class AppUI {
         userInput = userInput();
         while (!userInput.equals(EXIT_FROM_APP)) {
             manage(userInput);
-            System.out.println("create order!");
-            System.out.println(truckFactory.createCar(createTruckOrder()));
+
+            System.out.println(truckFactory.createCar((TruckOrder) order));
             userInput = userInput();
         }
     }
@@ -41,7 +45,7 @@ public class AppUI {
     private void manage(String userInput) {
         switch (userInput) {
             case HELP -> showCommands();
-            case ORDER -> orderCar();
+            case ORDER -> createOrder();
             default -> System.err.println(COMMAND_NOT_SUPPORT);
         }
     }
@@ -50,13 +54,41 @@ public class AppUI {
 
     }
 
-    private <ORDER extends Order> ORDER createOrder() {
+    private void createOrder() {
+        System.out.println("here");
         userInput = AppUIUtils.userInput();
-        return null;
+        switch (userInput) {
+            case TRUCK -> createTruckOrder();
+            case SPECIAL_CAR -> createSpecialCarOrder();
+            case PASSENGER_CAR -> createPassengerCarOrder();
+            default -> System.out.println(COMMAND_NOT_SUPPORT);
+        }
     }
 
-    private TruckOrder createTruckOrder() {
-        return new TruckOrder(
+    private void createPassengerCarOrder() {
+        order = new PassengerCarOrder(
+                2023,
+                (Brand) chooseConfig(PassengerCarBrand.values()),
+                (Engine) chooseConfig(PassengerCarEngine.values()),
+                (Color) chooseConfig(PassengerCarColor.values()),
+                (WheelSize) chooseConfig(PassengerCarWheelSize.values()),
+                null,
+                (PassengerCarFuelType) chooseConfig(PassengerCarFuelType.values()));
+    }
+
+    private void createSpecialCarOrder() {
+        order = new SpecialCarOrder(
+                2023,
+                (Brand) chooseConfig(SpecialCarBrand.values()),
+                (Engine) chooseConfig(SpecialCarEngine.values()),
+                (Color) chooseConfig(SpecialCarColor.values()),
+                (WheelSize) chooseConfig(SpecialCarWheelSize.values()),
+                null,
+                (SpecialCarType) chooseConfig(SpecialCarType.values()));
+    }
+
+    private void createTruckOrder() {
+        order = new TruckOrder(
                 2023,
                 (Brand) chooseConfig(TruckBrand.values()),
                 (Engine) chooseConfig(TruckEngine.values()),
