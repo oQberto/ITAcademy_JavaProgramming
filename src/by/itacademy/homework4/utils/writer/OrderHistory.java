@@ -13,15 +13,18 @@ import java.time.LocalDateTime;
 import java.util.stream.Stream;
 
 public class OrderHistory {
-    private static final String ORDER_HISTORY_PATH = "D:\\Java Projects\\ITAcademy_JavaProgramming\\src\\by\\itacademy\\homework4\\writer\\OrderHistory";
+    private static final String ORDER_HISTORY_PATH = "D:\\Java Projects\\ITAcademy_JavaProgramming\\src\\by\\itacademy\\homework4\\utils\\writer\\OrderHistory";
 
     private OrderHistory() {
     }
 
-    public static void writeOrderToFile(Car car) throws IOException {
-        PrintWriter printWriter = new PrintWriter(new FileWriter(ORDER_HISTORY_PATH));
-        LocalDateTime localDateTime = LocalDateTime.now().withNano(0);
-        printWriter.printf("%s ordered %s \n", localDateTime, car);
+    public static void writeOrderToFile(Car car) {
+        try (PrintWriter printWriter = new PrintWriter(new FileWriter(ORDER_HISTORY_PATH, true))) {
+            LocalDateTime localDateTime = LocalDateTime.now().withNano(0);
+            printWriter.printf("%s ordered %s \n", localDateTime, car);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void findCarsInHistoryByBrand(Brand brand) {
