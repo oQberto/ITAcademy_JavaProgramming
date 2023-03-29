@@ -20,6 +20,8 @@ import by.itacademy.homework4.car.enums.truckenums.TruckBrand;
 import by.itacademy.homework4.car.enums.truckenums.TruckEngine;
 import by.itacademy.homework4.car.enums.truckenums.TruckWheelSize;
 
+import java.util.Arrays;
+
 import static by.itacademy.homework4.utils.AppUI.AppUIUtils.*;
 import static by.itacademy.homework4.utils.writer.OrderHistory.*;
 import static by.itacademy.homework4.messages.Message.ErrorMessage.*;
@@ -76,37 +78,76 @@ public class AppUI {
     }
 
     private PassengerCarOrder createPassengerCarOrder() {
-        System.out.println("Order passenger car: brand, engine, color, wheel size, fuel type");
+        var brands = PassengerCarBrand.values();
+        var engines = PassengerCarEngine.values();
+        var colors = PassengerCarColor.values();
+        var wheelSizes = PassengerCarWheelSize.values();
+        var fuelTypes = PassengerCarFuelType.values();
+        printfMessage(
+                PASSENGER_CAR_ORDER,
+                Arrays.toString(brands),
+                Arrays.toString(engines),
+                Arrays.toString(colors),
+                Arrays.toString(wheelSizes),
+                Arrays.toString(fuelTypes)
+        );
         return new PassengerCarOrder(
                 2023,
-                (Brand) chooseConfig(PassengerCarBrand.values()),
-                (Engine) chooseConfig(PassengerCarEngine.values()),
-                (Color) chooseConfig(PassengerCarColor.values()),
-                (WheelSize) chooseConfig(PassengerCarWheelSize.values()),
+                (Brand) chooseConfig(brands),
+                (Engine) chooseConfig(engines),
+                (Color) chooseConfig(colors),
+                (WheelSize) chooseConfig(fuelTypes),
                 null,
-                (PassengerCarFuelType) chooseConfig(PassengerCarFuelType.values()));
+                (PassengerCarFuelType) chooseConfig(fuelTypes)
+        );
     }
 
     private SpecialCarOrder createSpecialCarOrder() {
+        var brands = SpecialCarBrand.values();
+        var engines = SpecialCarEngine.values();
+        var colors = SpecialCarColor.values();
+        var wheelSizes = SpecialCarWheelSize.values();
+        var carTypes = SpecialCarType.values();
+        printfMessage(
+                SPECIAL_CAR_ORDER,
+                Arrays.toString(brands),
+                Arrays.toString(engines),
+                Arrays.toString(colors),
+                Arrays.toString(wheelSizes),
+                Arrays.toString(carTypes)
+        );
         return new SpecialCarOrder(
                 2023,
-                (Brand) chooseConfig(SpecialCarBrand.values()),
-                (Engine) chooseConfig(SpecialCarEngine.values()),
-                (Color) chooseConfig(SpecialCarColor.values()),
-                (WheelSize) chooseConfig(SpecialCarWheelSize.values()),
+                (Brand) chooseConfig(brands),
+                (Engine) chooseConfig(engines),
+                (Color) chooseConfig(colors),
+                (WheelSize) chooseConfig(wheelSizes),
                 null,
-                (SpecialCarType) chooseConfig(SpecialCarType.values()));
+                (SpecialCarType) chooseConfig(carTypes)
+        );
     }
 
     private TruckOrder createTruckOrder() {
+        var brands = TruckBrand.values();
+        var engines = TruckEngine.values();
+        var colors = TruckColor.values();
+        var wheelSizes = TruckWheelSize.values();
+        printfMessage(
+                TRUCK_ORDER,
+                Arrays.toString(brands),
+                Arrays.toString(engines),
+                Arrays.toString(colors),
+                Arrays.toString(wheelSizes)
+        );
         return new TruckOrder(
                 2023,
-                (Brand) chooseConfig(TruckBrand.values()),
-                (Engine) chooseConfig(TruckEngine.values()),
-                (Color) chooseConfig(TruckColor.values()),
-                (WheelSize) chooseConfig(TruckWheelSize.values()),
+                (Brand) chooseConfig(brands),
+                (Engine) chooseConfig(engines),
+                (Color) chooseConfig(colors),
+                (WheelSize) chooseConfig(wheelSizes),
                 null,
-                chooseLoadCapacity());
+                chooseLoadCapacity()
+        );
     }
 
     private void findOrderedCarsByBrand(Brand brand) {
@@ -117,6 +158,10 @@ public class AppUI {
     private void introduce() {
         System.out.println(INTRODUCTION);
         showCommands();
+    }
+
+    private void printfMessage(String message, Object... ob) {
+        System.out.printf(message, ob);
     }
 
     private void showCommands() {

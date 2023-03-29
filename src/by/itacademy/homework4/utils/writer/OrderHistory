@@ -1,2 +1,4 @@
 2023-03-29T10:53:15 ordered Car -> issueYear=2023, carBrand=FORD, carEngine=COMMON_RAIL, carColor=GREEN, wheelSize=LARGE, options=[], passengerCarFuelType=GASOLINE. 
 2023-03-29T10:54:57 ordered Car -> issueYear=2023, carBrand=VOLVO, carEngine=COMMON_RAIL, carColor=WHITE, wheelSize=MIDDLE, options=[], loadCapacity=25. 
+2023-03-29T11:13:30 ordered Car -> issueYear=2023, carBrand=FORD, carEngine=COMMON_RAIL, carColor=BLACK, wheelSize=SMALL, options=[], passengerCarFuelType=CNG. 
+2023-03-29T11:34:35 ordered Car -> issueYear=2023, carBrand=VOLVO, carEngine=COMMON_RAIL, carColor=BLACK, wheelSize=SMALL, options=[], loadCapacity=12. 

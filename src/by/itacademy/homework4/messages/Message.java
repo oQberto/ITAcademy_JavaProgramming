@@ -30,6 +30,30 @@ public interface Message {
 
     interface SystemMessage {
         String INTRODUCTION = "Hi, welcome to the showroom!";
+        String TRUCK_ORDER = """
+                Choose the truck configuration:
+                 brands: %s,
+                 engines: %s,
+                 colors: %s,
+                 wheel sizes: %s
+                 load capacity: 0-100
+                 """;
+        String SPECIAL_CAR_ORDER = """
+                Choose the special car configuration:
+                 brands: %s,
+                 engines: %s,
+                 colors: %s,
+                 wheel sizes %s,
+                 car types: %s
+                 """;
+        String PASSENGER_CAR_ORDER = """
+                Choose the passenger car configuration:
+                 brands: %s,
+                 engines: %s,
+                 colors: %s,
+                 wheel sizes: %s,
+                 fuel types: %s
+                 """;
     }
 
     interface ConsoleCommands {
