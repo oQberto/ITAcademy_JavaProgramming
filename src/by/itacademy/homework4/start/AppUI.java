@@ -1,11 +1,8 @@
 package by.itacademy.homework4.start;
 
 import by.itacademy.homework4.car.Car;
-import by.itacademy.homework4.factory.PassengerCarFactory;
-import by.itacademy.homework4.factory.SpecialCarFactory;
 import by.itacademy.homework4.order.TruckOrder;
 import by.itacademy.homework4.showroom.Showroom;
-import by.itacademy.homework4.factory.TruckFactory;
 import by.itacademy.homework4.order.SpecialCarOrder;
 import by.itacademy.homework4.order.PassengerCarOrder;
 import by.itacademy.homework4.utils.writer.OrderHistory;
@@ -32,10 +29,7 @@ import static by.itacademy.homework4.messages.Message.ConsoleCommands.*;
 import static by.itacademy.homework4.messages.Message.ConsoleCommandsDescription.*;
 
 public class AppUI {
-    private final Showroom showroom = new Showroom();
-    private final TruckFactory truckFactory = new TruckFactory();
-    private final SpecialCarFactory specialCarFactory = new SpecialCarFactory();
-    private final PassengerCarFactory passengerCarFactory = new PassengerCarFactory();
+    private static final Showroom SHOWROOM = new Showroom();
     private String userInput;
 
     public void start() {
@@ -70,17 +64,17 @@ public class AppUI {
         userInput = userInput();
         switch (userInput) {
             case TRUCK -> {
-                clientCar = truckFactory.createCar(createTruckOrder());
+                clientCar = SHOWROOM.orderTruck(createTruckOrder());
                 writeOrderToFile(clientCar);
                 System.out.println(clientCar);
             }
             case SPECIAL_CAR -> {
-                clientCar = specialCarFactory.createCar(createSpecialCarOrder());
+                clientCar = SHOWROOM.orderSpecialCar(createSpecialCarOrder());
                 writeOrderToFile(clientCar);
                 System.out.println(clientCar);
             }
             case PASSENGER_CAR -> {
-                clientCar = passengerCarFactory.createCar(createPassengerCarOrder());
+                clientCar = SHOWROOM.orderPassengerCar(createPassengerCarOrder());
                 writeOrderToFile(clientCar);
                 System.out.println(clientCar);
             }
