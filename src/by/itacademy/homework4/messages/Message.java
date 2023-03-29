@@ -15,12 +15,13 @@ public interface Message {
     }
 
     interface ErrorMessage {
+        String INVALID_DATE = "Invalid date!";
         String OPTION_NOT_EXIST = "Removable option not exist!";
         String COLOR_ALREADY_SET = "You try to set the existing color!";
         String OPTION_ALREADY_SET = "You try to set the existing option!";
+        String COMMAND_NOT_SUPPORT = "Command not support!";
         String INVALID_LOAD_CAPACITY = "Invalid load capacity!";
         String WHEEL_SIZE_ALREADY_SET = "You try to set the existing wheel size!";
-        String COMMAND_NOT_SUPPORT = "Command not support!";
     }
 
     interface NotExistMessage {
@@ -29,7 +30,14 @@ public interface Message {
     }
 
     interface SystemMessage {
+        String DATE_FORMAT = "Date format for searching: yyyy-mm-dd.";
         String INTRODUCTION = "Hi, welcome to the showroom!";
+        String CHOOSE_CAR = """
+                Choose car:
+                /tr - truck;
+                /sp - special car;
+                /pc - passenger car.
+                """;
         String TRUCK_ORDER = """
                 Choose the truck configuration:
                  brands: %s,
@@ -65,9 +73,8 @@ public interface Message {
         String EXIT_FROM_APP = "/exit";
         String PASSENGER_CAR = "/pc";
         String SHOW_CATALOGUE = "/catalogue";
-        String FIND_CAR_BY_YEAR = "/f_year";
-        String FIND_CAR_BY_DATE = "/f_date: ";
-        String FIND_CAR_BY_BRAND = "/f_brand: ";
+        String FIND_CAR_BY_DATE = "/f_date";
+        String FIND_CAR_BY_BRAND = "/f_brand";
     }
 
     interface ConsoleCommandsDescription {
@@ -79,7 +86,6 @@ public interface Message {
         String EXIT_FROM_APP_DESCRIPTION = " - finishes work.";
         String PASSENGER_CAR_DESCRIPTION = " - passenger car.";
         String SHOW_CATALOGUE_DESCRIPTION = " - show showroom catalogue;";
-        String FIND_CAR_BY_YEAR_DESCRIPTION = " - find car by year;";
         String FIND_CAR_BY_DATE_DESCRIPTION = " - find car by order date.";
         String FIND_CAR_BY_BRAND_DESCRIPTION = " - find car by brand;";
     }

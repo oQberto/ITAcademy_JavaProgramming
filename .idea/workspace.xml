@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="fix: fix wrong order history entry">
+    <list default="true" id="54d9442a-2351-4a94-828a-e5938a91f318" name="Changes" comment="feat: add order instructions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/messages/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/start/AppUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/start/AppUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itacademy/homework4/utils/writer/OrderHistory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674548913971</updated>
-    </task>
-    <task id="LOCAL-00206" summary="refactor: replace while in run() method">
-      <created>1679163555591</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1679163555591</updated>
     </task>
     <task id="LOCAL-00207" summary="refactor: change names">
       <created>1679164653195</created>
@@ -483,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680076758134</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="feat: add order instructions">
+      <created>1680078943745</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078943745</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create Showroom" />
     <MESSAGE value="feat: add PassengerCar" />
     <MESSAGE value="feat: add PassengerCarOrder" />
     <MESSAGE value="feat: add PassengerCarFactory" />
@@ -523,7 +523,8 @@
     <MESSAGE value="feat: add possibility to order cars" />
     <MESSAGE value="feat: add possibility to order cars &amp; write them to history" />
     <MESSAGE value="fix: fix wrong order history entry" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix wrong order history entry" />
+    <MESSAGE value="feat: add order instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add order instructions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

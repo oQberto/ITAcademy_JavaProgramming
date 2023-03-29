@@ -20,6 +20,8 @@ import by.itacademy.homework4.car.enums.truckenums.TruckBrand;
 import by.itacademy.homework4.car.enums.truckenums.TruckEngine;
 import by.itacademy.homework4.car.enums.truckenums.TruckWheelSize;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 
 import static by.itacademy.homework4.utils.AppUI.AppUIUtils.*;
@@ -49,12 +51,21 @@ public class AppUI {
         switch (userInput) {
             case HELP -> showCommands();
             case ORDER -> orderCar();
+            case FIND_CAR_BY_BRAND -> findOrderedCarsByBrand((Brand) chooseConfig(TruckBrand.values()));
+            case FIND_CAR_BY_DATE -> {
+                System.out.println(DATE_FORMAT);
+                try {
+                    findCarsInHistoryByDate(LocalDate.parse(userInput()));
+                } catch (DateTimeParseException e) {
+                    System.err.println(INVALID_DATE);
+                }
+            }
             default -> System.err.println(COMMAND_NOT_SUPPORT);
         }
     }
 
     private void orderCar() {
-        System.out.println("Which car do you want?");
+        System.out.println(CHOOSE_CAR);
         Car clientCar;
         userInput = userInput();
         switch (userInput) {
@@ -171,7 +182,6 @@ public class AppUI {
         System.out.println(ORDER + ORDER_DESCRIPTION);
         System.out.println(EXIT_FROM_APP + EXIT_FROM_APP_DESCRIPTION + "\n");
         System.out.println(FIND_CAR_BY_BRAND + FIND_CAR_BY_BRAND_DESCRIPTION);
-        System.out.println(FIND_CAR_BY_YEAR + FIND_CAR_BY_YEAR_DESCRIPTION);
         System.out.println(FIND_CAR_BY_DATE + FIND_CAR_BY_DATE_DESCRIPTION + "\n");
         System.out.println(TRUCK + TRUCK_DESCRIPTION);
         System.out.println(SPECIAL_CAR + SPECIAL_CAR_DESCRIPTION);
