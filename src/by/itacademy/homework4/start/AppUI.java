@@ -1,11 +1,12 @@
 package by.itacademy.homework4.start;
 
-import by.itacademy.homework4.order.Order;
+import by.itacademy.homework4.car.Car;
+import by.itacademy.homework4.factory.PassengerCarFactory;
+import by.itacademy.homework4.factory.SpecialCarFactory;
 import by.itacademy.homework4.order.TruckOrder;
 import by.itacademy.homework4.showroom.Showroom;
 import by.itacademy.homework4.factory.TruckFactory;
 import by.itacademy.homework4.order.SpecialCarOrder;
-import by.itacademy.homework4.utils.AppUI.AppUIUtils;
 import by.itacademy.homework4.order.PassengerCarOrder;
 import by.itacademy.homework4.utils.writer.OrderHistory;
 import by.itacademy.homework4.car.markerinterfaces.Brand;
@@ -20,6 +21,7 @@ import by.itacademy.homework4.car.enums.truckenums.TruckEngine;
 import by.itacademy.homework4.car.enums.truckenums.TruckWheelSize;
 
 import static by.itacademy.homework4.utils.AppUI.AppUIUtils.*;
+import static by.itacademy.homework4.utils.writer.OrderHistory.*;
 import static by.itacademy.homework4.messages.Message.ErrorMessage.*;
 import static by.itacademy.homework4.messages.Message.SystemMessage.*;
 import static by.itacademy.homework4.messages.Message.ConsoleCommands.*;
@@ -28,7 +30,8 @@ import static by.itacademy.homework4.messages.Message.ConsoleCommandsDescription
 public class AppUI {
     private final Showroom showroom = new Showroom();
     private final TruckFactory truckFactory = new TruckFactory();
-    private Order order = null;
+    private final SpecialCarFactory specialCarFactory = new SpecialCarFactory();
+    private final PassengerCarFactory passengerCarFactory = new PassengerCarFactory();
     private String userInput;
 
     public void start() {
@@ -36,8 +39,6 @@ public class AppUI {
         userInput = userInput();
         while (!userInput.equals(EXIT_FROM_APP)) {
             manage(userInput);
-
-            System.out.println(truckFactory.createCar((TruckOrder) order));
             userInput = userInput();
         }
     }
@@ -45,28 +46,38 @@ public class AppUI {
     private void manage(String userInput) {
         switch (userInput) {
             case HELP -> showCommands();
-            case ORDER -> createOrder();
+            case ORDER -> orderCar();
             default -> System.err.println(COMMAND_NOT_SUPPORT);
         }
     }
 
     private void orderCar() {
-
-    }
-
-    private void createOrder() {
-        System.out.println("here");
-        userInput = AppUIUtils.userInput();
+        System.out.println("Which car do you want?");
+        Car clientCar;
+        userInput = userInput();
         switch (userInput) {
-            case TRUCK -> createTruckOrder();
-            case SPECIAL_CAR -> createSpecialCarOrder();
-            case PASSENGER_CAR -> createPassengerCarOrder();
-            default -> System.out.println(COMMAND_NOT_SUPPORT);
+            case TRUCK -> {
+                clientCar = truckFactory.createCar(createTruckOrder());
+                writeOrderToFile(clientCar);
+                System.out.println(clientCar);
+            }
+            case SPECIAL_CAR -> {
+                clientCar = specialCarFactory.createCar(createSpecialCarOrder());
+                writeOrderToFile(clientCar);
+                System.out.println(clientCar);
+            }
+            case PASSENGER_CAR -> {
+                clientCar = passengerCarFactory.createCar(createPassengerCarOrder());
+                writeOrderToFile(clientCar);
+                System.out.println(clientCar);
+            }
+            default -> System.err.println(COMMAND_NOT_SUPPORT);
         }
     }
 
-    private void createPassengerCarOrder() {
-        order = new PassengerCarOrder(
+    private PassengerCarOrder createPassengerCarOrder() {
+        System.out.println("Order passenger car: brand, engine, color, wheel size, fuel type");
+        return new PassengerCarOrder(
                 2023,
                 (Brand) chooseConfig(PassengerCarBrand.values()),
                 (Engine) chooseConfig(PassengerCarEngine.values()),
@@ -76,8 +87,8 @@ public class AppUI {
                 (PassengerCarFuelType) chooseConfig(PassengerCarFuelType.values()));
     }
 
-    private void createSpecialCarOrder() {
-        order = new SpecialCarOrder(
+    private SpecialCarOrder createSpecialCarOrder() {
+        return new SpecialCarOrder(
                 2023,
                 (Brand) chooseConfig(SpecialCarBrand.values()),
                 (Engine) chooseConfig(SpecialCarEngine.values()),
@@ -87,8 +98,8 @@ public class AppUI {
                 (SpecialCarType) chooseConfig(SpecialCarType.values()));
     }
 
-    private void createTruckOrder() {
-        order = new TruckOrder(
+    private TruckOrder createTruckOrder() {
+        return new TruckOrder(
                 2023,
                 (Brand) chooseConfig(TruckBrand.values()),
                 (Engine) chooseConfig(TruckEngine.values()),

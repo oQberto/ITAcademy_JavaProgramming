@@ -19,7 +19,7 @@ public class AppUIUtils {
                     break flag;
                 }
             }
-            System.out.println("Invalid input!");
+            System.err.println("Invalid input!");
         }
         return object;
     }
@@ -32,7 +32,7 @@ public class AppUIUtils {
                 loadCapacity = userLoadCapacity;
                 break;
             }
-            System.out.println("Invalid input!");
+            System.err.println("Invalid input!");
         }
         return loadCapacity;
     }
